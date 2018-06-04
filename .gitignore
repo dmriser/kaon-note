@@ -1,0 +1,12 @@
+# latex build files 
+*.aux 
+*.bcf
+
+# editor files 
+*~ 
+
+# other files 
+*.root 
+*.o 
+*.so 
+*.a 
