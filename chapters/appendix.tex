@@ -1,0 +1,61 @@
+\appendix 
+
+\section*{\\Appendix A: Derivation of formulas related to errors}
+
+\subsection*{Propagation of errors}
+
+Let $\vec{x}$ be a set of $n$ random variables $\vec{x} = (x_1, x_2, ..., x_n)$ and known mean $\mu_i = \expval{x_i}$ and covariance $V_{ij} = \expval{x_i x_j}-\expval{x_i}\expval{x_j}$.  Suppose that we measure a function $f(\vec{x})$ that depends on the variables $\vec{x}$ and we want to understand how the covariances $V_{ij}$ on $\vec{x}$ will show up manefest themselves as errors on our measurement of $f(\vec{x})$.  We can start by expanding our function around the expected value of $x_i$.
+
+\begin{equation}
+        f(\vec{x}) \approx f(\vec{\mu}) + \sum_{i=1}^{n} \frac{\partial f}{\partial x_i} \Bigr|_{x_i = \mu_i} (x_i - \mu_i)
+\end{equation}
+
+We can then take the expectation value of our function.
+\begin{equation}
+        \expval{f(\vec{x})} = \expval{f(\vec{\mu})} + \sum_{i=1}^{n} \frac{\partial f}{\partial x_i} \Bigr|_{x_i = \mu_i} \expval{x_i - \mu_i}
+\end{equation}
+
+Where here the term $ \expval{x_i - \mu_i}$ is zero.
+
+\begin{equation}
+        \expval{x_i - \mu_i} = \expval{x_i} - \mu_i = \mu_i - \mu_i = 0
+\end{equation}
+
+It is apparent then that the expectation value of our function $f$ evaluated close to the expected values of our variables $\vec{x}$ is just the function evaluated at the expectation value of the random variables $\vec{x}$.
+
+\begin{equation}
+        \expval{f(\vec{x})} = \expval{f(\mu)} = f(\mu)
+\end{equation}
+
+We can also consider the second moment $\expval{f^2(\vec{x})}$,  
+
+\begin{equation}
+        \expval{f^2(\vec{x})} \approx \expval{ (f(\vec{\mu}) + \sum_{i=1}^{n} \frac{\partial f}{\partial x_i} \Bigr|_{x_i = \mu_i} (x_i - \mu_i))^2 }
+\end{equation}
+
+which is, 
+
+\begin{equation}
+        = \expval{f^2(\mu)} + \sum_{i=1}^{n} \sum_{j=1}^{n} \frac{\partial f}{\partial x_i} \Bigr|_{x_i = \mu_i} \frac{\partial f}{\partial x_j} \Bigr|_{x_j = \mu_i} \expval{(x_i - \mu_i)(x_j - \mu_j)} + 2 \expval{f(\mu) \sum_{i=1}^{n} \frac{\partial f}{\partial x_i} \Bigr|_{x_i = \mu_i} (x_i-\mu_i)}
+\end{equation}
+
+and the last expectation value vanishes due to the same logic used when calculating the first moment.  We recognize the term $\expval{(x_i - \mu_i)(x_j - \mu_j)}$ as the element of the covariance matrix $V_{ij}$.  Our second moment is then complete as follows.
+
+\begin{equation}
+        \expval{f^2(\vec{x})}  = f^2(\mu) + \sum_{i=1}^{n} \sum_{j=1}^{n} \frac{\partial f}{\partial x_i} \Bigr|_{x_i = \mu_i} \frac{\partial f}{\partial x_j} \Bigr|_{x_j = \mu_i} V_{ij}
+\end{equation}
+
+We can then calculate the variance of the function.
+
+\begin{align} 
+    \sigma_{f}^2 = \expval{f^2(\vec{x})} - \expval{f(\vec{x})}^2 \\ 
+    = (f^2(\vec{\mu}) - f^2(\vec{\mu})) + \sum_{i=1}^{n} \sum_{j=1}^{n} \frac{\partial f}{\partial x_i} \Bigr|_{x_i = \mu_i} \frac{\partial f}{\partial x_j} \Bigr|_{x_j = \mu_i} V_{ij} \\
+    = \sum_{i=1}^{n} \sum_{j=1}^{n} \frac{\partial f}{\partial x_i} \Bigr|_{x_i = \mu_i} \frac{\partial f}{\partial x_j} \Bigr|_{x_j = \mu_i} V_{ij} 
+\end{align}
+
+This is the standard error propagation formula which is widely used.  These correlations $\sigma_{ij}$ can arise from several sources.
+
+\begin{itemize}
+    \item{Common measurement uncertainies.}
+    \item{Correlations in $x_i x_j$ leading to correlations in $\sigma_i \sigma_j$.}
+\end{itemize}

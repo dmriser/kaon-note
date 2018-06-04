@@ -1,0 +1,79 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Statement of Purpose}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Nucleon Structure from Experiment and Theory}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Measurement of Semi-Inclusive Deeply Inelastic Scattering with CLAS}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Overview of our Measurement}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Basic Analysis \& Corrections}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Introduction}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Luminosity Calculation}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Determination of Good Run List}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Helicity Determination}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Vertex Corrections}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Timing Corrections}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Kinematic Corrections}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Particle Identification}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Introduction}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Electron Identification}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Electron ID Cuts}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Hadron Identification}{28}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Hadron ID Cuts}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Beam Spin Asymmetry Analysis}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Introduction}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Event Selection and Binning}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}$\phi _h$ Distributions}{41}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Extraction of Modulations}{48}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}SIDIS Cross Section}{51}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Introduction}{51}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Inclusive Cross Section}{52}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Event Selection and Binning}{53}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Simulation}{53}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Radiative Corrections}{57}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.4}Model Comparison}{57}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Results for SIDIS}{57}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}TMD Extraction}{59}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Introduction}{59}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}EVA}{59}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Wandzura Wilzcheck Approximation}{59}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}Parametrization of TMD Functions}{59}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Results for $cos(2\phi _h)$ Modulation}{59}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Predictions for $cos\phi _h$ Modulation}{59}

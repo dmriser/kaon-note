@@ -1,0 +1,139 @@
+\chapter{SIDIS Cross Section}
+
+This chapter discusses the analysis of inclusive and semi-inclusive deeply inelastic events.  First, the important work on $\pi^{\pm}$ SIDIS that was done before this analysis is described.  Then, motivation is provided to measure the inclusive cross section.  Our analysis of inclusive scattering in the resonance region is then described in detail.  Finally, the SIDIS cross section is calculated and the results are discussed.
+
+\section{Introduction}
+
+The primary goal of this work is to provide the SIDIS cross section for charged pions ($\pi^{\pm}$) over a large kinematic range ($0.1 < x < 0.6$, $1.0 < Q^2 < 4.7$, $0.0 < z < 0.9$, $0.0 < P_{T}^{2} < 1.0$, $-180^\circ < \phi_h < 180^\circ$).  Fortunately these channels were studied by Nathan Harrison and the CLAS collaboration \cite{analysis-harrison} using the E1-F dataset (2010-2015).  By writing the cross section as, 
+
+\begin{equation}
+	\frac{d^5\sigma}{dx \; dQ^2 \; dz \; dP_T^2 \; d\phi_h} = A_{0} \Bigl[ 1 + A_{UU}^{\cos\phi_h} \cos\phi_h + A_{UU}^{\cos(2\phi_h)} \cos(2\phi_h) \Bigr]
+\end{equation}
+
+Harrison et al. measured the un-normalized quantities $A_0$, $A_{UU}^{\cos\phi}$, and $A_{UU}^{\cos(2\phi)}$ which are defined below.  
+
+\begin{gather}
+	A_{0} = \frac{\pi \alpha^2 y (1+\gamma^2/2x)}{2 E M_p x^2 Q^2 (1-\varepsilon)} \Bigl( F_{UU,T} + \varepsilon F_{UU,L} \Bigr) \\
+	A_{UU}^{\cos\phi_h} = \sqrt{2\varepsilon(1+\varepsilon)} \frac{F_{UU}^{\cos\phi_h}}{F_{UU,T} + \varepsilon F_{UU,L}} \\
+	A_{UU}^{\cos(2\phi_h)} = \varepsilon \frac{F_{UU}^{\cos(2\phi_h)}}{F_{UU,T} + \varepsilon F_{UU,L}}
+\end{gather}
+
+In order to measure the structure functions $F_{UU}^{\cos\phi_h}$ and $F_{UU}^{\cos(2\phi_h)}$ directly, the integrated luminosity is needed.  The calculation of this quanitity for E1-F is described in detail during chapter 2 of this document.  Experimentally, the cross section in the $i^{th}$ bin is given as, 
+
+\begin{equation}
+	\frac{d\sigma}{dx \; dQ^2 \; dz \; dP_T^2 \; d\phi_h} = \frac{1}{\Delta x \; \Delta Q^2 \; \Delta z \; \Delta P_T^2 \; \Delta \phi_h} \frac{N_{obs}^{(i)}}{\mathcal{L} A^{(i)} R^{(i)}} 
+\end{equation}
+
+where the superscript $(i)$ reminds the reader that these quantities are calculated for every bin.  Throughout this chapter the symbols $A^{(i)}$, $R^{(i)}$, and $B^{(i)}$ refer to the acceptance correction, radiative correction, and bin centering correction respectively.  These factors will be described in more details in this chapter. Finally, the $\Delta$ factors here denote the width of each bin in 1 dimension of the 5-dimensional space (non-uniform sized bins may be used, in which case this factor also carries an index $(i)$).\\
+
+The integrated luminosity obtained in chapter 2 can be directly applied to the measurement of Harrison et al. to produce 5-dimensional differential cross sections.  This procedure is carried out, but only after the luminosity factor is independently verified by calculating the cross section for inclusive inelastic electron scattering in the resonance region (here $1.1 < W < 2.1 \; GeV/c^2$).  Accurate models for the inclusive cross section exist based on phenomenological fits to existing datasets.  For verification, we compare the cross section from E1-F to a model created by Cynthia Keppel \cite{physics-keppel}. \\
+
+The calculation of the inelastic scattering cross section as described here is non-trivial, and (together with the phenomenological analysis presented in chapter 6) constitutes the main original effort expent by the authors.    
+
+\section{Inclusive Cross Section}
+Inclusive electron scattering is the process $e p \rightarrow e X$, where only the final state electron is detected and the rest of the event is not (anything apart from the electron that is detected is not analyzed).  As a function of $W$ (the invariant mass of the final state ($\gamma^* + p$) system) the region below 2 GeV contains resonances and is often referred to as the resonance region.  Resonance structures are difficult to detect higher than about 2 GeV, and this region is typically called the \textit{deeply inelastic} region.  While the deeply inelastic region is used extensively for measurements in nuclear/particle physics, the goal of luminosity verification is more easily achieved in the resonance region.  This fact is due principally to the excess of Bethe-Heitler events which collect in the $2 < W < 3$ region for $E_{beam} = 5.498$ (such events are difficult to remove when detecting only the final state electron). \\
+It is true that the elastic scattering cross section for $E_{beam} = 5.498$ is small compared to the inclusive cross section, but a significant number of electrons radiate photons before colliding with the target with $E_{i} < E_{beam}$.  These lower energy electrons then have a significantly higher probability to scatter elastically and for our beam energy collect in the region of $2 < W < 3$.\\
+In this section, our procedure for extracting the inclusive cross section and limiting the impact of background events is discussed.
+
+\subsection{Event Selection and Binning}
+A simple choice of 10 bins in $Q^2$ and 35 bins in $W$ is used.  This choice is mainly driven by the desire to keep bin migration effects small.  Events are generated and reconstructed in some bins $R^{(j)}$ and $G^{(i)}$ respectively.  Due to finite detector resolution, it is not always the case that $i = j$.  This effect is known as bin migration, and negatively impacts the acceptance calculation.\\
+The only kinematic restriction that is imposed is applied to the \textit{inelasticity} $y = 1-E'/E < 0.7$.  This restriction is applied because events with large-$y$ have a significantly higher probability to be Bethe-Heitler events.  This cut is equivillent to enforcing a minimum energy for the scattered electron.
+
+\begin{equation}
+	E_{min} = E_{beam}(1-y_{max}) \approx 1.6 \; GeV  
+\end{equation}   
+
+\easyFigure{image/plots/inclusive/ycut.png}{Event distributions ($\theta_e$ vs $p$) for data, simulated inelastic events, and simulated elastic events with radiation are shown.  The red line indicates the momentum cut applied by restricting $y < 0.7$.}
+
+\begin{table}
+  \centering
+  \begin{tabular}{c|c|c|c|c}
+    Variable & N & Min. & Max & Width \\
+    \hline 
+    $W$   & 35 & 1.1 & 2.1 & 0.286 \\
+    $Q^2$ & 10 & 1.7 & 4.2 & 0.25
+  \end{tabular}
+  \caption{Summary of $W$ and $Q^2$ binning used for the inclusive cross section.}
+\end{table}
+
+\subsection{Simulation}
+All processes that CLAS measures are observed through the combination of signals from several sub-detectors.  During analysis all sub-systems are calibrated accurately, but such a complicated system still often produces distributions that do not look like the true physical distribution.  This discrepancy arises from the combination of several effects.
+
+\begin{enumerate}
+	\item Holes, barriers, obstructions, shadows of other detectors, and any other physical effects that prevent events from being measured in some range of $\theta, \phi$ are known as geometrical acceptance effects.  An important geometrical acceptance effect is the presence of the torus coils in between every sector.  These represent a complete loss of information for a small range of $\phi$ between each sector.
+	\item Inefficiencies due to the probabalistic nature of particle interaction in the detector subsystems also lower the overall acceptance.  
+	\item Detectors have finite spatio-temporal resolutions.  
+\end{enumerate}
+
+In order to understand and limit the impact of these effects on the physics extracted from the experiment, a mock experiment is simulated.  In the simulated experiment everything is modelled as realistically as possible.  The simulation used for CLAS is called GSIM and is based on the CERN package GEANT3 (GEometry ANd Tracking).\\
+In this controlled environment, control samples of events can be generated and fed into the simulation.  The output of GSIM is a bos file that is similar to the raw data from the data aquisition system. This is then reconstructed using the same reconstruction algorithm that is applied to data (\texttt{userana}).  \\ 
+By retaining the truth information for all particles that are generated, the effect of the detector can be studied completely.  These concepts can be stated more formally by considering the true $t(x')$ and measured $m(x)$ distributions of some observable.  In the absence of background processes, the relationship between these distributions is expressed as a Fredholm integral equation of the first kind.
+
+\begin{equation}
+	m(x) = \int_{\Omega} K(x,x') t(x') dx'
+\end{equation}
+    
+Here $K(x,x')$ is a kernel which encodes information about detector acceptance due to the effects described above.  The goal of the Monte Carlo simulation is then to \textit{unfold} the measured distribution $m(x)$ by providing an estimate of $K(x,x')$ and finally corrected the data to get $t(x)$.\\
+Observed events are usually aggregated into bins and the problem is naturally discreetized and written in vector-matrix form.
+
+\begin{equation}
+	\mathbf{A} \mathbf{x} = \mathbf{y}
+\end{equation}        
+
+In this notation $\mathbf{A}$ represents the responce matrix, a discreetized version of the kernel function $K$, the vector $\mathbf{y}$ represents the measured distribution in the bins, and the vector $\mathbf{x}$ is the true distribution over the bins.  The matrix elements $A_{ij}$ can be estimated by using generating events, passing them through a monte-carlo detector simulation, and then counting the number of events that are reconstructed in bin $i$ when generated in bin $j$.  This quantity is then normalized by the total number of events generated in the $j^{th}$ bin.  In the absence of bin migration and with perfect acceptance this matrix is the identity matrix $I^{n}$ where $n$ is the total number of bins. \\
+
+\begin{equation}
+  A_{ij} = \frac{n_{rec=i, gen=j}}{n_{gen=j}}
+\end{equation}
+
+The binned true distribution can be recovered by inverting the responce matrix and correcting the observed distribution.
+
+\begin{equation}
+  \mathbf{x} = \mathbf{A}^{-1} \mathbf{y} 
+\end{equation}
+
+In the absence of bin migration, the matrix becomes diagonal with efficiency elements $\epsilon_i$ that represent the fraction of events reconstructed in the bin $i$.
+
+\begin{equation}
+  \mathbf{A} = \begin{pmatrix}
+    \epsilon_0 & 0 & 0\\
+    \vdots & \ddots \\
+    0 &  & \epsilon_n \\
+  \end{pmatrix}
+\end{equation}
+
+
+The inverse is, 
+\begin{equation}
+  \mathbf{A}^{-1} = \begin{pmatrix}
+    1/\epsilon_0 & 0 & 0\\
+    \vdots & \ddots \\
+    0 &  & 1/\epsilon_n \\
+  \end{pmatrix}
+\end{equation}
+
+and the corrected observation for the $i^{th}$ bin is simply given by the observation over the efficiency.
+
+\begin{equation}
+  t_i = \frac{m_i}{\epsilon_i} = m_i \frac{n_{gen=i}}{n_{rec=i}}
+\end{equation}
+
+This is the simple \textit{bin-by-bin} acceptance correction method, which is widely used and produces accurate results provided that bin migration is not significant.  In this analysis the simple bin-by-bin acceptance correction is used.  
+
+\easyFigure{image/plots/inclusive/acceptance-sect2-slice3.png}{Acceptance for one bin of $Q^2$ and one sector of CLAS.}
+
+\subsection{Radiative Corrections}
+The removal of radiative effects from the measured distribution is a similar unfolding problem as described above for acceptance corrections.  For this work we use two monte carlo event generators.  The first generator produces inelastic events in the resonance region with radiative effects included that alter the kinematics.  The second generator is the same parametrization but without radiative effects.  The radiated generator is used to calculate the acceptance corrections, and both are used to try to remove the radiative effects on the cross section.  The ratio $R^{(i)}$ is defined for the $i^{th}$ bin as shown below.
+
+\begin{equation}
+  R^{(i)} = \frac{n_{unrad}^{(i)}}{n_{rad}^{(i)}}
+\end{equation}
+
+This factor can be estimated without passing events through the simulation and we use the results directly from the output of the event generator to correct the cross section.   
+
+\subsection{Model Comparison}
+\easyFigure{image/plots/inclusive/cross-section-sect2-slice3.png}{Inclusive cross section in the resonance region shown for one bin of $Q^2$ in one sector of CLAS.  Our calculation is compared with a trusted model.}
+\easyFigure{image/plots/inclusive/cross-section-ratio-sect2-slice3.png}{The ratio of cross section/model is shown here for one bin of $Q^2$.}
+
+\section{Results for SIDIS}
+
