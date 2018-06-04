@@ -1,11 +1,4 @@
-\chapter{Particle Identification}
-
-% -----------------------------------------
-%    chapter motivation and purpose 
-% -----------------------------------------
-
-\section{Introduction}
-Particle identification (PID) is the process of classifying tracks as known particles.  After reconstruction and matching of detector responces to each track, the reconstruction package \texttt{recsis} assigns a preliminary particle identification based on loose selection criteria.  In this analysis, tracks are classified based on a more stringent criteria.  This chapter discusses the methodology used by the authors to classify particles.
+\chapter{Particle Identification and Corrections}
 
 \section{Electron Identification}
 Electrons in CLAS are abundant, and the detection of an electron is a basic necessity for every event that will be analyzed.  Each negative track is considered a possible electron, a series of physically motivated cuts is applied.  If a track passes all cuts, it is identified as an electron.  All track indices which pass electron identification are saved, and the one with the highest momentum is used in the analysis.  
@@ -143,7 +136,6 @@ The placement of photo-multiplier tubes (PMT) in the Cherenkov counter allows fo
 Hadron identification in CLAS is done by correlating particle momentum from the drift chambers with timing information supplied by the time of flight detector.  In this analysis some quality assurance cuts are applied preliminarily, but they do not discriminate between different species of particle.  The likelihood methodology described in this section is based on the discussion provided by the BES collaboration in \cite{bes-physics}.  
 
 \subsection{Hadron ID Cuts}
-
 The cuts used by the author for hadron classification are enumerated below.
 
 \begin{itemize}
@@ -151,7 +143,6 @@ The cuts used by the author for hadron classification are enumerated below.
   \item{Hadron-electron vertex difference}
   \item{Likelihood maximization of $\beta(p,h)$}
 \end{itemize}
-
 
 \subsubsection*{Drift chamber fiducial}
 Drift chamber fiducial cuts are applied (only region 1) using the same procedure as described for electrons.  The parameters are for negative hadrons are those which are used for the electron.  The parameters used for positive tracks are $h = 10$, $\theta = 60$.
@@ -231,12 +222,12 @@ This quantity represents the probability to observe a value of $\beta$ as far fr
 
 The most important and most difficult part of constructing the likelihood ratio identification is the ascertation of the mean and standard deviation of the probability density function (which depends on momentum) for the different particle hypothesis.  In the case where exceptionally accurate monte carlo (MC) simulations of the detector are available, one can use the truth information and track matching to construct the $\beta$ vs. $p$ 2-dimensional histograms, and fit the $\mu(p)$ and $\sigma(p)$.  In the absence of high quality MC, analysts typically fit directly the spectrum of $\beta$ vs. $p$ and extract the mean and variance.  In this work, the authors chose to create an enhanced sample of candidates for each of the three positive particles in question before doing the fitting.  In this way, we hope to get a better quality fit of the true mean, and resolutions for the different species.  For fitting of pion and proton resolutions, positive tracks are assumed to be pions and the missing mass of the event is calculated.  Then, a cut is placed around the neutron mass.  In doing so, we are selecting mainly two types of exclusive events.  The first is $ep \rightarrow e\pi^+N$, and the second is $ep \rightarrow ep\pi^0$.  In this way most positrons, and positive kaons are removed from the sample prior to fitting.  The mean and variance are fit using a third order polynomial in p (MINUIT $\chi^2$ minimization is used).  The negative tracks $\pi^-$, $K^-$ are fit directly as is normally done.
 
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=10cm]{image/plots/hadron-id/beautiful_pbeta_pip.pdf}
-    \caption{ Shown above: All positive tracks overlaid with our determination of $\mu(p) \pm \sigma(p)$ for $\pi^+$}
-  \end{center}
-\end{figure}
+%\begin{figure}
+%\begin{center}
+ %   \includegraphics[width=10cm]{image/plots/hadron-id/beautiful_pbeta_pip.pdf}
+ % \caption{ Shown above: All positive tracks overlaid with our determination of $\mu(p) \pm \sigma(p)$ for $\pi^+$}
+%\end{center}
+%\end{figure}
 
 \begin{figure}
   \begin{center}
@@ -245,12 +236,12 @@ The most important and most difficult part of constructing the likelihood ratio 
   \end{center}
 \end{figure}
 
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=10cm]{image/plots/hadron-id/beautiful_pbeta_prot.pdf}
-    \caption{ Shown above: All positive tracks overlaid with our determination of $\mu(p) \pm \sigma(p)$ for $p^+$}
-  \end{center}
-\end{figure}
+%\begin{figure}
+  %\begin{center}
+    %\includegraphics[width=10cm]{image/plots/hadron-id/beautiful_pbeta_prot.pdf}
+    %\caption{ Shown above: All positive tracks overlaid with our determination of $\mu(p) \pm \sigma(p)$ for $p^+$}
+  %\end{center}
+%\end{figure}
 
 The parametrization used for the mean $\mu_ (p,h)$ and resolutions $\sigma (p,h)$ are shown below.
 
@@ -306,5 +297,65 @@ The values are displayed in the table below.
 \end{landscape}
 
 
+% ------------------------------------------------
+%  These sections imported from the thesis chapter
+%  called basic analysis and corrections.
+% ------------------------------------------------
+\section{Vertex Corrections}
+Vertex information $(v_x, v_y, v_z)$ is calculated based on the intersection of a track with the midplane (the plane which contains the beamline and bisects the sector at $\phi_{rel} = 0$).  If the beam is not centered at $(x,y)=(0,0)$, the calculation of vertex position needs to be corrected by shifting the midplanes in accordance with the target offset.  This offset $(x,y)$ is identified by plotting events from the control foil placed near the target, which has a well defined z position of $-2$ cm. \\
+      
+For the E1-F run period, the beam position was (0.15, -0.25) cm.  
 
+\easyFigure{image/plots/basic-analysis/vertex-phi.pdf}{The z-vertex $v_z$ position shown for different values of $\phi$ the azimuthal angle in the hall.  The left figure shows the distribution before corrections are applied, the right after.  The vertical red lines bound the region which we define as acceptable for electrons in our analysis.}
 
+\section{Timing Corrections}
+Timing information comes from the time-of-flight detector system.  After normal calibration, small offsets in timing between time of flights paddles still exist for the E1-F dataset.  These biases can be removed on a run-by-run and paddle-by-paddle basis by adding a small shift $t_{corr}$.  In order to determine this shift $t_{corr}$ for each paddle, charged pions are used.  \\
+
+Using momentum information from the drift chambers the value of $\beta$ can be predicted and the difference $\Delta \beta$ can be determined for each electron/pion pair. 
+
+\begin{equation}
+	\Delta \beta = \beta_{obs} - \beta_{pred} = \frac{d}{c t_{obs}} - \sqrt{1+(m/p)^2} 
+\end{equation} 
+
+Here m is assumed to be $m_{\pi}$.  The offset $\Delta \beta$ from 0 is used to define the value of $t_{corr}$ for each paddle.  If this value is exceedingly small, no correction is applied.  For some paddles with low statistics a reasonable value for $t_{corr}$ cannot be obtained and these paddles are excluded from the analysis.  \\
+
+\easyFigure{image/plots/basic-analysis/timing.pdf}{Timing corrections are shown for paddle 24 of sector 1.  The left image shows the $\Delta \beta$ distribution before corrections.  On the right the same is shown after correction of the timing for this paddle.  We assume the mass of the track to be the pion, these show up as the green band.  Heavier protons are visible below the pion band.}
+
+In the method described above, the calibrated paddle is the one which is struck by the pion.  The electron paddle which was struck could also require calibration.  In practice the magnitude of the correction term $t_{corr}$ is small, and the paddle offset is (likely) randomly distributed about 0 when considering all paddles.  By including events from many different (electron) paddles, miscalibration effects from the electron side cease to be important.  This is demonstrated by the success of the technique in centering the $\Delta \beta$ distributions.  \\
+
+The work described in this section was performed by Nathan Harrison for the E1-F dataset.
+
+\section{Kinematic Corrections}
+The magnetic field map used in reconstruction to swim particle tracks cannot perfectly match the real magnetic field of the hall.  As a result of this the reconstructed momentum of particles is often slightly off (on order of 1\%).  Small misalighments in detector positions also contribute to this effect.  In order to correct for these small differences, the kinematics $(p, \theta)$ of charged tracks is corrected. \\
+
+Various proceedures exist for the correction of kinematic variables of measured particles, and they all rely on energy and momentum conservation applied to standard processes (such as elastic scattering).  The procedure used to derive corrections for the E1-F dataset was developed and described by Marco Mirazita in \cite{physics-mirazita}.  \\
+
+In this analysis the need for correction to $\theta$ (the polar angle measured from the beamline) arises from misalignments in the drift chambers.  This implys that the correction will be the same for positives and negatives, and this assumption is used in the correction algorithm.  First elastic $(ep \rightarrow ep)$ events are selected by identifying electron/proton events and using a missing mass around 0.  The kinematics of the event are then calculated.
+
+\begin{gather}
+	k^{\mu} = (k, 0, 0, k)                         \\
+	p^{\mu} = (M_{p}, 0, 0, 0)                     \\
+	k'^{\mu} = (k', k'\sin\theta, 0, k'\cos\theta) \\
+	p'^{\mu} = (E_{p}, -p'\sin\alpha, 0, p'\cos\alpha) 
+\end{gather}
+
+Applying energy and momentum conservation to the equations above yeilds 3 equations.
+
+\begin{gather}
+	k + M_p = k' + \sqrt{M_{p}^{2} + p'^2} \\
+	k'\sin\theta = p'\sin\alpha            \\
+	k = k'\cos\theta + p'\cos\alpha  
+\end{gather}
+
+Using these equations, the electron angle $\theta$ and the proton angle $\alpha$ can be predicted by using the momenta $(k',p')$.  These values are compared with measured values and iteratively corrected by tuning the parameters of a phi-dependent 2nd order polynomial.
+
+\begin{gather}
+	\cos\theta = 1 - M_p \frac{k-k'}{kk'} \\
+	\tan\alpha = \frac{1}{p'} \frac{k'\sin\theta}{k-k'\cos\theta}
+\end{gather}
+
+After $\theta$ corrections are applied, the momentum of the electrons are corrected by using an analogous procedure for $k'$ instead of $\theta$ and $\alpha$.  The momentum corrections are calculated as functions of $\phi$ for each sector in one degree bins of $\theta$.  Finally, the positively charged particles momenta are corrected by selecting the exclusive event $(ep \rightarrow e\pi^+N)$.  In this reaction the scattered electron and pion are detected and the neutron is selected using a missing mass cut.  Assuming the electron momentum, electron angle, and pion angle to be correct, the pion momentum correction is then calculated by iteratively improving the central position of the neutron mass peak to coincide with $M_{N}$.  Marco Mirazita shows in his note that these corrections can be satisfactorily applied to all negative (coming from electron) and positive (coming from positive pi-meson) particles.    
+
+\easyFigure{image/plots/basic-analysis/phi-dw-uncorr.pdf}{This figure shows the deviation from $M_p$ of the $W$ spectrum peak for elastic $ep \rightarrow ep$ events (before corrections).}
+\easyFigure{image/plots/basic-analysis/phi-dw-corr.pdf}{This figure shows the deviation from $M_p$ of the $W$ spectrum peak for elastic $ep \rightarrow ep$ events (after $\phi$-dependent corrections).}
+\easyFigure{image/plots/basic-analysis/w-mom-corr.png}{Elastic events shown in the spectrum of $W$ before and after momentum corrections are applied.}
