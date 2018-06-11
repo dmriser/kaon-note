@@ -1,39 +1,49 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{5}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Experimental \& Basic Analysis}{7}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}CEBAF at Jefferson Lab}{7}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}The CLAS Detector}{7}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Helicity Determination}{7}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Determination of Good Run List}{7}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Particle Identification and Corrections}{11}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Electron Identification}{11}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Electron ID Cuts}{11}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Hadron Identification}{18}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Hadron ID Cuts}{22}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Vertex Corrections}{29}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Timing Corrections}{29}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Kinematic Corrections}{30}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Beam Spin Asymmetry Analysis}{35}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Introduction}{35}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Event Selection and Binning}{35}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}$\phi _h$ Distributions}{37}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Extraction of Modulations}{44}
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Statement of Purpose}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Nucleon Structure from Experiment and Theory}{6}{section.1.2}
+\contentsline {section}{\numberline {1.3}Measurement of Semi-Inclusive Deeply Inelastic Scattering with CLAS}{7}{section.1.3}
+\contentsline {section}{\numberline {1.4}Overview of our Measurement}{7}{section.1.4}
+\contentsline {chapter}{\numberline {2}Experiment}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}CEBAF}{9}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Electron Injection \& Polarization}{9}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Acceleration of Electrons}{11}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}CLAS in Jefferson Lab Experimental Hall B}{13}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}CLAS Torus and Drift Chambers}{13}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}CLAS Cherenkov Counter}{16}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}CLAS Time of Flight Scintillator}{17}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}CLAS Electromagnetic Calorimeter}{17}{subsection.2.2.4}
+\contentsline {chapter}{\numberline {3}Basic Analysis \& Corrections}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}Luminosity Calculation}{21}{section.3.2}
+\contentsline {section}{\numberline {3.3}Determination of Good Run List}{24}{section.3.3}
+\contentsline {section}{\numberline {3.4}Helicity Determination}{24}{section.3.4}
+\contentsline {section}{\numberline {3.5}Vertex Corrections}{24}{section.3.5}
+\contentsline {section}{\numberline {3.6}Timing Corrections}{26}{section.3.6}
+\contentsline {section}{\numberline {3.7}Kinematic Corrections}{27}{section.3.7}
+\contentsline {chapter}{\numberline {4}Particle Identification}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{33}{section.4.1}
+\contentsline {section}{\numberline {4.2}Electron Identification}{33}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Electron ID Cuts}{33}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Hadron Identification}{40}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Hadron ID Cuts}{44}{subsection.4.3.1}
+\contentsline {chapter}{\numberline {5}Beam Spin Asymmetry Analysis}{51}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{51}{section.5.1}
+\contentsline {section}{\numberline {5.2}Event Selection and Binning}{51}{section.5.2}
+\contentsline {section}{\numberline {5.3}$\phi _h$ Distributions}{53}{section.5.3}
+\contentsline {section}{\numberline {5.4}Extraction of Modulations}{60}{section.5.4}
+\contentsline {chapter}{\numberline {6}SIDIS Cross Section}{63}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{63}{section.6.1}
+\contentsline {section}{\numberline {6.2}Inclusive Cross Section}{64}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Event Selection and Binning}{65}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Simulation}{65}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Radiative Corrections}{69}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Model Comparison}{69}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Results for SIDIS}{69}{section.6.3}
+\contentsline {chapter}{\numberline {7}TMD Extraction}{71}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{71}{section.7.1}
+\contentsline {section}{\numberline {7.2}EVA}{71}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Wandzura Wilzcheck Approximation}{71}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Parametrization of TMD Functions}{71}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Results for $cos(2\phi _h)$ Modulation}{71}{section.7.3}
+\contentsline {section}{\numberline {7.4}Predictions for $cos\phi _h$ Modulation}{71}{section.7.4}
+\contentsline {chapter}{References}{75}{appendix*.23}

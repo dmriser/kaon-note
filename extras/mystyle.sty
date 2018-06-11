@@ -10,6 +10,8 @@
 \usepackage{physics}
 \usepackage{setspace}
 \usepackage{slashed}
+\usepackage[hyperfootnotes=false,linktocpage]{hyperref}
+\usepackage[square,numbers,sort&compress]{natbib}
 
 % make the document double space 
 \doublespacing
@@ -43,15 +45,20 @@
 \usepackage[utf8]{inputenc}
 \usepackage{palatino}
 
-\usepackage[backend=biber]{biblatex}
-\addbibresource{extras/Bibliography.bib}
+%\usepackage[backend=biber]{biblatex}
+%\addbibresource{extras/Bibliography.bib}
 
+
+% UConn requires 1 inch margins all around. 
 \usepackage[a4paper, margin=1.0in]{geometry}
+
+% For now disabling this feature.
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \lhead{}
 \chead{}
-\rhead{Analysis Note Draft ($K^+$ SIDIS)}
+%\rhead{Thesis Draft}
+\rhead{Thesis Draft}
 \lfoot{}
 \cfoot{\thepage}
 \rfoot{}
@@ -73,3 +80,5 @@
     \caption{#2}
   \end{figure}
 }
+
+\renewcommand{\bibsection}{}

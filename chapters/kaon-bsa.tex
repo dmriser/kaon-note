@@ -144,7 +144,7 @@ Unfortunately, applying the standard single-fit procedure described above does n
   \vec{A}_{rep} = \mathcal{N}(\vec{A}, \vec{\sigma_{A}})
 \end{equation}
 
-Where here $\vec{A}$ is a vector of length $n_{phi}$ bins, representing the measured beam spin asymmetry for each value of $\phi_h$ in a given kinematic bin.  Each of these distributions is fit with the full model, and the resulting parameter values are saved.  The final reported value for each fit parameter, as well as it's uncertainty can be reported as the mean, and standard deviation of the fit results.  This procedure which is similar to bootstrapping, can be seen as an attempt to fit the underlying distribution that generated the data while avoiding the statistical noise.  This technique has been discussed in \cite{replica-fitting}.
+Where here $\vec{A}$ is a vector of length $n_{phi}$ bins, representing the measured beam spin asymmetry for each value of $\phi_h$ in a given kinematic bin.  Each of these distributions is fit with the full model, and the resulting parameter values are saved.  The final reported value for each fit parameter, as well as it's uncertainty can be reported as the mean, and standard deviation of the fit results.  This procedure which is similar to bootstrapping, can be seen as an attempt to fit the underlying distribution that generated the data while avoiding the statistical noise.  This technique has been discussed in \cite{computing-watt:2012}.
 
 \begin{gather}
   \expval{a_j} = \sum_{i=1}^{N_{rep}} a_{j}^{(i)} \\
@@ -157,4 +157,3 @@ Where here $\vec{A}$ is a vector of length $n_{phi}$ bins, representing the meas
 We observe that the term $A_{LU}^{\sin\phi}$ is weakly dependent on the kinematic variables.  The value is around +3\% for most bins.  
 
 \easyFigure{image/plots/kaon-bsa/alu_sin.pdf}{Our extraction of $A_{LU}^{\sin\phi}$ for the kinematic bins described above.  The black error bars represent uncertainty in the extraction of the parameter value.  Red error bars are systematic uncertainties.}
-

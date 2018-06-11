@@ -1,0 +1,79 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: doc.aux
+A level-1 auxiliary file: extras/title.aux
+A level-1 auxiliary file: chapters/introduction.aux
+A level-1 auxiliary file: chapters/experiment.aux
+A level-1 auxiliary file: chapters/basic-analysis.aux
+A level-1 auxiliary file: chapters/particle-identification.aux
+A level-1 auxiliary file: chapters/kaon-bsa.aux
+A level-1 auxiliary file: chapters/sidis.aux
+A level-1 auxiliary file: chapters/tmd-extraction.aux
+A level-1 auxiliary file: chapters/appendix.aux
+A level-1 auxiliary file: chapters/references.aux
+The style file: apsrev4-1.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: extras/references.bib
+Warning--entry type for "misc-mirazita:2010" isn't style-file defined
+--line 359 of file extras/references.bib
+Warning--I didn't find a database entry for "hardware-leeman:2001"
+Warning--I didn't find a database entry for "thesis-harrison:2015"
+Warning--I didn't find a database entry for "find-keppel-reference"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+Control: key (0) 
+Control: author (72) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (-1) disabled
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+Warning--empty year in misc-mirazita:2010
+You've used 10 entries,
+            5847 wiz_defined-function locations,
+            1691 strings with 16496 characters,
+and the built_in function-call counts, 8727 in all, are:
+= -- 623
+> -- 167
+< -- 55
++ -- 58
+- -- 36
+* -- 1276
+:= -- 921
+add.period$ -- 11
+call.type$ -- 10
+change.case$ -- 42
+chr.to.int$ -- 10
+cite$ -- 11
+duplicate$ -- 819
+empty$ -- 643
+format.name$ -- 108
+if$ -- 1699
+int.to.chr$ -- 1
+int.to.str$ -- 18
+missing$ -- 104
+newline$ -- 91
+num.names$ -- 30
+pop$ -- 333
+preamble$ -- 1
+purify$ -- 49
+quote$ -- 0
+skip$ -- 330
+stack$ -- 0
+substring$ -- 228
+swap$ -- 734
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 8
+type$ -- 128
+warning$ -- 1
+while$ -- 29
+width$ -- 0
+write$ -- 141
+(There were 5 warnings)
