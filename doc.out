@@ -1,49 +1,45 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Statement of Purpose}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Nucleon Structure from Experiment and Theory}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{Measurement of Semi-Inclusive Deeply Inelastic Scattering with CLAS}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.4}{Overview of our Measurement}{chapter.1}% 5
-\BOOKMARK [0][-]{chapter.2}{Experiment}{}% 6
-\BOOKMARK [1][-]{section.2.1}{CEBAF}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.1.1}{Electron Injection \046 Polarization}{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.2}{Acceleration of Electrons}{section.2.1}% 9
-\BOOKMARK [1][-]{section.2.2}{CLAS in Jefferson Lab Experimental Hall B}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.1}{CLAS Torus and Drift Chambers}{section.2.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.2}{CLAS Cherenkov Counter}{section.2.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.3}{CLAS Time of Flight Scintillator}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.4}{CLAS Electromagnetic Calorimeter}{section.2.2}% 14
-\BOOKMARK [0][-]{chapter.3}{Basic Analysis \046 Corrections}{}% 15
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.2}{Luminosity Calculation}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.3}{Determination of Good Run List}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.4}{Helicity Determination}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.5}{Vertex Corrections}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.6}{Timing Corrections}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.7}{Kinematic Corrections}{chapter.3}% 22
-\BOOKMARK [0][-]{chapter.4}{Particle Identification}{}% 23
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.2}{Electron Identification}{chapter.4}% 25
-\BOOKMARK [2][-]{subsection.4.2.1}{Electron ID Cuts}{section.4.2}% 26
-\BOOKMARK [1][-]{section.4.3}{Hadron Identification}{chapter.4}% 27
-\BOOKMARK [2][-]{subsection.4.3.1}{Hadron ID Cuts}{section.4.3}% 28
-\BOOKMARK [0][-]{chapter.5}{Beam Spin Asymmetry Analysis}{}% 29
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 30
-\BOOKMARK [1][-]{section.5.2}{Event Selection and Binning}{chapter.5}% 31
-\BOOKMARK [1][-]{section.5.3}{h Distributions}{chapter.5}% 32
-\BOOKMARK [1][-]{section.5.4}{Extraction of Modulations}{chapter.5}% 33
-\BOOKMARK [0][-]{chapter.6}{SIDIS Cross Section}{}% 34
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 35
-\BOOKMARK [1][-]{section.6.2}{Inclusive Cross Section}{chapter.6}% 36
-\BOOKMARK [2][-]{subsection.6.2.1}{Event Selection and Binning}{section.6.2}% 37
-\BOOKMARK [2][-]{subsection.6.2.2}{Simulation}{section.6.2}% 38
-\BOOKMARK [2][-]{subsection.6.2.3}{Radiative Corrections}{section.6.2}% 39
-\BOOKMARK [2][-]{subsection.6.2.4}{Model Comparison}{section.6.2}% 40
-\BOOKMARK [1][-]{section.6.3}{Results for SIDIS}{chapter.6}% 41
-\BOOKMARK [0][-]{chapter.7}{TMD Extraction}{}% 42
-\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 43
-\BOOKMARK [1][-]{section.7.2}{EVA}{chapter.7}% 44
-\BOOKMARK [2][-]{subsection.7.2.1}{Wandzura Wilzcheck Approximation}{section.7.2}% 45
-\BOOKMARK [2][-]{subsection.7.2.2}{Parametrization of TMD Functions}{section.7.2}% 46
-\BOOKMARK [1][-]{section.7.3}{Results for cos\(2h\) Modulation}{chapter.7}% 47
-\BOOKMARK [1][-]{section.7.4}{Predictions for cosh Modulation}{chapter.7}% 48
-\BOOKMARK [0][-]{appendix*.23}{References}{}% 49
+\BOOKMARK [0][-]{chapter.2}{Experiment}{}% 2
+\BOOKMARK [1][-]{section.2.1}{CEBAF}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Electron Injection \046 Polarization}{section.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.1.2}{Acceleration of Electrons}{section.2.1}% 5
+\BOOKMARK [1][-]{section.2.2}{CLAS in Jefferson Lab Experimental Hall B}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.1}{CLAS Torus and Drift Chambers}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.2}{CLAS Cherenkov Counter}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.3}{CLAS Time of Flight Scintillator}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.4}{CLAS Electromagnetic Calorimeter}{section.2.2}% 10
+\BOOKMARK [0][-]{chapter.3}{Basic Analysis \046 Corrections}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{Luminosity Calculation}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.3}{Determination of Good Run List}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.4}{Helicity Determination}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.5}{Vertex Corrections}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.6}{Timing Corrections}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.7}{Kinematic Corrections}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Particle Identification}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{Electron Identification}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.2.1}{Electron ID Cuts}{section.4.2}% 22
+\BOOKMARK [1][-]{section.4.3}{Hadron Identification}{chapter.4}% 23
+\BOOKMARK [2][-]{subsection.4.3.1}{Hadron ID Cuts}{section.4.3}% 24
+\BOOKMARK [0][-]{chapter.5}{Beam Spin Asymmetry Analysis}{}% 25
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.2}{Event Selection and Binning}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.3}{h Distributions}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.4}{Extraction of Modulations}{chapter.5}% 29
+\BOOKMARK [0][-]{chapter.6}{SIDIS Cross Section}{}% 30
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.2}{Inclusive Cross Section}{chapter.6}% 32
+\BOOKMARK [2][-]{subsection.6.2.1}{Event Selection and Binning}{section.6.2}% 33
+\BOOKMARK [2][-]{subsection.6.2.2}{Simulation}{section.6.2}% 34
+\BOOKMARK [2][-]{subsection.6.2.3}{Radiative Corrections}{section.6.2}% 35
+\BOOKMARK [2][-]{subsection.6.2.4}{Model Comparison}{section.6.2}% 36
+\BOOKMARK [1][-]{section.6.3}{Results for SIDIS}{chapter.6}% 37
+\BOOKMARK [0][-]{chapter.7}{TMD Extraction}{}% 38
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 39
+\BOOKMARK [1][-]{section.7.2}{EVA}{chapter.7}% 40
+\BOOKMARK [2][-]{subsection.7.2.1}{Wandzura Wilzcheck Approximation}{section.7.2}% 41
+\BOOKMARK [2][-]{subsection.7.2.2}{Parametrization of TMD Functions}{section.7.2}% 42
+\BOOKMARK [1][-]{section.7.3}{Results for cos\(2h\) Modulation}{chapter.7}% 43
+\BOOKMARK [1][-]{section.7.4}{Predictions for cosh Modulation}{chapter.7}% 44
+\BOOKMARK [0][-]{appendix*.23}{References}{}% 45

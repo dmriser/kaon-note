@@ -1,30 +1,5 @@
 \chapter{Introduction}
-The majority of this thesis explains how we performed our experimental measurement.  The role of this introductory chapter is to provide an explanation of why we performed this measurement, and what exactly it is that was measured.  First, a brief statement of the measurement is given.  Then, in order to understand why we perform the current measurement, a historical look back at the parallel development of nucleon structure in theoretical and experimental aspects is presented.  After obtaining a historical perspective, it is evident why the current study is needed, and the scope of the present measurement is re-stated.  Finally, a high-level discussion of how this measurement was performed is presented, leaving the details to the remainder of the document.
 
-\section{Statement of Purpose}
-This work aims to contribute to the understanding of nucleon structure in the framework of transverse momentum dependent parton distribution functions (TMDs) by measuring structure functions in semi-inclusive deeply inelastic scattering (SIDIS).  By measuring the cross section for charged pi-mesons $\pi^{\pm}$, we measure ($F_{UU,T} + \epsilon F_{UU,L}$, $F_{UU}^{\cos\phi}$, and $F_{UU}^{\cos(2\phi)}$).  By analyzing the beam spin asymmetry (BSA) we measure the ratio
+The nucleons (protons and neutrons) are spin-half fermions, which are bound states of QCD.  Exactly how the quarks and gluons dynamically combine to produce the net spin-half of the nucleon is not clear.  Striking results of $g_1$ and $g_2$ measurements performed by the European Muon Collaboration (EMC) in 1988 \cite{pdfs-leader:1988} demonstrated that only $30\%$ of the net spin of the nucleons can be attributed to the quark spin.  This result became known was the \textit{proton spin crisis}, and remains largely unresolved.  The understanding of quark orbital angular momentum in the nucleon, and it's contribution to the net spin, is now of vital importance.  \\
 
-\begin{equation}
-  A_{LU}^{\sin\phi} = \sqrt{2\epsilon(1-\epsilon)} \frac{F_{LU}^{\sin\phi}}{F_{UU,T}+\epsilon F_{UU,L}}
-\end{equation}
-
-for positively charged k-mesons.  Finally, we are able to use these structure functions to estimate the model parameters in TMD models.
-
-\section{Nucleon Structure from Experiment and Theory}
-
-Nucleon structure is currently a very active field of research which aims to explain the structure of protons and neutrons in terms of the fundamental particles known as quarks.  This sub-field was born in 1958 following Hofstadters demonstration that the electron-proton scattering cross sections are not consistent with the predictions based on a pointlike proton theory \cite{history-hofstadter:1955}.  At the same time, an ever growing number of particles discovered by bubble and spark chamber experiments confused physicists.
-
-Some theoretical progress was made during the 1960s as Murray Gell-Mann proposed the construction of this large number of observed particles from pairs or triplets of fundamental particles called quarks.  The proposed quark came in 3 flavors called up, down, and strange.  However, in order to correctly predict the charge of the observed particles the quarks had to be fractionally charged (up $2/3$, down $-1/3$, and strange $1/3$).  Accordinly, the quarks had to be permanently confined somehow inside of bound states.  This idea was troubling to many physicists, and support for the quark model only really established itself after the $J/\psi$ ($c \bar{c}$) particle was observed in 1974 and the inclusion of the charm quark into the existing set of 3 quark flavors accomodated it's existence.  This quark model picture enjoyed some success predicting the masses of hadrons, but gives no information about the dynamics of quarks in hadrons.
-
-Almost all modern measurements that relate to quark dynamics are done by scattering electrons on protons or proton/neutron pairs in deuterium.  Since this process proceeds via virtual photon exchange between the charged electron and the charged quarks, it is easier to understand using the tools of QED.  If the virtual photon is of sufficiently high energy ($\approx 2 GeV$) its wavelength is an order of magnitude less than the diameter of the proton/neutron and likely interacts with just one part (quark or gluon) of the nucleon.  This idea is known as the parton model, and was proposed by Feynman in 1969 \cite{history-feynman:1969}.
-
-For the 30 years following this development, the measurement of parton distribution functions (PDFs) was performed at experiments around the world (HERMES, COMPASS, and Jefferson Lab).  The PDFs (at leading order) describe the probability to observe a quark with a given momentum fraction $x$ in a hadron.  There is one such function for each quark flavor in each hadron.  The unpolarized PDF is now known quite well, and the polarized PDFs have also been measured.  During the measurement of polarized PDFs in 1989 the European Muon Collaboration (EMC) observed that only 30\% of the total spin of the proton appeared to be due to the spin of the quarks.  This result came to be known as the proton spin crisis.  
-
-One possible resolution to this problem is that the quarks carry orbital angular momentum inside of the proton and this contributes to the total observed spin.  In this case, measurements of the three-dimensional momentum structure of the quarks inside of hadrons is expected to be very useful.  The transverse momentum dependent parton distribution functions (TMD PDFs) describe the quark momenta in both the longitudinal direction $x$ (defined by the hard momentum transfer direction) and the momentum in the plane transverse to that as well $\mathbf{p_T}$.  
-
-\section{Measurement of Semi-Inclusive Deeply Inelastic Scattering with CLAS}
-Our purpose is re-stated clearly.
-
-\section{Overview of our Measurement}
-Let's talk about detectors, accelerators, and software written in c++. 
-
+Addressing the question of orbital angular momentum distributions of partons within nucleons necessitates moving beyond a co-linear picture of parton interactions.   During the early 1990s, theoretical tools began to emerge that are now being used to study quark dynamics in three-dimensions.  Transverse momentum dependent functions (TMDs) naturally extend the co-linear parton distribution functions (PDFs) to include intrinsic quark momentum in the plane transverse to the hard probe \cite{tmds-mulders:1995, tmds-bacchetta:2006}.
