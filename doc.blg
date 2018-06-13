@@ -7,8 +7,6 @@ A level-1 auxiliary file: chapters/experiment.aux
 A level-1 auxiliary file: chapters/basic-analysis.aux
 A level-1 auxiliary file: chapters/particle-identification.aux
 A level-1 auxiliary file: chapters/kaon-bsa.aux
-A level-1 auxiliary file: chapters/sidis.aux
-A level-1 auxiliary file: chapters/tmd-extraction.aux
 A level-1 auxiliary file: chapters/appendix.aux
 A level-1 auxiliary file: chapters/references.aux
 The style file: apsrev4-1.bst
@@ -23,8 +21,6 @@ Database file #1: extras/references.bib
 Warning--entry type for "misc-mirazita:2010" isn't style-file defined
 --line 359 of file extras/references.bib
 Warning--I didn't find a database entry for "hardware-leeman:2001"
-Warning--I didn't find a database entry for "thesis-harrison:2015"
-Warning--I didn't find a database entry for "find-keppel-reference"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
 Control: key (0) 
@@ -37,7 +33,7 @@ Control: production of eprint (0) enabled
 Warning--empty year in misc-mirazita:2010
 You've used 14 entries,
             5847 wiz_defined-function locations,
-            1732 strings with 17794 characters,
+            1728 strings with 17708 characters,
 and the built_in function-call counts, 13221 in all, are:
 = -- 927
 > -- 277
@@ -76,4 +72,4 @@ warning$ -- 1
 while$ -- 41
 width$ -- 0
 write$ -- 184
-(There were 5 warnings)
+(There were 3 warnings)
