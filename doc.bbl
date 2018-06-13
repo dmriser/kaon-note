@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{10}%
+\begin{thebibliography}{14}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,24 +50,79 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
-\bibitem [{\citenamefont {Hofstadter}\ and\ \citenamefont
-  {McAllister}(1955)}]{history-hofstadter:1955}%
+\bibitem [{\citenamefont {Leader}\ and\ \citenamefont
+  {Anselmino}(1988)}]{pdfs-leader:1988}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Hofstadter}}\ and\ \bibinfo {author} {\bibfnamefont {R.~W.}\ \bibnamefont
-  {McAllister}},\ }\href {\doibase 10.1103/PhysRev.98.217} {\bibfield
-  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume}
-  {98}},\ \bibinfo {pages} {217} (\bibinfo {year} {1955})}\BibitemShut
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Leader}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Anselmino}},\ }\bibfield  {booktitle} {\emph {\bibinfo {booktitle}
+  {{Proceedings, 8th International Symposium on High-energy Spin Physics:
+  Minneapolis, Minnesota, USA, September 12-17, 1988. Vol. 1, 2}}},\ }\href
+  {\doibase 10.1063/1.38312, 10.1007/BF01566922} {\bibfield  {journal}
+  {\bibinfo  {journal} {Z. Phys.}\ }\textbf {\bibinfo {volume} {C41}},\
+  \bibinfo {pages} {239} (\bibinfo {year} {1988})},\ \bibinfo {note} {[AIP
+  Conf. Proc.187,764(2008)]}\BibitemShut {NoStop}%
+%%CITATION = ZEPYA,C41,239;%%
+\bibitem [{\citenamefont {Mulders}\ and\ \citenamefont
+  {Tangerman}(1996)}]{tmds-mulders:1995}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~J.}\ \bibnamefont
+  {Mulders}}\ and\ \bibinfo {author} {\bibfnamefont {R.~D.}\ \bibnamefont
+  {Tangerman}},\ }\href {\doibase 10.1016/S0550-3213(96)00648-7,
+  10.1016/0550-3213(95)00632-X} {\bibfield  {journal} {\bibinfo  {journal}
+  {Nucl. Phys.}\ }\textbf {\bibinfo {volume} {B461}},\ \bibinfo {pages} {197}
+  (\bibinfo {year} {1996})},\ \bibinfo {note} {[Erratum: Nucl.
+  Phys.B484,538(1997)]},\ \Eprint {http://arxiv.org/abs/hep-ph/9510301}
+  {arXiv:hep-ph/9510301 [hep-ph]} \BibitemShut {NoStop}%
+%%CITATION = HEP-PH/9510301;%%
+\bibitem [{\citenamefont {Bacchetta}\ \emph {et~al.}(2007)\citenamefont
+  {Bacchetta}, \citenamefont {Diehl}, \citenamefont {Goeke}, \citenamefont
+  {Metz}, \citenamefont {Mulders},\ and\ \citenamefont
+  {Schlegel}}]{tmds-bacchetta:2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Bacchetta}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Diehl}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Goeke}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Metz}}, \bibinfo {author}
+  {\bibfnamefont {P.~J.}\ \bibnamefont {Mulders}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Schlegel}},\ }\href {\doibase
+  10.1088/1126-6708/2007/02/093} {\bibfield  {journal} {\bibinfo  {journal}
+  {JHEP}\ }\textbf {\bibinfo {volume} {02}},\ \bibinfo {pages} {093} (\bibinfo
+  {year} {2007})},\ \Eprint {http://arxiv.org/abs/hep-ph/0611265}
+  {arXiv:hep-ph/0611265 [hep-ph]} \BibitemShut {NoStop}%
+%%CITATION = HEP-PH/0611265;%%
+\bibitem [{\citenamefont {Airapetian}\ \emph {et~al.}(2009)\citenamefont
+  {Airapetian} \emph {et~al.}}]{tmds-airapetian:2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Airapetian}} \emph {et~al.} (\bibinfo {collaboration} {HERMES}),\ }\href
+  {\doibase 10.1103/PhysRevLett.103.152002} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {103}},\ \bibinfo
+  {pages} {152002} (\bibinfo {year} {2009})},\ \Eprint
+  {http://arxiv.org/abs/0906.3918} {arXiv:0906.3918 [hep-ex]} \BibitemShut
   {NoStop}%
-%%CITATION = PHRVA,98,217;%%
-\bibitem [{\citenamefont {Feynman}(1969)}]{history-feynman:1969}%
+%%CITATION = ARXIV:0906.3918;%%
+\bibitem [{\citenamefont {Airapetian}\ \emph {et~al.}(2013)\citenamefont
+  {Airapetian} \emph {et~al.}}]{tmds-airapetian:2012}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~P.}\ \bibnamefont
-  {Feynman}},\ }\href {\doibase 10.1103/PhysRevLett.23.1415} {\bibfield
-  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
-  {volume} {23}},\ \bibinfo {pages} {1415} (\bibinfo {year} {1969})},\ \bibinfo
-  {note} {[,494(1969)]}\BibitemShut {NoStop}%
-%%CITATION = PRLTA,23,1415;%%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Airapetian}} \emph {et~al.} (\bibinfo {collaboration} {HERMES}),\ }\href
+  {\doibase 10.1103/PhysRevD.87.074029} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D87}},\ \bibinfo {pages}
+  {074029} (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/1212.5407}
+  {arXiv:1212.5407 [hep-ex]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1212.5407;%%
+\bibitem [{\citenamefont {Aghasyan}\ \emph {et~al.}(2018)\citenamefont
+  {Aghasyan} \emph {et~al.}}]{tmds-aghasyan:2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Aghasyan}} \emph {et~al.} (\bibinfo {collaboration} {COMPASS}),\ }\href
+  {\doibase 10.1103/PhysRevD.97.032006} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D97}},\ \bibinfo {pages}
+  {032006} (\bibinfo {year} {2018})},\ \Eprint
+  {http://arxiv.org/abs/1709.07374} {arXiv:1709.07374 [hep-ex]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1709.07374;%%
 \bibitem [{\citenamefont {Chao}\ \emph {et~al.}(2011)\citenamefont {Chao} \emph
   {et~al.}}]{hardware-chao:2011}%
   \BibitemOpen

@@ -35,45 +35,45 @@ Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
 Warning--empty year in misc-mirazita:2010
-You've used 10 entries,
+You've used 14 entries,
             5847 wiz_defined-function locations,
-            1691 strings with 16496 characters,
-and the built_in function-call counts, 8727 in all, are:
-= -- 623
-> -- 167
-< -- 55
-+ -- 58
-- -- 36
-* -- 1276
-:= -- 921
-add.period$ -- 11
-call.type$ -- 10
-change.case$ -- 42
-chr.to.int$ -- 10
-cite$ -- 11
-duplicate$ -- 819
-empty$ -- 643
-format.name$ -- 108
-if$ -- 1699
+            1732 strings with 17794 characters,
+and the built_in function-call counts, 13221 in all, are:
+= -- 927
+> -- 277
+< -- 80
++ -- 92
+- -- 62
+* -- 2044
+:= -- 1347
+add.period$ -- 15
+call.type$ -- 14
+change.case$ -- 59
+chr.to.int$ -- 14
+cite$ -- 15
+duplicate$ -- 1237
+empty$ -- 979
+format.name$ -- 179
+if$ -- 2592
 int.to.chr$ -- 1
-int.to.str$ -- 18
-missing$ -- 104
-newline$ -- 91
-num.names$ -- 30
-pop$ -- 333
+int.to.str$ -- 22
+missing$ -- 154
+newline$ -- 107
+num.names$ -- 42
+pop$ -- 465
 preamble$ -- 1
-purify$ -- 49
+purify$ -- 69
 quote$ -- 0
-skip$ -- 330
+skip$ -- 490
 stack$ -- 0
-substring$ -- 228
-swap$ -- 734
-text.length$ -- 12
+substring$ -- 346
+swap$ -- 1150
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 128
+type$ -- 185
 warning$ -- 1
-while$ -- 29
+while$ -- 41
 width$ -- 0
-write$ -- 141
+write$ -- 184
 (There were 5 warnings)
