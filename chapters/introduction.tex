@@ -1,13 +1,13 @@
 \chapter{Introduction}
 
 % Setting up the problem (where is the proton spin coming from)
-The nucleons (protons and neutrons) are spin-half fermions, which are bound states of QCD.  Exactly how the quarks and gluons dynamically combine to produce the net spin-half of the nucleon is not clear.  Striking results of $g_1$ and $g_2$ measurements performed by the European Muon Collaboration (EMC) in 1988 \cite{pdfs-leader:1988} demonstrated that only $30\%$ of the spin of the nucleons can be attributed to quark spin.  This result became known as the \textit{proton spin crisis}, and remains largely unresolved.  The understanding of quark orbital angular momentum in the nucleon, and it's contribution to the proton spin, is now of vital importance.  \\
+Protons and neutrons (nucleons) are spin-half fermions, which are bound states of QCD.  Exactly how quarks and gluons dynamically combine to produce the net spin-half of the nucleon is not clear.  Striking results of $g_2$ measurements performed by the European Muon Collaboration (EMC) in 1988 \cite{pdfs-leader:1988} demonstrated that only $30\%$ of the spin of the nucleons can be attributed to quark spin.  This result became known as the \textit{proton spin crisis}, and remains largely unresolved.  The understanding of quark orbital angular momentum in the nucleon, and it's contribution to the proton spin, is now of vital importance.  \\
 
 % Introducing important character (TMD)
 Addressing the question of orbital angular momentum distributions of partons within nucleons necessitates moving beyond a co-linear picture of parton interactions.   During the early 1990s, theoretical tools began to emerge that are now being used to study quark dynamics in three-dimensions.  Transverse momentum dependent functions (TMDs) naturally extend the co-linear parton distribution functions (PDFs) to include intrinsic quark momentum in the plane transverse to the hard probe \cite{tmds-mulders:1995, tmds-bacchetta:2006}.  \\
 
 % Introducing important character (SSAs)
-Sadly, TMDs are not directly observable.  Despite this fact, single spin asymmetry (SSA) measurements of semi-inclusive deeply inelastic scattering (SIDIS) have proved useful in recent years as inputs for phenomenological extraction of TMD parton distribution functions (TMD PDFs, sometimes just called TMDs) and TMD fragmentation functions (TMD FFs or simple FFs) \cite{tmds-airapetian:2009, tmds-airapetian:2012, tmds-aghasyan:2017}.  Because of the absence of a TMD PDF, semi-inclusive annihilation of $e^+ e^- \rightarrow h_1 h_2 X$ has been successfully used as a proxy for accessing the TMD FFs (add a reference the Prokudin's extraction of Collins here).  \\
+Sadly, TMDs are not directly observable.  Despite this fact, single spin asymmetry (SSA) measurements of semi-inclusive deeply inelastic scattering (SIDIS) have proved useful in recent years as inputs for phenomenological extraction of TMD parton distribution functions (TMD PDFs, sometimes just called TMDs) and TMD fragmentation functions (TMD FFs or simply FFs) \cite{tmds-airapetian:2009, tmds-airapetian:2012, tmds-aghasyan:2017}.  Because of the absence of a TMD PDF, semi-inclusive annihilation of $e^+ e^- \rightarrow h_1 h_2 X$ has been successfully used as a proxy for accessing the TMD FFs (add a reference the Prokudin's extraction of Collins here).  \\
 
 % More quantitative connection between cross sections and TMDs
 By assuming single photon exchange and writing the QED interaction between the virtual photon and the nucleon as a generic vertex, then applying hermiticity, parity, and naive time-reversal invariance, the cross section for SIDIS can be written in a model independent way in terms of structure functions \cite{tmds-mulders:1995, tmds-bacchetta:2006}.  
@@ -22,13 +22,19 @@ In this notation the coefficients $A$ are referred to as moments, $\lambda$ refe
 	A_{LU}^{\sin\phi_h} = \frac{d\sigma^+ - d\sigma^-}{d\sigma^+ + d\sigma^-}
 \end{equation}
 
-Within the TMD framework, the structure function $F_{LU}^{\sin\phi_h}$ is a pure twist-three structure function; it is composed of four terms, each of which appear at twist-three.  
+The notation $d\sigma^{\lambda}$ refers to the helicity of the incoming lepton.  Within the TMD framework, the structure function $F_{LU}^{\sin\phi_h}$ is a pure twist-three structure function.  With the assumption of twist-three factorization (which has not been demonstrated) the structure function is, 
 
 \begin{equation}
-	F_{LU}^{\sin\phi_h} \propto \frac{M}{Q} \sum_{a} \Bigl [ h_{L}^(a) H_{1}^{\perp (a)} + g_{1L}^{(a)} \tilde{G}^{\perp (a)} + f_{L}^{\perp (a)} D_{1}^{(a)} + h_{1L}^{\perp (a)} \tilde{H}^{(a)} \Bigr ]
-\end{equation} 
+	F_{LU}^{\sin\phi_h} \propto \frac{M}{Q} \sum_{a} \Bigl [ h_{L}^{(a)} H_{1}^{\perp (a)} + g_{1L}^{(a)} \tilde{G}^{\perp (a)} + f_{L}^{\perp (a)} D_{1}^{(a)} + h_{1L}^{\perp (a)} \tilde{H}^{(a)} \Bigr ]
+\end{equation}
 
+% Describe each TMD PDF/FF 
+% This passage is not intended to be rendered as-is it is a transcription from WG and 
+% is extremely vague.  I'm not sure what to do here?
+where kinematic weighting factors have been omitted and the quark flavor is denoted by $a$. From Boer Mulders $h_{1}^{\perp}$ (leading order time-reversal odd TMD), $g^{\perp}$ the twist-three time reversal odd TMD (higher twist analog of Sivers?), $e$ is a chiral odd twist-three PDF (maybe the $x^2$ moment of e is related to transverse force acting on the transversely polarized quarks in unpolarized nucleon). As well as $f_1$, the unpolarized.
 
+% Same story for FF 
+Twist-three fragmentation functions $\tilde{G}^{\perp}$, $\tilde{E}$, and the Collins $H_{1}^{\perp}$ as well as $D_1$ the unpolarized.
 
-
-  
+% Introduce another charactor 
+Despite measurements of $A_{LU}^{\sin\phi_h}$ for $\pi^+$, $\pi^-$, and the neutral $\pi^0$ mesons, little is known about the contribution of each individual PDF/FF term to the asymmetry.  Still fewer are the SSA measurements which have tagged kaons in the final state.  The Sivers asymmetry $A_{UT}^{\sin(\phi_h - \phi_S)$ 
