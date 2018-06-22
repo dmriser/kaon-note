@@ -53,30 +53,26 @@ Any charge which accumulates in a period of time where the number of events did 
 The result of this procedure is a numerical value of charge for each run.  For practitioners, it is important to note that this value needs to be scaled by the DAQ scaling factor before it represents a value of charge.  In our analysis, the numerical value of charge for a typical file is a few tens of micro-Coulombs.
 
 \section{Determination of Good Run List}
-The total dataset contains 831 runs.  Due to the complex experimental setup, it is not uncommon for run conditions to change during a few of the runs such that the data collected are not of analysis quality.  Imagine as a simple example that the liquid hydrogen target boils, the density is suddenly decreased, and the number of recorded events drops drastically (but the Faraday Cup charge would look the same).  For this reason, a good run list is constructed and used in the analysis. \\
+The total dataset contains 831 runs.  Due to the complexities of the CLAS experimental setup, it is not uncommon for run conditions to change during a small percentage of the runs such that the data collected are not of analysis quality.  For this reason, a good run list is constructed. \\
 
-To construct this list, we simply count good electrons in every file and normalize that by the accumulated charge for that file.  While the number of events collected varies from run to run the ratio defined above is a stable quantity -- provided that the run conditions do not vary greatly.  Runs which are within 3 standard deviations of the mean (calculated over the dataset) are used as good runs.  The good run list used for this analysis contains 522 runs.  
+Good runs are selected for the list by counting good electrons in each file and normalizing by the accumulated charge for the associated file.  While the number of events collected varies from run to run the ratio defined above is a stable quantity -- provided that the run conditions do not vary greatly.  Runs which are within 3 standard deviations of the mean (calculated over the dataset) are used as good runs.  The good run list used for this analysis contains 522 runs.  
 
 \easyFigure{image/plots/basic-analysis/inclusive-rates.png}{Inclusive electrons per file normalized by the total charge accumulated for the file.  This quantity is used to make a good run list.}
 
 \section{Helicity Determination}
-During the course of the E1-F run period the beam helicity convention was changed by the insertion of a half-wave plate at the injector.  Our definition of $+$ and $-$ helicity must change in accordance with these wave-plate insertions.  To monitor these changes, the value of $A_{LU}^{\sin\phi}$ for $\pi^+$ is recorded for every run.  Whenever the asymmetry (which has a magnitude of around $3\%$) changes sign, we know that the sign convention has changed.  These changes are then taken into account in the data analysis.   
+During the course of the E1-F run period the beam helicity convention was changed by the insertion of a half-wave plate at the injector.  The definition of $\pm$ helicity must change in accordance with these wave-plate insertions.  To monitor these changes, the value of $A_{LU}^{\sin\phi}$ for $\pi^+$ is recorded for every run.  Whenever the asymmetry (which has a magnitude of around $3\%$) changes sign, the sign convention has changed.  These changes are taken into account in the data analysis.   
 
 \easyFigure{image/plots/basic-analysis/bsa-waveplate.pdf}{The waveplate position is determined and corrected by plotting the BSA for $\pi^{+}$ mesons as a function of the run.  The top panel shows the corrected results, the bottom shows the results before changing the helicity.}
 
-
-
 \section{Vertex Corrections}
-Vertex information $(v_x, v_y, v_z)$ is calculated based on the intersection of a track with the midplane (the plane which contains the beamline and bisects the sector at $\phi_{rel} = 0$).  If the beam is not centered at $(x,y)=(0,0)$, the calculation of vertex position needs to be corrected by shifting the midplanes in accordance with the target offset.  This offset $(x,y)$ is identified by plotting events from the control foil placed near the target, which has a $z$ position of-20 cm. \\
-      
-For the E1-F run period, the beam position was (0.15, -0.25) cm.  
+The track vertex position $(v_x, v_y, v_z)$ is calculated based on the intersection of each track with the midplane (the plane which contains the beamline and bisects the sector at $\phi_{rel} = 0$).  If the beam is not centered at $(x,y)=(0,0)$, the vertex position calculation needs to be corrected by shifting the midplanes in accordance with the target offset.  The offset $(x,y)$ is identified by plotting events from the control foil placed near the target, which has a $z$ position of-20 cm. For the E1-F run period, the beam position was (0.15, -0.25) cm.  \\
 
 \easyFigure{image/plots/basic-analysis/vertex-phi.pdf}{The z-vertex $v_z$ position shown for different values of $\phi$ the azimuthal angle in the hall.  The left figure shows the distribution before corrections are applied, the right after.  The vertical red lines bound the region which we define as acceptable for electrons in our analysis.}
 
 \section{Timing Corrections}
-Timing information comes from the time-of-flight detector system.  After normal calibration, small offsets in timing between time of flights paddles still exist for the E1-F dataset.  These biases can be removed on a run-by-run and paddle-by-paddle basis by adding a small shift $t_{corr}$.  In order to determine this shift $t_{corr}$ for each paddle, charged pions are used.  \\
+Timing information comes from the time-of-flight detector system.  After calibration, small offsets in timing between time of flights paddles still exist for the E1-F dataset.  These biases can be removed on a run-by-run and paddle-by-paddle basis by adding a small shift $t_{corr}$.  In order to determine this shift $t_{corr}$ for each paddle, charged pions are used.  \\
 
-Using momentum information from the drift chambers the value of $\beta$ can be predicted and the difference $\Delta \beta$ can be determined for each electron/pion pair. 
+Using momentum information from the drift chambers the value of $\beta$ can be predicted and the difference $\Delta \beta$ can be determined for each pion. 
 
 \begin{equation}
 	\Delta \beta = \beta_{obs} - \beta_{pred} = \frac{d}{c t_{obs}} - \sqrt{1+(m/p)^2} 
@@ -86,16 +82,14 @@ Here m is assumed to be $m_{\pi}$.  The offset $\Delta \beta$ from 0 is used to 
 
 \easyFigure{image/plots/basic-analysis/timing.pdf}{Timing corrections are shown for paddle 24 of sector 1.  The left image shows the $\Delta \beta$ distribution before corrections.  On the right the same is shown after correction of the timing for this paddle.  We assume the mass of the track to be the pion, these show up as the green band.  Heavier protons are visible below the pion band.}
 
-In the method described above, the calibrated paddle is the one which is struck by the pion.  The electron paddle which was struck could also require calibration.  In practice the magnitude of the correction term $t_{corr}$ is small, and the paddle offset is (likely) randomly distributed about 0 when considering all paddles.  By including events from many different (electron) paddles, miscalibration effects from the electron side cease to be important.  This is demonstrated by the success of the technique in centering the $\Delta \beta$ distributions.  \\
-
-The work described in this section was performed by Nathan Harrison for the E1-F dataset.
+In the method described above, the calibrated paddle is the one which is struck by the pion.  The electron paddle which was struck could also require calibration.  In practice the magnitude of the correction term $t_{corr}$ is small, and the paddle offset is (likely) randomly distributed about 0 when considering all paddles.  By including events from many different (electron) paddles, miscalibration effects from the electron side cease to be important.  This is demonstrated by the success of the technique in centering the $\Delta \beta$ distributions.  This work was first described in \cite{theses-harrison:2015}. \\
 
 \section{Kinematic Corrections}
-The magnetic field map used in reconstruction to swim particle tracks cannot perfectly match the real magnetic field of the hall.  As a result of this the reconstructed momentum of particles is often slightly off (on order of 1\%).  Small misalighments in detector positions also contribute to this effect.  In order to correct for these small differences, the kinematics $(p, \theta)$ of charged tracks is corrected. \\
+The magnetic field map used in reconstruction to swim particle tracks cannot perfectly match the real magnetic field of the hall.  As a result of this the reconstructed momentum of particles is often slightly off (of order 1\%).  Small misalighments in detector positions also contribute to this effect.  In order to correct for these small differences, the momentum $(p_x, p_y, p_z)$ and hence $\theta$ of charged tracks is corrected. \\
 
 Various proceedures exist for the correction of kinematic variables of measured particles, and they all rely on energy and momentum conservation applied to standard processes (such as elastic scattering).  The procedure used to derive corrections for the E1-F dataset was developed and described by Marco Mirazita in \cite{misc-mirazita:2010}.  \\
 
-In this analysis the need for correction to $\theta$ (the polar angle measured from the beamline) arises from misalignments in the drift chambers.  This implys that the correction will be the same for positives and negatives, and this assumption is used in the correction algorithm.  First elastic $(ep \rightarrow ep)$ events are selected by identifying electron/proton events and using a missing mass around 0.  The kinematics of the event are then calculated.
+As mentioned previously, the need for correction to $\theta$ (the polar angle measured from the beamline) arises from misalignments in the drift chambers.  This implies that the correction will be the same for positives and negatives, and this assumption is used in the correction algorithm.  First, elastic $(ep \rightarrow ep)$ events are selected by identifying events that contain at least one electron and one proton, then requiring that the missing mass $M_X$ of the ($ep \rightarrow epX$) system is close to 0.  The kinematics of the event are then calculated.
 
 \begin{gather}
 	k^{\mu} = (k, 0, 0, k)                         \\
@@ -104,7 +98,7 @@ In this analysis the need for correction to $\theta$ (the polar angle measured f
 	p'^{\mu} = (E_{p}, -p'\sin\alpha, 0, p'\cos\alpha) 
 \end{gather}
 
-Applying energy and momentum conservation to the equations above yeilds 3 equations.
+Applying energy and momentum conservation to the equations above yields 3 equations.
 
 \begin{gather}
 	k + M_p = k' + \sqrt{M_{p}^{2} + p'^2} \\
@@ -119,7 +113,7 @@ Using these equations, the electron angle $\theta$ and the proton angle $\alpha$
 	\tan\alpha = \frac{1}{p'} \frac{k'\sin\theta}{k-k'\cos\theta}
 \end{gather}
 
-After $\theta$ corrections are applied, the momentum of the electrons are corrected by using an analogous procedure for $k'$ instead of $\theta$ and $\alpha$.  The momentum corrections are calculated as functions of $\phi$ for each sector in one degree bins of $\theta$.  Finally, the positively charged particles momenta are corrected by selecting the exclusive event $(ep \rightarrow e\pi^+N)$.  In this reaction the scattered electron and pion are detected and the neutron is selected using a missing mass cut.  Assuming the electron momentum, electron angle, and pion angle to be correct, the pion momentum correction is then calculated by iteratively improving the central position of the neutron mass peak to coincide with $M_{N}$.  Marco Mirazita shows in his note that these corrections can be satisfactorily applied to all negative (coming from electron) and positive (coming from positive pi-meson) particles.    
+After $\theta$ corrections are applied, the momentum of the electrons are corrected by using an analogous procedure for $k'$ instead of $\theta$ and $\alpha$.  The momentum corrections are calculated as functions of $\phi$ for each sector in one degree bins of $\theta$.  Finally, the positively charged particles momenta are corrected by selecting the exclusive event $(ep \rightarrow e\pi^+N)$.  In this reaction the scattered electron and pion are detected and the neutron is selected using a missing mass cut.  Assuming the electron momentum, electron angle, and pion angle to be correct, the pion momentum correction is then calculated by iteratively improving the central position of the neutron mass peak to coincide with $M_{N}$.  Marco Mirazita shows in his note that these corrections can be satisfactorily applied to all negative and positive particles.
 
 \easyFigure{image/plots/basic-analysis/phi-dw-uncorr.pdf}{This figure shows the deviation from $M_p$ of the $W$ spectrum peak for elastic $ep \rightarrow ep$ events (before corrections).}
 \easyFigure{image/plots/basic-analysis/phi-dw-corr.pdf}{This figure shows the deviation from $M_p$ of the $W$ spectrum peak for elastic $ep \rightarrow ep$ events (after $\phi$-dependent corrections).}
