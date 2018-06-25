@@ -8,6 +8,7 @@
 \contentsline {subsection}{\numberline {2.2.2}CLAS Cherenkov Counter}{15}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}CLAS Time of Flight Scintillator}{15}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}CLAS Electromagnetic Calorimeter}{16}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}E1-F}{17}{subsection.2.2.5}
 \contentsline {chapter}{\numberline {3}Basic Analysis \& Corrections}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{19}{section.3.1}
 \contentsline {section}{\numberline {3.2}Luminosity Calculation}{19}{section.3.2}

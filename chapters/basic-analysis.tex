@@ -1,56 +1,7 @@
 \chapter{Basic Analysis \& Corrections}
 
 \section{Introduction}
-This chapter discusses analysis procedures that are common to the subsequent data analyses of pions and kaons.  These procedures can be divided into two groups.  The first type of basic analysis described is the aggregation or calculation of scalar values over the run-period (examples include luminosity and helicity).  The second type of analysis procedure described is a correction to measured values.  Vertex corrections, timing corrections, and kinematic corrections will be discussed.
-
-
-\section{Luminosity Calculation}
-A useful concept in accelerator/collider physics is the luminosity $\mathcal{L}$.  Luminosity is defined as the number of collisions per unit area per unit time that could lead to some process of interest.  Consider as an example elastic scattering of electrons from protons, the luminosity is the number of electron-proton collisions per unit time per unit area.  The rate $\frac{dN}{dt}$ of the occurance of events for some process $X$ can be written in terms of this luminosity and the cross section for the process.
-
-\begin{equation}
-	\frac{dN_X}{dt} = \mathcal{L} \sigma_X 
-\end{equation}
-
-For the fixed target case, the luminosity has a simple expression.
-
-\begin{equation}
-	\mathcal{L} = \frac{j_e \rho_p l_T}{e} 
-\end{equation}
-
-Here $l_t$ is the target length, $\rho_p$ is the proton number density in the target, and $j_e$ is the beam current. To find the total number of events which accumulate in some time $t_{exp}$ the event rate is integrated with respect to time.
-
-\begin{equation}
-	N_X = \int_{0}^{t_{exp}} \frac{j_e \rho_p l_T}{e} \sigma_X dt = \frac{\rho_p l_T}{e} \sigma_X \int_{0}^{t_{exp}} j_e dt =  \frac{\rho_p l_T}{e} \sigma_X \Delta Q
-\end{equation}
-
-Thus the experimentally observed cross section for some process $X$ is,
-
-\begin{equation}
-	\sigma_{X} = \frac{N_{X}}{\mathcal{L}_{int}}
-\end{equation}
-
-where the number of events $N_X$ is corrected for all effects and $\mathcal{L}_{int}$ is the integrated luminosity as shown above. \\
-
-Experimentally, the factor $\Delta Q$ can be calculated from charge deposition measurements by the Faraday cup.  The Faraday cup charge is a scalar value written periodically into the output event stream, not with every recorded event.  This information is stored in the output BOS files in a bank called \texttt{TRGS}, the variable is named \texttt{FCUP\_G2}.  \\
-
-For this data analysis, the final ntuple (root files) used did not contain the Faraday cup charge information.  For this reason, the authors used the BOS files directly and recorded the value of \texttt{FCUP\_G2} for every scalar reading, as well as the event number directly after each scalar entry (from the \texttt{HEAD} bank).  This event number correlates directly to the event number stored in the root files used for analysis. \\
-
-The total accumulated charge over a run is simply the sum over consecutive differences in the Faraday cup charge.
-
-\begin{equation}
-	\Delta Q = \sum_{i=1}^{n-1} q[i+1]-q[i] 	
-\end{equation}
-
-Here $n$ denotes the number of scalar entries for a given file.  Due to the periodic nature of the scalar bank writing events are also recorded after the last reading of the file, and before the first scalar reading of the next file in the run.  To account for this the difference between consecutive files last and first readings is added to the total. \\
-
-\easyFigure{image/plots/basic-analysis/entries.png}{Entries per scalar reading for run 38222.}
-\easyFigure{image/plots/basic-analysis/charge.png}{Charge per scalar reading for run 38222.}
-
-For the E1-F dataset, a run typically contains around 20 files, each representing a raw file size of 2 gigabytes.  These files are named by run number, and given an index from $0$ to $n_{files}-1$.  It is not uncommon that a run will contain missing files in the middle of the range.  If this occurs, the charge difference between last/first reading is not added to the total. \\
-
-Any charge which accumulates in a period of time where the number of events did not change is not added to the total.  Similarly, any events which occur within regions where no charge is recorded need to be discarded.  This is accomplished by recording the bad event ranges for every file and removing these events from our analysis. \\
-
-The result of this procedure is a numerical value of charge for each run.  For practitioners, it is important to note that this value needs to be scaled by the DAQ scaling factor before it represents a value of charge.  In our analysis, the numerical value of charge for a typical file is a few tens of micro-Coulombs.
+This chapter discusses analysis procedures that are common to the subsequent data analyses of kaons.  These procedures can be divided into two groups.  The first type of basic analysis described is the aggregation or calculation of scalar values over the run-period (examples include luminosity and helicity).  The second type of analysis procedure described is a correction to measured values.  Vertex corrections, timing corrections, and kinematic corrections will be discussed.
 
 \section{Determination of Good Run List}
 The total dataset contains 831 runs.  Due to the complexities of the CLAS experimental setup, it is not uncommon for run conditions to change during a small percentage of the runs such that the data collected are not of analysis quality.  For this reason, a good run list is constructed. \\
