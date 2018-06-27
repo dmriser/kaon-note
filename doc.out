@@ -1,30 +1,21 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Experiment}{}% 2
-\BOOKMARK [1][-]{section.2.1}{CEBAF}{chapter.2}% 3
-\BOOKMARK [2][-]{subsection.2.1.1}{Electron Injection \046 Polarization}{section.2.1}% 4
-\BOOKMARK [2][-]{subsection.2.1.2}{Acceleration of Electrons}{section.2.1}% 5
-\BOOKMARK [1][-]{section.2.2}{CLAS in Jefferson Lab Experimental Hall B}{chapter.2}% 6
-\BOOKMARK [2][-]{subsection.2.2.1}{CLAS Torus and Drift Chambers}{section.2.2}% 7
-\BOOKMARK [2][-]{subsection.2.2.2}{CLAS Cherenkov Counter}{section.2.2}% 8
-\BOOKMARK [2][-]{subsection.2.2.3}{CLAS Time of Flight Scintillator}{section.2.2}% 9
-\BOOKMARK [2][-]{subsection.2.2.4}{CLAS Electromagnetic Calorimeter}{section.2.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.5}{E1-F}{section.2.2}% 11
-\BOOKMARK [0][-]{chapter.3}{Basic Analysis \046 Corrections}{}% 12
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{Determination of Good Run List}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.3}{Helicity Determination}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.4}{Vertex Corrections}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.5}{Timing Corrections}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.6}{Kinematic Corrections}{chapter.3}% 18
-\BOOKMARK [0][-]{chapter.4}{Particle Identification}{}% 19
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.2}{Electron Identification}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.2.1}{Electron ID Cuts}{section.4.2}% 22
-\BOOKMARK [1][-]{section.4.3}{Hadron Identification}{chapter.4}% 23
-\BOOKMARK [2][-]{subsection.4.3.1}{Hadron ID Cuts}{section.4.3}% 24
-\BOOKMARK [0][-]{chapter.5}{Beam Spin Asymmetry Analysis}{}% 25
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 26
-\BOOKMARK [1][-]{section.5.2}{Event Selection and Binning}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.3}{h Distributions}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.4}{Extraction of Modulations}{chapter.5}% 29
-\BOOKMARK [0][-]{appendix*.22}{References}{}% 30
+\BOOKMARK [0][-]{chapter.2}{Basic Analysis \046 Corrections}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{E1-F}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Determination of Good Run List}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Helicity Determination}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.5}{Vertex Corrections}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.6}{Timing Corrections}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.7}{Kinematic Corrections}{chapter.2}% 9
+\BOOKMARK [0][-]{chapter.3}{Particle Identification}{}% 10
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.2}{Electron Identification}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.2.1}{Electron ID Cuts}{section.3.2}% 13
+\BOOKMARK [1][-]{section.3.3}{Hadron Identification}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.3.1}{Hadron ID Cuts}{section.3.3}% 15
+\BOOKMARK [0][-]{chapter.4}{Beam Spin Asymmetry Analysis}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Event Selection and Binning}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.3}{h Distributions}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.4}{Extraction of Modulations}{chapter.4}% 20
+\BOOKMARK [0][-]{appendix*.22}{References}{}% 21
