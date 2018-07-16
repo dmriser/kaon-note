@@ -348,6 +348,9 @@ INPUT /Users/davidriser/repos/kaon-note/chapters/kaon-bsa.tex
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-pt2.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-pt2.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-pt2.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/mx.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/mx.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/mx.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/binning.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/binning.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/binning.pdf
@@ -372,6 +375,9 @@ INPUT /Users/davidriser/repos/kaon-note/image/diagrams/linear-error.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/p-study-x.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/p-study-x.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/p-study-x.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-phi-counts.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-phi-counts.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-phi-counts.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/alu_sin.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/alu_sin.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/alu_sin.pdf
@@ -415,6 +421,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
