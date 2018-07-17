@@ -16,6 +16,6 @@
 \contentsline {chapter}{\numberline {4}Beam Spin Asymmetry Analysis}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{39}{section.4.1}
 \contentsline {section}{\numberline {4.2}Event Selection and Binning}{39}{section.4.2}
-\contentsline {section}{\numberline {4.3}$\phi _h$ Distributions}{43}{section.4.3}
-\contentsline {section}{\numberline {4.4}Extraction of Modulations}{49}{section.4.4}
+\contentsline {section}{\numberline {4.3}$\phi _h$ Distributions}{42}{section.4.3}
+\contentsline {section}{\numberline {4.4}Extraction of Modulations}{48}{section.4.4}
 \contentsline {chapter}{References}{57}{appendix*.22}

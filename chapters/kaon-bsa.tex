@@ -1,11 +1,11 @@
 \chapter{Beam Spin Asymmetry Analysis}
 
 \section{Introduction}
-Measurement of the beam spin asymmetry is carried out for the positively charged k-meson.  As discussed in the introduction, the beam spin asymmetry theoretically depends on $F_{UU,L}$, $F_{UU,T}$, $F_{UU}^{\cos\phi}$, $F_{UU}^{\cos 2\phi}$, and $F_{LU}^{\sin\phi}$.  By dividing the electron-kaon events into several bins of SIDIS kinematic variables, beam spin asymmetry measurements can be taken at different average values of the kinematic variables.  Finally, the structure function ratios $A_{LU}^{\sin\phi}$, $A_{UU}^{\cos\phi}$, and $A_{UU}^{\cos 2\phi}$ can be extracted from each bin.  In this chapter a discussion is provided of SIDIS event selection, the binning used in this analysis, measurement values with associated systematic uncertainties, and the extraction of structure function ratios using the $\phi$ dependence in each kinematic bin.
+Measurement of the beam spin asymmetry is carried out for the positively charged k-meson.  As discussed in the introduction, the beam spin asymmetry theoretically depends on $F_{UU,L}$, $F_{UU,T}$, $F_{UU}^{\cos\phi}$, $F_{UU}^{\cos 2\phi}$, and $F_{LU}^{\sin\phi}$.  By dividing the electron-kaon events into several bins, beam spin asymmetry measurements are taken at different average values of the kinematic variables $x$, $Q^2$, $z_h$, and $P_T$.  Finally, the structure function ratios $A_{LU}^{\sin\phi}$, $A_{UU}^{\cos\phi}$, and $A_{UU}^{\cos 2\phi}$ are extracted from each bin.  In this chapter a discussion is provided of SIDIS event selection, the binning used in this analysis, measurement values with associated systematic uncertainties, and the extraction of structure function ratios using the $\phi_h$ dependence in each kinematic bin.
 
 \section{Event Selection and Binning}
 \subsubsection*{Event Selection}
-After particle identification, those events which have a trigger electron and a positive kaon are kept for analysis.  Events are discarded that do not have $W > 2$ and $Q^2 > 1$, because they are not considered part of the deeply inelastic region.  Additionally, to avoid exclusive resonances in the $ep \rightarrow eK^+X$ spectrum, a minimum value is imposed on the missing mass of the final state $M_X$ ($ep \rightarrow eK^+X$).  Here, we use $M_{X} (ep \rightarrow eK^+X) > 1.25$.  Finally, a cut is applied to exclude low values of $z_h$ to constrain our kinematics to the current factorization region where TMD factorization has been demonstrated at leading order.  It is additionally required that $z_h < 0.75$ to avoid exclusive events.  This restriction on $z_h$ is not applied to the $z_h$ axis, where we measure across the entire experimentally observed range.  
+After particle identification, events which have a trigger electron and a positive kaon are kept for analysis.  Events are discarded that do not have $W > 2$ and $Q^2 > 1$, because they are not considered part of the deeply inelastic region.  Additionally, to avoid exclusive resonances in the $ep \rightarrow eK^+X$ spectrum, a minimum value is imposed on the missing mass of the final state $M_X$ ($ep \rightarrow eK^+X$).  Here, we use $M_{X} (ep \rightarrow eK^+X) > 1.25$.  Finally, a cut is applied to exclude low values of $z_h$ to constrain our kinematics to the current factorization region where TMD factorization has been demonstrated at leading order.  It is additionally required that $z_h < 0.75$ to avoid exclusive events.  This restriction on $z_h$ is not applied to the $z_h$ axis, where we measure across the entire experimentally observed range.  
 
 \easyFigure{image/plots/kaon-bsa/z-pt2.pdf}{Correlation between $z_h$ and $P_{T}^{2}$ for each event in our analysis sample.} 
 
@@ -18,7 +18,8 @@ After particle identification, those events which have a trigger electron and a 
 
 \subsubsection*{Binning}
 
-\easyFigure{image/plots/kaon-bsa/binning.pdf}{The binning used for each of the kinematic axes.}
+% This is the ugliest figure in the history of physics.
+%\easyFigure{image/plots/kaon-bsa/binning.pdf}{The binning used for each of the kinematic axes.}
 The beam spin asymmetry measurement is performed for the kinematic variables $x$, $Q^2$, $z_h$, and $P_T$.  For each variable 10 bins are chosen, as well as 12 bins in $\phi$ for a total of 120 analysis bins. \\
 
 Bins were chosen using a simple method to ensure equal statistics in each bin.  The procedure is described using the axis $x$ as an example.  First, all events are sorted by their $x$ value from smallest to largest.  Then, the smallest and largest values are recorded, which are $x_1$ and $x_N$ if there are N events in the sample.  Next, the target number of bins M is chosen (this choice depends on each analysis).  Finally, the limits of each bin can be chosen by calculating the number of events per bin $N/M$ and then using the value of $x$ which corresponds to multiples of $N/M$ in the sample.    
@@ -141,6 +142,20 @@ Except for the beam polarization and the momentum of the kaon track, all paramet
 
 Because of the inability to distinguish kaon, pion, and proton tracks at higher momentum, the maximum kaon track momentum is varied between 5.5 (no maximum) and 2.5 GeV.  The difference between these results is quoted as a systematic uncertainty and added in quadrature with the other sources.  This source of systematic uncertainty has a larger effect on the $z_h$-axis, because $z_{max}$ is limited by limiting $p_{max}$.  While for the large $z_h$-bins this contribution is dominant, its size is comparable with other systematic sources throughout the remainder of the bins.
 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=16cm]{image/plots/kaon-bsa/bar-systematics-x.pdf}
+	\caption{The relative contribution of each systematic uncertainty to the total is shown above averaged over the bins of the $x$ axis.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=16cm]{image/plots/kaon-bsa/bar-systematics-z.pdf}
+	\caption{The relative contribution of each systematic uncertainty to the total is shown above averaged over the bins of the $z_h$ axis.}
+\end{figure}
+
+
 \section{Extraction of Modulations}
 The motivation to measure the beam spin asymmetry in several kinematic bins as well as bins of $\phi_{h}$ is to perform an estimate of the value of structure functions at the kinematic points (more precisely the average value of the structure functions over the range of values included in a point).  To do this, the authors perform parameter estimation on the $\phi_{h}$ distributions taking as a model the theoretical dependence of the beam spin asymmetry on $\phi_{h}$.
 
@@ -170,8 +185,6 @@ Where here $\vec{A}$ is a vector of length $n_{phi}$ bins, representing the meas
 	\includegraphics[width=16cm]{image/plots/kaon-bsa/z-phi-counts.pdf}
 	\caption{Counts for different helicity states are superimposed for different bins of $z_h$.}
 \end{figure}
-
-
 
 \subsubsection*{Results}
 %
