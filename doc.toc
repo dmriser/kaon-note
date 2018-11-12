@@ -5,17 +5,17 @@
 \contentsline {section}{\numberline {2.3}Determination of Good Run List}{9}{section.2.3}
 \contentsline {section}{\numberline {2.4}Helicity Determination}{10}{section.2.4}
 \contentsline {section}{\numberline {2.5}Vertex Corrections}{10}{section.2.5}
-\contentsline {section}{\numberline {2.6}Timing Corrections}{12}{section.2.6}
-\contentsline {section}{\numberline {2.7}Kinematic Corrections}{13}{section.2.7}
-\contentsline {chapter}{\numberline {3}Particle Identification}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}Electron Identification}{19}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Electron ID Cuts}{19}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Hadron Identification}{30}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Hadron ID Cuts}{30}{subsection.3.3.1}
-\contentsline {chapter}{\numberline {4}Beam Spin Asymmetry Analysis}{39}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{39}{section.4.1}
-\contentsline {section}{\numberline {4.2}Event Selection and Binning}{39}{section.4.2}
-\contentsline {section}{\numberline {4.3}$\phi _h$ Distributions}{42}{section.4.3}
-\contentsline {section}{\numberline {4.4}Extraction of Modulations}{48}{section.4.4}
-\contentsline {chapter}{References}{57}{appendix*.22}
+\contentsline {section}{\numberline {2.6}Timing Corrections}{11}{section.2.6}
+\contentsline {section}{\numberline {2.7}Kinematic Corrections}{12}{section.2.7}
+\contentsline {chapter}{\numberline {3}Particle Identification}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Electron Identification}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Electron ID Cuts}{17}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Hadron Identification}{28}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Hadron ID Cuts}{28}{subsection.3.3.1}
+\contentsline {chapter}{\numberline {4}Beam Spin Asymmetry Analysis}{37}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{37}{section.4.1}
+\contentsline {section}{\numberline {4.2}Event Selection and Binning}{37}{section.4.2}
+\contentsline {section}{\numberline {4.3}$\phi _h$ Distributions}{40}{section.4.3}
+\contentsline {section}{\numberline {4.4}Extraction of Modulations}{46}{section.4.4}
+\contentsline {chapter}{References}{55}{appendix*.22}
