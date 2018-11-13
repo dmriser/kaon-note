@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  12 NOV 2018 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  13 NOV 2018 13:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1937,7 +1937,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
  []
 
 [9]
-<image/plots/basic-analysis/inclusive-rates.png, id=190, 798.985pt x 473.77pt>
+<image/plots/basic-analysis/inclusive-rates.png, id=195, 798.985pt x 473.77pt>
 File: image/plots/basic-analysis/inclusive-rates.png Graphic file (type png)
 
 <use image/plots/basic-analysis/inclusive-rates.png>
@@ -1945,7 +1945,7 @@ Package pdftex.def Info: image/plots/basic-analysis/inclusive-rates.png used on
  input line 18.
 (pdftex.def)             Requested size: 398.33858pt x 236.20488pt.
 
-<image/plots/basic-analysis/bsa-waveplate.pdf, id=191, 857.47856pt x 499.1335pt
+<image/plots/basic-analysis/bsa-waveplate.pdf, id=196, 857.47856pt x 499.1335pt
 >
 File: image/plots/basic-analysis/bsa-waveplate.pdf Graphic file (type pdf)
  <use image/plots/basic-analysis/bsa-waveplate.pdf>
@@ -1959,7 +1959,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
 [10 </Users/davidriser/repos/kaon-note/image/plots/basic-analysis/inclusive-rat
 es.png (PNG copy)>]
-<image/plots/basic-analysis/vertex-phi.pdf, id=197, 569.12625pt x 183.68625pt>
+<image/plots/basic-analysis/vertex-phi.pdf, id=202, 569.12625pt x 183.68625pt>
 File: image/plots/basic-analysis/vertex-phi.pdf Graphic file (type pdf)
 
 <use image/plots/basic-analysis/vertex-phi.pdf>
@@ -1978,7 +1978,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-<image/plots/basic-analysis/timing.pdf, id=302, 569.12625pt x 183.68625pt>
+<image/plots/basic-analysis/timing.pdf, id=307, 569.12625pt x 183.68625pt>
 File: image/plots/basic-analysis/timing.pdf Graphic file (type pdf)
 
 <use image/plots/basic-analysis/timing.pdf>
@@ -2002,7 +2002,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
  []
 
 [13]
-<image/plots/basic-analysis/phi-dw-uncorr.pdf, id=370, 569.12625pt x 497.86pt>
+<image/plots/basic-analysis/phi-dw-uncorr.pdf, id=376, 569.12625pt x 497.86pt>
 File: image/plots/basic-analysis/phi-dw-uncorr.pdf Graphic file (type pdf)
 
 <use image/plots/basic-analysis/phi-dw-uncorr.pdf>
@@ -2010,7 +2010,7 @@ Package pdftex.def Info: image/plots/basic-analysis/phi-dw-uncorr.pdf used on i
 nput line 79.
 (pdftex.def)             Requested size: 452.9679pt x 396.2678pt.
 
-<image/plots/basic-analysis/phi-dw-corr.pdf, id=371, 569.12625pt x 497.86pt>
+<image/plots/basic-analysis/phi-dw-corr.pdf, id=377, 569.12625pt x 497.86pt>
 File: image/plots/basic-analysis/phi-dw-corr.pdf Graphic file (type pdf)
 
 <use image/plots/basic-analysis/phi-dw-corr.pdf>
@@ -2018,7 +2018,7 @@ Package pdftex.def Info: image/plots/basic-analysis/phi-dw-corr.pdf used on inp
 ut line 80.
 (pdftex.def)             Requested size: 452.9679pt x 396.2678pt.
 
-<image/plots/basic-analysis/w-mom-corr.png, id=372, 798.985pt x 1076.02pt>
+<image/plots/basic-analysis/w-mom-corr.png, id=378, 798.985pt x 1076.02pt>
 File: image/plots/basic-analysis/w-mom-corr.png Graphic file (type png)
 
 <use image/plots/basic-analysis/w-mom-corr.png>
@@ -2052,40 +2052,40 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 [18]
-<image/plots/electron-id/summary-dc-region1.pdf, id=486, 569.12625pt x 497.86pt
+<image/plots/electron-id/summary-dc-region1.pdf, id=491, 569.12625pt x 497.86pt
 >
 File: image/plots/electron-id/summary-dc-region1.pdf Graphic file (type pdf)
  <use image/plots/electron-id/summary-dc-region1.pdf>
 Package pdftex.def Info: image/plots/electron-id/summary-dc-region1.pdf used on
- input line 57.
+ input line 58.
 (pdftex.def)             Requested size: 452.9679pt x 396.2678pt.
 
-<image/plots/electron-id/summary-dc-region3.pdf, id=487, 569.12625pt x 497.86pt
+<image/plots/electron-id/summary-dc-region3.pdf, id=492, 569.12625pt x 497.86pt
 >
 File: image/plots/electron-id/summary-dc-region3.pdf Graphic file (type pdf)
  <use image/plots/electron-id/summary-dc-region3.pdf>
 Package pdftex.def Info: image/plots/electron-id/summary-dc-region3.pdf used on
- input line 58.
+ input line 59.
 (pdftex.def)             Requested size: 452.9679pt x 396.2678pt.
 
 
-! LaTeX Error: \begin{tabular} on input line 65 ended by \end{tbular}.
+! LaTeX Error: \begin{tabular} on input line 66 ended by \end{tbular}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71   \end{tbular}
+l.72   \end{tbular}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2094,7 +2094,7 @@ or  <return>  to continue without it.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.71   \end{tbular}
+l.72   \end{tbular}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2105,7 +2105,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.71   \end{tbular}
+l.72   \end{tbular}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2116,14 +2116,14 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.71   \end{tbular}
+l.72   \end{tbular}
                    
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.71   \end{tbular}
+l.72   \end{tbular}
                    
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2132,7 +2132,7 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.71   \end{tbular}
+l.72   \end{tbular}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2143,7 +2143,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.71   \end{tbular}
+l.72   \end{tbular}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2154,7 +2154,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.71   \end{tbular}
+l.72   \end{tbular}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2162,136 +2162,156 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<image/plots/electron-id/ec-fid.png, id=488, 800.9925pt x 776.9025pt>
+<image/plots/electron-id/ec-fid.png, id=493, 800.9925pt x 776.9025pt>
 File: image/plots/electron-id/ec-fid.png Graphic file (type png)
 
 <use image/plots/electron-id/ec-fid.png>
 Package pdftex.def Info: image/plots/electron-id/ec-fid.png used on input line 
-75.
+76.
 (pdftex.def)             Requested size: 452.9679pt x 439.35378pt.
  [19] [20 </Users/davidriser/repos/kaon-note/image/plots/electron-id/summary-dc
 -region1.pdf, page is rotated 90 degrees>] [21 </Users/davidriser/repos/kaon-no
 te/image/plots/electron-id/summary-dc-region3.pdf, page is rotated 90 degrees>]
  [22 </Users/davidriser/repos/kaon-note/image/plots/electron-id/ec-fid.png>]
-<image/plots/electron-id/summary-sampling-fraction.pdf, id=603, 569.12625pt x 4
+<image/plots/electron-id/summary-sampling-fraction.pdf, id=608, 569.12625pt x 4
 97.86pt>
 File: image/plots/electron-id/summary-sampling-fraction.pdf Graphic file (type 
 pdf)
  <use image/plots/electron-id/summary-sampling-fraction.pdf>
 Package pdftex.def Info: image/plots/electron-id/summary-sampling-fraction.pdf 
-used on input line 97.
+used on input line 98.
 (pdftex.def)             Requested size: 452.9679pt x 396.2678pt.
 
-Overfull \hbox (11.6213pt too wide) in paragraph at lines 106--118
+Overfull \hbox (11.6213pt too wide) in paragraph at lines 107--119
  [][] 
  []
 
 
-<image/plots/electron-id/summary-z-vertex.pdf, id=604, 569.12625pt x 497.86pt>
+<image/plots/electron-id/summary-z-vertex.pdf, id=609, 569.12625pt x 497.86pt>
 File: image/plots/electron-id/summary-z-vertex.pdf Graphic file (type pdf)
 
 <use image/plots/electron-id/summary-z-vertex.pdf>
 Package pdftex.def Info: image/plots/electron-id/summary-z-vertex.pdf used on i
-nput line 125.
+nput line 126.
 (pdftex.def)             Requested size: 452.9679pt x 396.2678pt.
- [23] [24 </Users/davidriser/repos/kaon-note/image/plots/electron-id/summary-sa
-mpling-fraction.pdf, page is rotated 90 degrees>] [25 </Users/davidriser/repos/
-kaon-note/image/plots/electron-id/summary-z-vertex.pdf, page is rotated 90 degr
-ees>]
-<image/diagrams/relative-phi.pdf, id=711, 1027.84pt x 770.88pt>
+
+Underfull \vbox (badness 7595) has occurred while \output is active []
+
+ [23]
+[24 </Users/davidriser/repos/kaon-note/image/plots/electron-id/summary-sampling
+-fraction.pdf, page is rotated 90 degrees>] [25 </Users/davidriser/repos/kaon-n
+ote/image/plots/electron-id/summary-z-vertex.pdf, page is rotated 90 degrees>]
+<image/diagrams/relative-phi.pdf, id=715, 1027.84pt x 770.88pt>
 File: image/diagrams/relative-phi.pdf Graphic file (type pdf)
 
 <use image/diagrams/relative-phi.pdf>
-Package pdftex.def Info: image/diagrams/relative-phi.pdf used on input line 137
+Package pdftex.def Info: image/diagrams/relative-phi.pdf used on input line 147
 .
 (pdftex.def)             Requested size: 452.9679pt x 339.72934pt.
 
-<image/plots/electron-id/summary-cc-theta.pdf, id=712, 569.12625pt x 497.86pt>
+<image/plots/electron-id/summary-cc-theta.pdf, id=716, 569.12625pt x 497.86pt>
 File: image/plots/electron-id/summary-cc-theta.pdf Graphic file (type pdf)
 
 <use image/plots/electron-id/summary-cc-theta.pdf>
 Package pdftex.def Info: image/plots/electron-id/summary-cc-theta.pdf used on i
-nput line 138.
+nput line 148.
 (pdftex.def)             Requested size: 452.9679pt x 396.2678pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26 </Users/davidriser/repos/kaon-note/image/diagrams/relative-phi.pdf>] [27 <
-/Users/davidriser/repos/kaon-note/image/plots/electron-id/summary-cc-theta.pdf,
- page is rotated 90 degrees>]
-<image/plots/hadron-id/fid.pdf, id=795, 549.05125pt x 739.76375pt>
+ [26] [27 </Users/davidriser/repos/kaon-note/image/diagrams/relative-phi.pdf>] 
+[28 </Users/davidriser/repos/kaon-note/image/plots/electron-id/summary-cc-theta
+.pdf, page is rotated 90 degrees>] <image/plots/hadron-id/fid.pdf, id=807, 549.
+05125pt x 739.76375pt>
 File: image/plots/hadron-id/fid.pdf Graphic file (type pdf)
 
 <use image/plots/hadron-id/fid.pdf>
-Package pdftex.def Info: image/plots/hadron-id/fid.pdf used on input line 160.
+Package pdftex.def Info: image/plots/hadron-id/fid.pdf used on input line 170.
 (pdftex.def)             Requested size: 284.52756pt x 383.36996pt.
-
-<image/plots/hadron-id/dvz.pdf, id=797, 549.05125pt x 739.76375pt>
+ [29 </Users/davidriser/repos/kaon-note/image/plots/hadron-id/fid.pdf>]
+<image/plots/hadron-id/dvz.pdf, id=858, 549.05125pt x 739.76375pt>
 File: image/plots/hadron-id/dvz.pdf Graphic file (type pdf)
 
 <use image/plots/hadron-id/dvz.pdf>
-Package pdftex.def Info: image/plots/hadron-id/dvz.pdf used on input line 171.
+Package pdftex.def Info: image/plots/hadron-id/dvz.pdf used on input line 181.
 (pdftex.def)             Requested size: 284.52756pt x 383.36996pt.
- [28] [29 </Users/davidriser/repos/kaon-note/image/plots/hadron-id/fid.pdf>] [3
-0 </Users/davidriser/repos/kaon-note/image/plots/hadron-id/dvz.pdf>]
-<image/plots/hadron-id/confidence_level.pdf, id=902, 569.12625pt x 224.84pt>
+ [30 </Users/davidriser/repos/kaon-note/image/plots/hadron-id/dvz.pdf>]
+<image/plots/hadron-id/confidence_level.pdf, id=909, 569.12625pt x 224.84pt>
 File: image/plots/hadron-id/confidence_level.pdf Graphic file (type pdf)
 
 <use image/plots/hadron-id/confidence_level.pdf>
 Package pdftex.def Info: image/plots/hadron-id/confidence_level.pdf used on inp
-ut line 224.
+ut line 234.
 (pdftex.def)             Requested size: 398.33858pt x 157.37663pt.
- [31 </Users/davidriser/repos/kaon-note/image/plots/hadron-id/confidence_level.
-pdf, page is rotated 90 degrees>]
-<image/plots/hadron-id/beautiful_pbeta_pip.pdf, id=956, 569.12625pt x 558.085pt
+ [31]
+<image/plots/hadron-id/beautiful_pbeta_pip.pdf, id=920, 569.12625pt x 558.085pt
 >
 File: image/plots/hadron-id/beautiful_pbeta_pip.pdf Graphic file (type pdf)
  <use image/plots/hadron-id/beautiful_pbeta_pip.pdf>
 Package pdftex.def Info: image/plots/hadron-id/beautiful_pbeta_pip.pdf used on 
-input line 235.
+input line 245.
 (pdftex.def)             Requested size: 284.52756pt x 279.01627pt.
 
-<image/plots/hadron-id/beautiful_pbeta_kp.pdf, id=957, 569.12625pt x 558.085pt>
+<image/plots/hadron-id/beautiful_pbeta_kp.pdf, id=921, 569.12625pt x 558.085pt>
 File: image/plots/hadron-id/beautiful_pbeta_kp.pdf Graphic file (type pdf)
 <use image/plots/hadron-id/beautiful_pbeta_kp.pdf>
 Package pdftex.def Info: image/plots/hadron-id/beautiful_pbeta_kp.pdf used on i
-nput line 242.
+nput line 252.
 (pdftex.def)             Requested size: 284.52756pt x 279.01627pt.
 
-<image/plots/hadron-id/beautiful_pbeta_prot.pdf, id=958, 569.12625pt x 558.085p
+<image/plots/hadron-id/beautiful_pbeta_prot.pdf, id=922, 569.12625pt x 558.085p
 t>
 File: image/plots/hadron-id/beautiful_pbeta_prot.pdf Graphic file (type pdf)
  <use image/plots/hadron-id/beautiful_pbeta_prot.pdf>
 Package pdftex.def Info: image/plots/hadron-id/beautiful_pbeta_prot.pdf used on
- input line 249.
+ input line 259.
 (pdftex.def)             Requested size: 284.52756pt x 279.01627pt.
+ [32 </Users/davidriser/repos/kaon-note/image/plots/hadron-id/confidence_level.
+pdf, page is rotated 90 degrees>] [33 </Users/davidriser/repos/kaon-note/image/
+plots/hadron-id/beautiful_pbeta_pip.pdf, page is rotated 90 degrees> </Users/da
+vidriser/repos/kaon-note/image/plots/hadron-id/beautiful_pbeta_kp.pdf, page is 
+rotated 90 degrees>]
+[34 </Users/davidriser/repos/kaon-note/image/plots/hadron-id/beautiful_pbeta_pr
+ot.pdf, page is rotated 90 degrees>] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ []
 
- [32 </Users/davidriser/repos/kaon-note/image/plots/hadron-id/beautiful_pbeta_p
-ip.pdf, page is rotated 90 degrees>] [33 </Users/davidriser/repos/kaon-note/ima
-ge/plots/hadron-id/beautiful_pbeta_kp.pdf, page is rotated 90 degrees> </Users/
-davidriser/repos/kaon-note/image/plots/hadron-id/beautiful_pbeta_prot.pdf, page
- is rotated 90 degrees>] [34] [35])
+
+<image/plots/inclusive/cross-section-sect2-slice3.png, id=1118, 798.985pt x 473
+.77pt>
+File: image/plots/inclusive/cross-section-sect2-slice3.png Graphic file (type p
+ng)
+ <use image/plots/inclusive/cross-section-sect2-slice3.png>
+Package pdftex.def Info: image/plots/inclusive/cross-section-sect2-slice3.png u
+sed on input line 324.
+(pdftex.def)             Requested size: 170.71652pt x 101.22963pt.
+
+<image/plots/inclusive/cross-section-ratio-sect2-slice3.png, id=1119, 798.985pt
+ x 473.77pt>
+File: image/plots/inclusive/cross-section-ratio-sect2-slice3.png Graphic file (
+type png)
+ <use image/plots/inclusive/cross-section-ratio-sect2-slice3.png>
+Package pdftex.def Info: image/plots/inclusive/cross-section-ratio-sect2-slice3
+.png used on input line 325.
+(pdftex.def)             Requested size: 170.71652pt x 101.22963pt.
+)
+[36
+
+
+ </Users/davidriser/repos/kaon-note/image/plots/inclusive/cross-section-sect2-s
+lice3.png> </Users/davidriser/repos/kaon-note/image/plots/inclusive/cross-secti
+on-ratio-sect2-slice3.png>]
 \openout2 = `chapters/kaon-bsa.aux'.
 
 
-(/Users/davidriser/repos/kaon-note/chapters/kaon-bsa.tex [36
-
-
-
-
-
-]
+(/Users/davidriser/repos/kaon-note/chapters/kaon-bsa.tex
 Chapter 4.
-<image/plots/kaon-bsa/z-pt2.pdf, id=1115, 476.83571pt x 376.10574pt>
+<image/plots/kaon-bsa/z-pt2.pdf, id=1125, 476.83571pt x 376.10574pt>
 File: image/plots/kaon-bsa/z-pt2.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/z-pt2.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/z-pt2.pdf used on input line 10.
 (pdftex.def)             Requested size: 452.9679pt x 357.2927pt.
 
-<image/plots/kaon-bsa/mx.pdf, id=1116, 514.80435pt x 387.6377pt>
+<image/plots/kaon-bsa/mx.pdf, id=1126, 514.80435pt x 387.6377pt>
 File: image/plots/kaon-bsa/mx.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/mx.pdf>
@@ -2310,7 +2330,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
 Underfull \vbox (badness 2735) has occurred while \output is active []
 
- [37]
+ [37
+
+
+
+]
 [38 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-pt2.pdf>]
 [39 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/mx.pdf>]
 
@@ -2329,7 +2353,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 33.
 
-<image/plots/kaon-bsa/bsa_x_sys.pdf, id=1191, 854.30415pt x 857.97412pt>
+<image/plots/kaon-bsa/bsa_x_sys.pdf, id=1201, 854.30415pt x 857.97412pt>
 File: image/plots/kaon-bsa/bsa_x_sys.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/bsa_x_sys.pdf>
@@ -2338,7 +2362,7 @@ Package pdftex.def Info: image/plots/kaon-bsa/bsa_x_sys.pdf used on input line
 (pdftex.def)             Requested size: 452.9679pt x 454.9205pt.
  [40] [41 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/bsa_x_sys.pdf
 >]
-<image/plots/kaon-bsa/bsa_z_sys.pdf, id=1242, 854.30415pt x 857.97412pt>
+<image/plots/kaon-bsa/bsa_z_sys.pdf, id=1252, 854.30415pt x 857.97412pt>
 File: image/plots/kaon-bsa/bsa_z_sys.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/bsa_z_sys.pdf>
@@ -2346,16 +2370,11 @@ Package pdftex.def Info: image/plots/kaon-bsa/bsa_z_sys.pdf used on input line
 66.
 (pdftex.def)             Requested size: 452.9679pt x 454.9205pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-<image/diagrams/linear-error.pdf, id=1244, 1027.84pt x 770.88pt>
+<image/diagrams/linear-error.pdf, id=1254, 1027.84pt x 770.88pt>
 File: image/diagrams/linear-error.pdf Graphic file (type pdf)
 
 <use image/diagrams/linear-error.pdf>
@@ -2364,120 +2383,167 @@ Package pdftex.def Info: image/diagrams/linear-error.pdf used on input line 79.
 (pdftex.def)             Requested size: 452.9679pt x 339.72934pt.
  [42] [43 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/bsa_z_sys.pdf
 >] [44 </Users/davidriser/repos/kaon-note/image/diagrams/linear-error.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 [45]
-<image/plots/kaon-bsa/bar-systematics-x.pdf, id=1381, 624.71399pt x 400.67857pt
+<image/plots/kaon-bsa/ec-fid-sys.pdf, id=1392, 1127.12965pt x 260.89346pt>
+File: image/plots/kaon-bsa/ec-fid-sys.pdf Graphic file (type pdf)
+
+<use image/plots/kaon-bsa/ec-fid-sys.pdf>
+Package pdftex.def Info: image/plots/kaon-bsa/ec-fid-sys.pdf used on input line
+ 148.
+(pdftex.def)             Requested size: 398.33858pt x 92.20181pt.
+
+<image/plots/kaon-bsa/systematics_integrated_heatmap_x.pdf, id=1393, 936.44368p
+t x 552.57945pt>
+File: image/plots/kaon-bsa/systematics_integrated_heatmap_x.pdf Graphic file (t
+ype pdf)
+
+<use image/plots/kaon-bsa/systematics_integrated_heatmap_x.pdf>
+Package pdftex.def Info: image/plots/kaon-bsa/systematics_integrated_heatmap_x.
+pdf used on input line 156.
+(pdftex.def)             Requested size: 398.33858pt x 235.04973pt.
+
+<image/plots/kaon-bsa/systematics_integrated_heatmap_pt.pdf, id=1397, 936.44368
+pt x 552.57945pt>
+File: image/plots/kaon-bsa/systematics_integrated_heatmap_pt.pdf Graphic file (
+type pdf)
+
+<use image/plots/kaon-bsa/systematics_integrated_heatmap_pt.pdf>
+Package pdftex.def Info: image/plots/kaon-bsa/systematics_integrated_heatmap_pt
+.pdf used on input line 170.
+(pdftex.def)             Requested size: 398.33858pt x 235.04973pt.
+ [46 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/ec-fid-sys.pdf> </
+Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/systematics_integrated_he
+atmap_x.pdf
+
+pdfTeX warning: pdflatex (file /Users/davidriser/repos/kaon-note/image/plots/ka
+on-bsa/systematics_integrated_heatmap_x.pdf): PDF inclusion: multiple pdfs with
+ page group included in a single page
+>]
+<image/plots/kaon-bsa/systematics_integrated_heatmap_z.pdf, id=1491, 936.44368p
+t x 552.57945pt>
+File: image/plots/kaon-bsa/systematics_integrated_heatmap_z.pdf Graphic file (t
+ype pdf)
+
+<use image/plots/kaon-bsa/systematics_integrated_heatmap_z.pdf>
+Package pdftex.def Info: image/plots/kaon-bsa/systematics_integrated_heatmap_z.
+pdf used on input line 178.
+(pdftex.def)             Requested size: 398.33858pt x 235.04973pt.
+
+<image/plots/kaon-bsa/bar-systematics-x.pdf, id=1492, 624.71399pt x 400.67857pt
 >
 File: image/plots/kaon-bsa/bar-systematics-x.pdf Graphic file (type pdf)
  <use image/plots/kaon-bsa/bar-systematics-x.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/bar-systematics-x.pdf used on inp
-ut line 148.
+ut line 188.
 (pdftex.def)             Requested size: 455.24408pt x 291.99158pt.
 
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 148--149
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 188--189
  [][] 
  []
 
 
-<image/plots/kaon-bsa/bar-systematics-z.pdf, id=1382, 624.71399pt x 400.67857pt
+<image/plots/kaon-bsa/bar-systematics-z.pdf, id=1493, 624.71399pt x 400.67857pt
 >
 File: image/plots/kaon-bsa/bar-systematics-z.pdf Graphic file (type pdf)
  <use image/plots/kaon-bsa/bar-systematics-z.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/bar-systematics-z.pdf used on inp
-ut line 154.
+ut line 194.
 (pdftex.def)             Requested size: 455.24408pt x 291.99158pt.
 
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 154--155
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 194--195
  [][] 
  []
 
+[47 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/systematics_integra
+ted_heatmap_pt.pdf>] [48 </Users/davidriser/repos/kaon-note/image/plots/kaon-bs
+a/systematics_integrated_heatmap_z.pdf> </Users/davidriser/repos/kaon-note/imag
+e/plots/kaon-bsa/bar-systematics-x.pdf
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+pdfTeX warning: pdflatex (file /Users/davidriser/repos/kaon-note/image/plots/ka
+on-bsa/bar-systematics-x.pdf): PDF inclusion: multiple pdfs with page group inc
+luded in a single page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-[46] [47 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/bar-systematic
-s-x.pdf> </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/bar-systematic
-s-z.pdf
-
-pdfTeX warning: pdflatex (file /Users/davidriser/repos/kaon-note/image/plots/ka
-on-bsa/bar-systematics-z.pdf): PDF inclusion: multiple pdfs with page group inc
-luded in a single page
->]
+[49 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/bar-systematics-z.p
+df>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
-<image/plots/kaon-bsa/p-study-x.pdf, id=1425, 1006.09941pt x 563.06393pt>
+ [50]
+<image/plots/kaon-bsa/p-study-x.pdf, id=1669, 1006.09941pt x 563.06393pt>
 File: image/plots/kaon-bsa/p-study-x.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/p-study-x.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/p-study-x.pdf used on input line 
-181.
+229.
 (pdftex.def)             Requested size: 452.9679pt x 253.4967pt.
 
-<image/plots/kaon-bsa/z-phi-counts.pdf, id=1426, 844.16287pt x 843.09909pt>
+<image/plots/kaon-bsa/z-phi-counts.pdf, id=1670, 844.16287pt x 843.09909pt>
 File: image/plots/kaon-bsa/z-phi-counts.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/z-phi-counts.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/z-phi-counts.pdf used on input li
-ne 185.
+ne 233.
 (pdftex.def)             Requested size: 455.24408pt x 454.6621pt.
 
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 185--186
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 233--234
  [][] 
  []
 
-<image/plots/kaon-bsa/alu_sin.pdf, id=1427, 711.45174pt x 448.82053pt>
+<image/plots/kaon-bsa/alu_sin.pdf, id=1671, 711.45174pt x 448.82053pt>
 File: image/plots/kaon-bsa/alu_sin.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/alu_sin.pdf>
-Package pdftex.def Info: image/plots/kaon-bsa/alu_sin.pdf used on input line 19
-6.
+Package pdftex.def Info: image/plots/kaon-bsa/alu_sin.pdf used on input line 24
+4.
 (pdftex.def)             Requested size: 452.9679pt x 285.75803pt.
 
-<image/plots/kaon-bsa/compare-pion-xq2.pdf, id=1428, 725.3594pt x 280.55241pt>
+<image/plots/kaon-bsa/compare-pion-xq2.pdf, id=1672, 725.3594pt x 280.55241pt>
 File: image/plots/kaon-bsa/compare-pion-xq2.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/compare-pion-xq2.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/compare-pion-xq2.pdf used on inpu
-t line 201.
+t line 249.
 (pdftex.def)             Requested size: 455.24408pt x 176.08113pt.
 
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 201--202
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 249--250
  [][] 
  []
 
-<image/plots/kaon-bsa/compare-pion-zpt.pdf, id=1431, 731.452pt x 279.52838pt>
+<image/plots/kaon-bsa/compare-pion-zpt.pdf, id=1675, 731.452pt x 279.52838pt>
 File: image/plots/kaon-bsa/compare-pion-zpt.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/compare-pion-zpt.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/compare-pion-zpt.pdf used on inpu
-t line 208.
+t line 256.
 (pdftex.def)             Requested size: 455.24408pt x 173.97545pt.
 
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 208--209
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 256--257
  [][] 
  []
 
-) [49 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/p-study-x.pdf>]
-[50 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-phi-counts.pdf>]
-[51 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/alu_sin.pdf> </User
+) [51 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/p-study-x.pdf>]
+[52 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-phi-counts.pdf>]
+[53 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/alu_sin.pdf> </User
 s/davidriser/repos/kaon-note/image/plots/kaon-bsa/compare-pion-xq2.pdf
 
 pdfTeX warning: pdflatex (file /Users/davidriser/repos/kaon-note/image/plots/ka
 on-bsa/compare-pion-xq2.pdf): PDF inclusion: multiple pdfs with page group incl
 uded in a single page
->] [52 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/compare-pion-zpt
+>] [54 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/compare-pion-zpt
 .pdf>]
 \openout2 = `chapters/appendix.aux'.
 
- (/Users/davidriser/repos/kaon-note/chapters/appendix.tex [53
+ (/Users/davidriser/repos/kaon-note/chapters/appendix.tex [55
 
 
-]) [54]
+]) [56]
 \openout2 = `chapters/references.aux'.
 
 
@@ -2488,7 +2554,7 @@ Underfull \hbox (badness 4543) in paragraph at lines 71--81
 /n/10 B461\OT1/ppl/m/n/10 , 197 (1996)[], [Er-ra-tum: Nucl.
  []
 
-)) [55
+)) [57
 
 
 
@@ -2506,18 +2572,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
 Package rerunfilecheck Info: File `doc.out' has not changed.
-(rerunfilecheck)             Checksum: DCEEF9086C74E6306302E8B59CABA34D;1334.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: 759D2FBE97B4BE08029340C11697C68D;1420.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 18204 strings out of 492995
- 306957 string characters out of 6132704
+ 18257 strings out of 492995
+ 308850 string characters out of 6132704
  383140 words of memory out of 5000000
- 21257 multiletter control sequences out of 15000+600000
+ 21287 multiletter control sequences out of 15000+600000
  32495 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,12n,60p,10403b,1186s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2539,10 +2601,10 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist
 ype1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/ur
 w/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palat
 ino/uplri8a.pfb>
-Output written on doc.pdf (55 pages, 6344850 bytes).
+Output written on doc.pdf (57 pages, 6444180 bytes).
 PDF statistics:
- 1745 PDF objects out of 2073 (max. 8388607)
- 1066 compressed objects within 11 object streams
- 203 named destinations out of 1000 (max. 500000)
- 329 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1994 PDF objects out of 2073 (max. 8388607)
+ 1137 compressed objects within 12 object streams
+ 219 named destinations out of 1000 (max. 500000)
+ 367 words of extra memory for PDF output out of 10000 (max. 10000000)
 

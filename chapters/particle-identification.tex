@@ -22,6 +22,7 @@ The cuts used to select electrons are enumerated below.
   \item{z-vertex position}
   \item{Cherenkov counter $\theta_{cc}$ matching to PMT number}
   \item{Cherenkov counter $\phi_{rel}$ matching to PMT (left/right)}
+  \item{Cherenkov counter Fiducial Cuts}
 \end{itemize}
 
 Each cut is now be described in more detail.
@@ -123,6 +124,15 @@ Due to slight differences between the 6 sectors of the CLAS detector, this cut i
 Electrons can be produced as part of $e^+ e^-$ pairs, or by other processes.  For this analysis, these are not of interest.  For the purposes of this analysis it is then natural to accept only electron candidates which have a z-vertex $v_z \in [-27.7302, -22.6864]$ within the expected target region.  This cut is applied after the vertex position has been corrected (which is discussed in the basic analysis section).
 
 \easyFigure{image/plots/electron-id/summary-z-vertex.pdf}{The track vertex cut is shown above.  All negative tracks are shown in white, while the tracks passing all other criteria are shown in black hatch.  The cut bounday is displayed as red lines.  For E1-F the target center was located at -25 cm.}
+
+\subsubsection*{Cherenkov counter fiducial cuts}
+The value of the polar angle $\theta_{cc}$ and the azimuthal angle $\phi_{rel}$ with respect to the center of the sector is used for each event to define a fiducial cut at the Cherenkov counter.  In this study, the functional form below is used for the boundary function.
+
+\begin{equation}
+	\theta_{cc} > 46 - 35 \sqrt{1 - \phi_{rel}^2  / 350}
+\end{equation} 
+
+The parameters were chosen empirically based on a study of the distributions with and without other electron identification cuts applied.
 
 \subsubsection*{Cherenkov counter $\theta_{cc}$ and $\phi_{rel}$ matching to PMT}
 The angular arrangement of photo-multiplier tubes (PMTs) in the Cherenkov counter allows for additional consistency conditions to be applied.  Each half-sector of the CC contains 18 PMTs increasing in polar angle away from the beamline, these divisions are known as segments.  The polar angle measured at the Cherenkov counter $\theta{cc}$ is then correlated to the segment in which the track was detected.  Additionally, PMTs that are placed on the left and right of the detector can be used to check consistency with the azimuthal angle the track forms with the central line of the detector (ie $\phi_{rel} > 0$ means the track was in the right half of the sector, $\phi_{rel} < 0$ means the track was in the left half of the sector).  An integer is used to describe the PMT associated with the track.  The left PMT is assigned value -1, the right 1, and a signal in both PMTs is assigned 0.  If both PMTs have a signal, the track is allowed to pass.  If the left PMT was the one that had a signal, only events with $\phi_{rel} < 0$ passes.  Similarly if the right PMT fired (code = 1), only events with $\phi_{rel} > 0$ are allowed to pass.  Technical note: the integers in question can be obtained from the ntuple22 format tree by doing the following.
@@ -304,6 +314,17 @@ The values are displayed in the table below.
   \end{table}
 \end{landscape}
 
+\subsection{Inclusive Electron Cross Section}
+As an additional validation step for a different analysis, the authors undertook the measurement of the inclusive electron scattering cross section in the resonance region as a function of $W$ and $Q^2$.  A short description of that work is provided here as a form of validation of our good run list, as well as our electron identification procedure. \\
 
+A simple two dimensional $W$ and $Q^2$ binning scheme was used to count inclusive events.  Then, acceptance corrections were applied using events generated with `keppel\_rad`.  Finally, bin centering corrections and radiative corrections were applied using the generators `keppel\_norad` and `keppel\_rad`.  The resulting cross sections agree well with the model by Keppel.
 
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=6cm]{image/plots/inclusive/cross-section-sect2-slice3.png}		
+		\includegraphics[width=6cm]{image/plots/inclusive/cross-section-ratio-sect2-slice3.png}
+
+		\caption{Left: The cross section measured from $E1-F$ using our electron identification and good run list.  The pink line corresponds to the model prediction by Cynthia Keppel's inclusive resonance parametrization.  Right: The ratio of our calculation to the model values shown on the left figure.}
+	\end{center}		
+\end{figure}
 

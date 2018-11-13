@@ -72,9 +72,9 @@ The first term which is the contribution from the variance in the measurements o
 %   the treatment of systematics. 
 % ---------------------------------------
 
-Systematic effects are shifts or biases in the measured result of some observable as a result of the procedure used in the measurement.  Systematic effects can typically be identified and corrected for, or removed all together from the measurement.  In the cases where an effect cannot be completely removed, the degree to which the correction for the effect is uncertain is included in the result of the measurement as a systematic uncertainty \cite{misc-barlow:2002}. \\
+\subsubsection*{Basic Formalism}
 
-Sources of systematic effects can include background events from different processes which enter the sample, calibrations of different detector systems, misalignment in detector geometry, and biases in selection criteria.  Each of the systematic sources mentioned here has at least one associated procedure for correcting it's effect on the analysis.  As an example consider momentum corrections in CLAS.  These corrections are performed to remove the effect of slight misalignment in detector geometry from what is in reconstruction, as well as slight differences between the true magnetic field and the field map used in reconstruction.  These physical effects introduce a systematic effect, the particle 4-momenta reconstructed are shifted away from the true values.  Standard reactions (elastic scattering) can be used to develop corrections for the 4-momenta of particles, and these corrections typically depend on a set of parameters $\vec{\theta}$, which have an associated parameter uncertainty described by a covariance matrix $V_{ij}$.  It is these parameter uncertainties that propagate through to the final observables, and the assignment of the magnitude of such effects is then what is referred to as systematic uncertainty. \\
+Systematic effects are shifts or biases in the measured result of some observable as a result of the procedure used in the measurement.  Systematic effects can typically be identified and corrected for, or removed all together from the measurement.  In the cases where an effect cannot be completely removed, the degree to which the correction for the effect is uncertain is included in the result of the measurement as a systematic uncertainty \cite{misc-barlow:2002}. \\
 
 \easyFigure{image/diagrams/linear-error.pdf}{The analysis is run for variations in the input parameters $\theta_i$ to calculate the dependence of the result $\mathcal{O}$ on each parameter, as described in this section.}
 
@@ -96,14 +96,16 @@ where $\rho_{ij}$ is the correlation $V_{ij}/\sigma_i \sigma_j$.  In most cases,
   \sigma_{\mathcal{O}}^{2} = \sum_{i=1}^{n} \Bigl[ \mathcal{O}(\theta_i + \sigma_{\theta_i}/2) - \mathcal{O}(\theta_i - \sigma_{\theta_i}/2) \Bigr]^2
 \end{equation}
 
-Another approach exists that takes into account possible correlations between the analysis parameters $\theta_i$.  The approach consists of generating $M$ sets of parameters $\vec{\theta}$ and obtaining $M$ results for the observable $\mathcal{O}$.  The results are then interpreted statistically and the observable value and total systematic error are reported as the mean and standard deviation of the results.  This Monte Carlo based technique has the advantage that it is conceptually simple, and allows the capture of correlations.  However, it can be computationally intensive to perform the analysis hundreds of times.  Additionally, only using this technique without first testing the individual size of each systematic source removes the possibility of correcting for or removing biases.
-
-\begin{gather}
-  \expval{\mathcal{O}} = \frac{1}{M} \sum_{i=1}^{M} \mathcal{O}_i \\
-  \sigma_{\mathcal{O}}^{2} = \frac{1}{M-1} \sum_{i=1}^{M} (\mathcal{O}_i - \expval{\mathcal{O}})^2
-\end{gather}
+%Another approach exists that takes into account possible correlations between the analysis parameters $\theta_i$.  The approach consists of generating $M$ sets of parameters $\vec{\theta}$ and obtaining $M$ results for the observable $\mathcal{O}$.  The results are then interpreted statistically and the observable value and total systematic error are reported as the mean and standard deviation of the results.  This Monte Carlo based technique has the advantage that it is conceptually simple, and allows the capture of correlations.  However, it can be computationally intensive to perform the analysis hundreds of times.  Additionally, only using this technique without first testing the individual size of each systematic source removes the possibility of correcting for or removing biases.
+%
+%\begin{gather}
+%  \expval{\mathcal{O}} = \frac{1}{M} \sum_{i=1}^{M} \mathcal{O}_i \\
+%  \sigma_{\mathcal{O}}^{2} = \frac{1}{M-1} \sum_{i=1}^{M} (\mathcal{O}_i - \expval{\mathcal{O}})^2
+%\end{gather}
 
 \subsubsection*{Sources of Systematic Uncertainty}
+In this study, systematic errors are calculated using the techniques described above for both the $\phi_h$ dependent asymmetry measurement as well as the results of the parameter extraction for each kinematic bin.
+
 Table \ref{table:kaon-systematics} below summarizes the sources of systematic uncertainty considered in this analysis.
 
 % --------------------
@@ -131,17 +133,55 @@ Table \ref{table:kaon-systematics} below summarizes the sources of systematic un
     \hline
     MC Estimate                & -              & 0.002917
   \end{tabular}
-  \caption{Different sources of systematic effect considered in this analysis.  The magnitude of the effect is shown here averaged over all bins.  The units of the shift are just the same units of the asymmetry value. }
+  \caption{Different sources of systematic effect considered in this analysis.  The magnitude of the effect is shown here averaged over all bins of $\phi_h$.  The units of the shift are just the same units of the asymmetry value. }
   \label{table:kaon-systematics}
 \end{table}
 
-% Do we need this figure?
-%\easyFigure{image/plots/kaon-bsa/systematic-bar-x.pdf}{The fractional contribution to the total systematic uncertainty by each source, averaged over the bins in the x axis.}
-
 Except for the beam polarization and the momentum of the kaon track, all parameters listed in the table are treated using the formalism outlined above.  The beam polarization uncertainty quoted at 2.4\% contains contributions from the standard deviation of the Moller polarimetry measurements (0.2\%), residual target polarization effects (1.4\%), and atomic motion/finite acceptance corrections (0.8\%).\\
 
-Because of the inability to distinguish kaon, pion, and proton tracks at higher momentum, the maximum kaon track momentum is varied between 5.5 (no maximum) and 2.5 GeV.  The difference between these results is quoted as a systematic uncertainty and added in quadrature with the other sources.  This source of systematic uncertainty has a larger effect on the $z_h$-axis, because $z_{max}$ is limited by limiting $p_{max}$.  While for the large $z_h$-bins this contribution is dominant, its size is comparable with other systematic sources throughout the remainder of the bins.
+\subsubsection*{Electromagnetic Calorimeter Fiducial Cuts}
+The electron identification cuts used on ECAL are varied in order to estimate the dependence of the asymmetry on these parameters.  For most kinematic bins these boundaries produced the largest shift in our measured value, particularly at small $x$ and small $Q^2$.  These shifts likely arise from the reduction of statistics in the low angle region ($x$ is correlated with $ECU$ with coefficient 0.49, $Q^2$ is correlated with $ECU$ with coefficient 0.8).  Noteworthy however is that even these observed shifts are within the parameter error extracted from the original measurement and it's systematic errors.  
 
+\begin{figure}
+	\label{fig:ec_fid_sys}
+	\begin{center}
+		\includegraphics[width=14cm]{image/plots/kaon-bsa/ec-fid-sys.pdf}
+		\caption{Boundaries and associated uncertainties for the $EC$ coordinate cuts.}
+	\end{center}
+\end{figure}
+
+\begin{figure}
+	\label{fig:systematic_heatmap_x}
+	\begin{center}
+		\includegraphics[width=14cm]{image/plots/kaon-bsa/systematics_integrated_heatmap_x.pdf}
+		\caption{The magnitude of each systematic error source considered is shown above in a heat-map for the $x$ axis.  The vertical scale maximum corresponds to half of a percent.}
+	\end{center}
+\end{figure}
+
+\subsubsection*{Missing Mass}
+To investigate the effect of varying our missing mass cut on the analysis we shift it left and right by 50 MeV, which produces little to no effect.  This is demonstrated in the figures \ref{fig:systematic_heatmap_x} \ref{fig:systematic_heatmap_pt} \ref{fig:systematic_heatmap_z}.
+
+\subsubsection*{Confidence Level}
+The confidence level is varied between 0.01 at the loosest and 0.07 at the tightest.  For the $x$, $Q^2$, and $P_T$ axes the observed shift is roughly constant regardless of the kinematic bin, for the $z_h$ axis however the resulting uncertainty is largest for the last three bins.  This captures the fact that at higher values of $z_h$ the ability to distinguish between pions and kaons diminishes to some degree.  The impact of this is captured completely in the systematic from kaon momentum. 
+
+\begin{figure}
+	\label{fig:systematic_heatmap_pt}
+	\begin{center}
+		\includegraphics[width=14cm]{image/plots/kaon-bsa/systematics_integrated_heatmap_pt.pdf}
+		\caption{The magnitude of each systematic error source considered is shown above in a heat-map for the $P_T$ axis.  The vertical scale maximum corresponds to half of a percent.}
+	\end{center}
+\end{figure}
+
+\begin{figure}
+	\label{fig:systematic_heatmap_z}
+	\begin{center}
+		\includegraphics[width=14cm]{image/plots/kaon-bsa/systematics_integrated_heatmap_z.pdf}
+		\caption{The magnitude of each systematic error source considered is shown above in a heat-map for the $z_h$ axis.  The vertical scale maximum corresponds to half of a percent.}
+	\end{center}
+\end{figure}
+
+\subsubsection*{Kaon Momentum}
+Because of the inability to distinguish kaon, pion, and proton tracks at higher momentum, the maximum kaon track momentum is varied between 5.5 (no maximum) and 2.5 GeV.  The difference between these results is quoted as a systematic uncertainty and added in quadrature with the other sources.  This source of systematic uncertainty has a larger effect at higher values of $z_h$, because $z_{max}$ is limited by limiting $p_{max}$.  While for the large $z_h$-bins this contribution is dominant, its size is comparable with other systematic sources throughout the remainder of the bins.  
 
 \begin{figure}
 	\centering
@@ -155,6 +195,14 @@ Because of the inability to distinguish kaon, pion, and proton tracks at higher 
 	\caption{The relative contribution of each systematic uncertainty to the total is shown above averaged over the bins of the $z_h$ axis.}
 \end{figure}
 
+\subsubsection*{Electromagnetic Calorimeter Energy Cuts}
+The momentum dependent sampling fraction cut, as well as the energy deposition cut placed on the inner electromagnetic calorimeter do not contribute much to the total systematic uncertainty.  In this study, the variation of the energy deposited cut by 10 MeV did not have a strong impact on the result.  Additionally, the observed shift was mostly constant over the kinematic variables.  The same is true for the sampling fraction cut.
+
+\subsubsection*{Fiducial Cuts on DC and CC}
+The variation of our fiducial cuts on the drift chambers regions 1 and 3, as well as the Cherenkov counter produced no major shift in our measured asymmetries.  
+
+\subsubsection*{Vertex Cuts}
+When our vertex cut was varied, little to no changes were observed in the beam spin asymmetries we extracted.  Additionally, no kinematic dependence was observed in the shifts.
 
 \section{Extraction of Modulations}
 The motivation to measure the beam spin asymmetry in several kinematic bins as well as bins of $\phi_{h}$ is to perform an estimate of the value of structure functions at the kinematic points (more precisely the average value of the structure functions over the range of values included in a point).  To do this, the authors perform parameter estimation on the $\phi_{h}$ distributions taking as a model the theoretical dependence of the beam spin asymmetry on $\phi_{h}$.
