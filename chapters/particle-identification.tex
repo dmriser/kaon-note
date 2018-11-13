@@ -135,23 +135,62 @@ The value of the polar angle $\theta_{cc}$ and the azimuthal angle $\phi_{rel}$ 
 The parameters were chosen empirically based on a study of the distributions with and without other electron identification cuts applied.
 
 \subsubsection*{Cherenkov counter $\theta_{cc}$ and $\phi_{rel}$ matching to PMT}
-The angular arrangement of photo-multiplier tubes (PMTs) in the Cherenkov counter allows for additional consistency conditions to be applied.  Each half-sector of the CC contains 18 PMTs increasing in polar angle away from the beamline, these divisions are known as segments.  The polar angle measured at the Cherenkov counter $\theta{cc}$ is then correlated to the segment in which the track was detected.  Additionally, PMTs that are placed on the left and right of the detector can be used to check consistency with the azimuthal angle the track forms with the central line of the detector (ie $\phi_{rel} > 0$ means the track was in the right half of the sector, $\phi_{rel} < 0$ means the track was in the left half of the sector).  An integer is used to describe the PMT associated with the track.  The left PMT is assigned value -1, the right 1, and a signal in both PMTs is assigned 0.  If both PMTs have a signal, the track is allowed to pass.  If the left PMT was the one that had a signal, only events with $\phi_{rel} < 0$ passes.  Similarly if the right PMT fired (code = 1), only events with $\phi_{rel} > 0$ are allowed to pass.  Technical note: the integers in question can be obtained from the ntuple22 format tree by doing the following.
-
-\begin{lstlisting}
-  for (int index = 0; index < event.gpart; index++){
-    int pmt = event.cc_segm[index]/1000 - 1;
-    int segment = event.cc_segm[index]%1000/10; 
-  }
-\end{lstlisting}
+The angular arrangement of photo-multiplier tubes (PMTs) in the Cherenkov counter allows for additional consistency conditions to be applied.  Each half-sector of the CC contains 18 PMTs increasing in polar angle away from the beamline, these divisions are known as segments.  The polar angle measured at the Cherenkov counter $\theta{cc}$ is then correlated to the segment in which the track was detected.  Additionally, PMTs that are placed on the left and right of the detector can be used to check consistency with the azimuthal angle the track forms with the central line of the detector (ie $\phi_{rel} > 0$ means the track was in the right half of the sector, $\phi_{rel} < 0$ means the track was in the left half of the sector).  An integer is used to describe the PMT associated with the track.  The left PMT is assigned value -1, the right 1, and a signal in both PMTs is assigned 0.  If both PMTs have a signal, the track is allowed to pass.  If the left PMT was the one that had a signal, only events with $\phi_{rel} < 0$ passes.  Similarly if the right PMT fired (code = 1), only events with $\phi_{rel} > 0$ are allowed to pass. 
 
 \easyFigure{image/diagrams/relative-phi.pdf}{The angle $\phi_{rel}$ is the azimuthal angle between the central line of the detector and the track.}
 \easyFigure{image/plots/electron-id/summary-cc-theta.pdf}{Correlation between $\theta_{CC}$ and the CC segment is shown above, with our selection boundaries overlaid in red.}
 
+% ------------------------------------
+%      Inclusive Cross Section
+% ------------------------------------
+\section{Inclusive Electron Cross Section}
+A brief discussion is provided here regarding our extraction of the inclusive electron scattering cross section in the resonance region.  The inclusion of this study here is intended to add credibility to our electron identification and good run list.  Inclusive electron scattering is the process $e p \rightarrow e X$, where only the final state electron is detected and the rest of the event is not (anything apart from the electron that is detected is not analyzed).  As a function of $W$ (the invariant mass of the final state ($\gamma^* + p$) system) the region below 2 GeV contains resonances and is often referred to as the resonance region.  Resonance structures are difficult to detect higher than about 2 GeV, and this region is typically called the \textit{deeply inelastic} region.  While the deeply inelastic region is used extensively for measurements in nuclear/particle physics, the goal of luminosity and electron identification verification is more easily achieved in the resonance region.  This fact is due principally to the excess of Bethe-Heitler events which collect in the $2 < W < 3$ region for $E_{beam} = 5.498$ (such events are difficult to remove when detecting only the final state electron).  The cross section is measured by counting events in each kinematic bin, and normalizing by the integrated luminosity over files analyzed.  Additionally, acceptance and radiative corrections are applied bin-by-bin as shown in \ref{eqn:cross_section_measured}.
+
+\begin{equation}
+	\label{eqn:cross_section_measured}
+	\frac{d^2 \sigma}{dW \; dQ^2} = \frac{1}{\Delta W \; \Delta Q^2} \frac{N_{i}}{\mathcal{L} \; A_i \; R_i}
+\end{equation}
+
+Here $A_i$ and $R_i$ refer to the acceptance and radiative corrections for the bin $i$, and $\mathcal{L}$ is the integrated luminosity.  
+
+\subsubsection*{Event Selection and Binning}
+A simple choice of 10 bins in $Q^2$ and 35 bins in $W$ is used.  This choice is mainly driven by the desire to keep bin migration effects small.  Events are generated and reconstructed in some bins $R^{(j)}$ and $G^{(i)}$ respectively.  Due to finite detector resolution, it is not always the case that $i = j$.  This effect is known as bin migration, and negatively impacts the acceptance calculation.\\
+The only kinematic restriction that is imposed is applied to the \textit{inelasticity} $y = 1-E'/E < 0.7$.  This restriction is applied because events with large-$y$ have a significantly higher probability to be Bethe-Heitler events.  This cut is equivalent to enforcing a minimum energy for the scattered electron.
+
+\begin{equation}
+        E_{min} = E_{beam}(1-y_{max}) \approx 1.6 \; GeV
+\end{equation}
+
+\begin{table}
+  \centering
+  \begin{tabular}{c|c|c|c|c}
+    Variable & N & Min. & Max & Width \\
+    \hline
+    $W$   & 35 & 1.1 & 2.1 & 0.286 \\
+    $Q^2$ & 10 & 1.7 & 4.2 & 0.25
+  \end{tabular}
+  \caption{Summary of $W$ and $Q^2$ binning used for the inclusive cross section.}
+\end{table}
+
+\subsubsection*{Results}
+All sectors individually were analyzed and our results are consistent with the model parametrization by Cynthia Keppel \ref{fig:inclusive_xs}.  In most of the kinematics that we studied, our extracted cross section is within 5 \% of the model prediction.  The most notable difficulty that appeared was the residual elastic tail at lower $W$ values that caused some kinematic bins to be slightly off.  There also exist bin migration effects on the resonance peaks, but these are small.
+
+\begin{figure}
+	\begin{center}
+		\label{fig:inclusive_xs}
+		\includegraphics[width=7cm]{image/plots/inclusive/compareDataModelSector2Slice2.png}	
+		\includegraphics[width=7cm]{image/plots/inclusive/crossSectionRatioSector2Slice2.png}
+		\caption{Left: Our cross section extraction for sector 2 in the moderate $Q^2$ region.  Right: The ratio of our extraction to the theoretical predictions from the parametrization.}	
+	\end{center}
+\end{figure}
+
+% ------------------------------------
+%     Hadron ID
+% ------------------------------------
 \section{Hadron Identification}
 Hadron identification in CLAS is done by correlating particle momentum from the drift chambers with timing information supplied by the time of flight detector.  In this analysis some quality assurance cuts are applied preliminarily, but they do not discriminate between different species of particle.  The likelihood methodology described in this section is based on the discussion provided by the BES collaboration in \cite{misc-ping:2009}.  
 
 \subsection{Hadron ID Cuts}
-
 The cuts used for hadron classification are enumerated below.
 
 \begin{itemize}
@@ -314,17 +353,4 @@ The values are displayed in the table below.
   \end{table}
 \end{landscape}
 
-\subsection{Inclusive Electron Cross Section}
-As an additional validation step for a different analysis, the authors undertook the measurement of the inclusive electron scattering cross section in the resonance region as a function of $W$ and $Q^2$.  A short description of that work is provided here as a form of validation of our good run list, as well as our electron identification procedure. \\
-
-A simple two dimensional $W$ and $Q^2$ binning scheme was used to count inclusive events.  Then, acceptance corrections were applied using events generated with `keppel\_rad`.  Finally, bin centering corrections and radiative corrections were applied using the generators `keppel\_norad` and `keppel\_rad`.  The resulting cross sections agree well with the model by Keppel.
-
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=6cm]{image/plots/inclusive/cross-section-sect2-slice3.png}		
-		\includegraphics[width=6cm]{image/plots/inclusive/cross-section-ratio-sect2-slice3.png}
-
-		\caption{Left: The cross section measured from $E1-F$ using our electron identification and good run list.  The pink line corresponds to the model prediction by Cynthia Keppel's inclusive resonance parametrization.  Right: The ratio of our calculation to the model values shown on the left figure.}
-	\end{center}		
-\end{figure}
 

@@ -11,12 +11,12 @@
 \contentsline {section}{\numberline {3.1}Introduction}{17}{section.3.1}
 \contentsline {section}{\numberline {3.2}Electron Identification}{17}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Electron ID Cuts}{17}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Hadron Identification}{26}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Hadron ID Cuts}{29}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Inclusive Electron Cross Section}{36}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}Beam Spin Asymmetry Analysis}{37}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{37}{section.4.1}
-\contentsline {section}{\numberline {4.2}Event Selection and Binning}{37}{section.4.2}
-\contentsline {section}{\numberline {4.3}$\phi _h$ Distributions}{40}{section.4.3}
-\contentsline {section}{\numberline {4.4}Extraction of Modulations}{49}{section.4.4}
-\contentsline {chapter}{References}{57}{appendix*.31}
+\contentsline {section}{\numberline {3.3}Inclusive Electron Cross Section}{26}{section.3.3}
+\contentsline {section}{\numberline {3.4}Hadron Identification}{30}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Hadron ID Cuts}{30}{subsection.3.4.1}
+\contentsline {chapter}{\numberline {4}Beam Spin Asymmetry Analysis}{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{39}{section.4.1}
+\contentsline {section}{\numberline {4.2}Event Selection and Binning}{39}{section.4.2}
+\contentsline {section}{\numberline {4.3}$\phi _h$ Distributions}{42}{section.4.3}
+\contentsline {section}{\numberline {4.4}Extraction of Modulations}{52}{section.4.4}
+\contentsline {chapter}{References}{61}{appendix*.33}
