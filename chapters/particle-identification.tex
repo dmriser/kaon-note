@@ -28,10 +28,10 @@ The cuts used to select electrons are enumerated below.
 Each cut is now be described in more detail.
 
 \subsubsection*{Negativity Cut}
-Each track is assigned a charge based on the curvature of it's trajectory through the magnetic field of the torus.  This is done during the track reconstruction phase.  Tracks are eliminated as electron candidates if they are not negatively charged.
+Each track is assigned a charge based on the curvature of its trajectory through the magnetic field of the torus.  This is done during the track reconstruction phase.  Tracks are eliminated as electron candidates if they are not negatively charged.
 
 \subsubsection*{Drift chamber fiducial}
-The fiducial region or volume is a term used to refer to the region of a sensitive detector which is unimpeded in it's acceptance of physics events.  In practice, shadows from other detectors, poorly understood edge effects, or geometric obstacles may impede the flight of particles from the target, and render regions of sensitive detectors unreliable (to use the vocabulary presented above, these events fall outside of the fiducial region of the detector).  \\
+The fiducial region or volume is a term used to refer to the region of a sensitive detector which is unimpeded in its acceptance of physics events.  In practice, shadows from other detectors, poorly understood edge effects, or geometric obstacles may impede the flight of particles from the target, and render regions of sensitive detectors unreliable (to use the vocabulary presented above, these events fall outside of the fiducial region of the detector).  \\
 
 Negative tracks which pass geometrically close to the edges of the drift chamber are, from a tracking perspective, more difficult to understand.  Additionally, tracks which fall outside of the fiducial region of the drift chambers are likely to fall outside of the fiducial region of the downstream detectors as well.  For these reasons, it is common to remove tracks which are geometrically close to the boundaries of the drift chambers in region 1 as well as region 3 coordinate systems.\\
 
@@ -201,13 +201,13 @@ The cuts used for hadron classification are enumerated below.
 
 
 \subsubsection*{Drift chamber fiducial}
-Drift chamber fiducial cuts are applied (only region 1) using the same procedure as described for electrons.  The parameters are for negative hadrons are those which are used for the electron.  The parameters used for positive tracks are $h = 10$, $\theta = 60$.
+Drift chamber fiducial cuts are applied (only region 1) using the same procedure as described for electrons.  The parameters used for positive tracks are $h = 10$, $\theta = 60$.
 
 \begin{figure}
   \label{fig:fid}
   \begin{center}
     \includegraphics[width=10cm]{image/plots/hadron-id/fid.pdf}
-    \caption{Shown above: Positive track hits on the region 1 drift chamber, events falling between the red lines are kept for analysis.}
+    \caption{Positive track hits on the region 1 drift chamber, events falling between the red lines are kept for analysis.}
   \end{center}
 \end{figure}
 
@@ -218,7 +218,7 @@ The distance between the electron vertex and the hadron candidate track vertex i
   \label{fig:dvz}
   \begin{center}
     \includegraphics[width=10cm]{image/plots/hadron-id/dvz.pdf}
-    \caption{Shown above: The difference between the z-vertex position between detected electrons and positive tracks.}
+    \caption{The difference between the z-vertex position between detected electrons and positive tracks.}
   \end{center}
 \end{figure}
 
@@ -242,13 +242,13 @@ The distance between the electron vertex and the hadron candidate track vertex i
 %\end{figure}
 
 \subsubsection*{Likelihood maximization of $\beta(p,h)$}
-In this section, positive hadrons are used as an example.  The same method is applied to the negative hadrons.  For each particle species considered, a normalized probability density function $P(x;p,h)$ is constructed for each input into the likelihood analysis.  Here, x corresponds to the feature being used to catagorize different particles (in our case, x is the $\beta$ value measured by CLAS time-of-flight), p is the particle momentum, and h is the hadron being hypothesized (eg: the possible values for positive hadrons are pion, kaon, proton).  In general if one uses a set of $N$ variables $x = (x_1, x_2, ..., x_N)$, the likelihood for a hypothesis $h$ is defined below.
+In this section, positive hadrons are used as an example.  For each particle species considered, a normalized probability density function $P(x;p,h)$ is constructed for each input into the likelihood analysis.  Here, $x$ corresponds to the feature being used to categorize different particles (in our case, $x$ is the $\beta$ value measured by CLAS time-of-flight), $p$ is the particle momentum, and $h$ is the label for the hadron being hypothesized (eg: the possible values for positive hadrons are pion, kaon, proton).  In general if one uses a set of $N$ variables $x = (x_1, x_2, ..., x_N)$, the likelihood for a hypothesis $h$ is defined below.
 
 \begin{equation}
   \mathcal{L}_h = \prod^{N}_{i=1} P_{i} (x_i; p, h)
 \end{equation}
 
-In our case, the only random variable we consider is $\beta$, and the likelihood is just the PDF.  Here, and in many cases where the choice is statistically appropriate, it is possible to use a Gaussian PDF for the variable $x_i$ (here $\beta$).
+In our case, the only random variable we consider is $\beta$, and the likelihood is just the PDF.  Here, and in many cases where the choice is statistically appropriate, it is possible to use a Gaussian PDF for the variable $x_i$ (here $\beta$).  The variable $\sigma_{\beta} (p,h)$ is the standard deviation of the PDF at a given value of momentum and for a given hadronic species, similarly $\mu_{\beta}$ is the mean of the Gaussian PDF for the same value of momentum and same hadron. 
 
 \begin{equation}
   P(\beta;p,h) = \frac{1}{\sqrt{2 \pi} \sigma_\beta(p,h) } exp \left \{ -\frac{1}{2} \bigg( \frac{\beta - \mu_\beta(p,h)}{\sigma_\beta(p,h)} \bigg)^2 \right \}
@@ -270,33 +270,33 @@ This quantity represents the probability to observe a value of $\beta$ as far or
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=14cm]{image/plots/hadron-id/confidence_level.pdf}
+    \includegraphics[width=16cm]{image/plots/hadron-id/confidence_level.pdf}
     \caption{ Shown above: The distribution of confidence level for all positive tracks after being classified by the likelihood ratio.}
   \end{center}
 \end{figure}
 
 \subsubsection*{Determination of probability density functions for likelihood method}
 
-The most important and most difficult part of constructing the likelihood ratio identification is the determination of the mean and standard deviation of the probability density function (which depends on momentum) for the different hypotheses.  In the case where exceptionally accurate monte carlo (MC) simulations of the detector are available, one can use the truth information and track matching to construct the $\beta$ vs. $p$ 2-dimensional histograms, and fit the $\mu(p)$ and $\sigma(p)$.  In the absence of high quality MC, analysts typically fit directly the spectrum of $\beta$ vs. $p$ and extract the mean and variance.  In this work, an enhanced sample of candidates for each of the three positive particles in question is created before doing the fitting.  In this way, we hope that our fit better represents the true $\mu$ and $\sigma$ for each particle.  For fitting of pion and proton resolutions, positive tracks are assumed to be pions and the missing mass of the event is calculated.  Then, a cut is placed around the neutron mass.  In doing so, two main exclusive reactions are selected.  The first is $ep \rightarrow e\pi^+N$, and the second is $ep \rightarrow ep\pi^0$.  In this way most positrons, and positive kaons are removed from the sample prior to fitting.  The mean and variance are fit using a third order polynomial in p (MINUIT $\chi^2$ minimization is used).  Negative pions and kaons are fit directly (as is normally done).
+The most important and most difficult part of constructing the likelihood ratio identification is the determination of the mean and standard deviation of the probability density function (which depends on momentum) for the different hypotheses.  In the case where exceptionally accurate monte carlo (MC) simulations of the detector are available, one can use the truth information and track matching to construct the $\beta$ vs. $p$ 2-dimensional histograms, and fit the $\mu(p)$ and $\sigma(p)$.  In the absence of high quality MC, analysts typically fit directly the spectrum of $\beta$ vs. $p$ and extract the mean and variance.  In this work, an enhanced sample of candidates for each of the three positive particles in question is created before doing the fitting.  In this way, we hope that our fit better represents the true $\mu$ and $\sigma$ for each particle.  For fitting of pion and proton resolutions, positive tracks are assumed to be pions and the missing mass of the event is calculated.  Then, a cut is placed around the neutron mass.  In doing so, two main exclusive reactions are selected.  The first is $ep \rightarrow e\pi^+N$, and the second is $ep \rightarrow ep\pi^0$.  In this way most positrons, and positive kaons are removed from the sample prior to fitting.  The mean and variance are fit using a third order polynomial in p (MINUIT $\chi^2$ minimization is used).  For accessing the kaon distribution, the opposite condition is applied.  This is not nearly as effective as the pion case, but we believe is still an improvement over fitting the spectrum directly.    
 
 \begin{figure}
   \begin{center}
     \includegraphics[width=10cm]{image/plots/hadron-id/beautiful_pbeta_pip.pdf}
-    \caption{ Shown above: All positive tracks overlaid with our determination of $\mu(p) \pm \sigma(p)$ for $\pi^+$}
+    \caption{All positive tracks overlaid with our determination of $\mu(p) \pm \sigma(p)$ for $\pi^+$ (black dashed lines).}
   \end{center}
 \end{figure}
 
 \begin{figure}
   \begin{center}
     \includegraphics[width=10cm]{image/plots/hadron-id/beautiful_pbeta_kp.pdf}
-    \caption{ Shown above: All positive tracks overlaid with our determination of $\mu(p) \pm \sigma(p)$ for $K^+$}
+    \caption{All positive tracks overlaid with our determination of $\mu(p) \pm \sigma(p)$ for $K^+$ (black dashed lines).}
   \end{center}
 \end{figure}
 
 \begin{figure}
   \begin{center}
     \includegraphics[width=10cm]{image/plots/hadron-id/beautiful_pbeta_prot.pdf}
-    \caption{ Shown above: All positive tracks overlaid with our determination of $\mu(p) \pm \sigma(p)$ for $p^+$}
+    \caption{All positive tracks overlaid with our determination of $\mu(p) \pm \sigma(p)$ for $p^+$ (black dashed lines).}
   \end{center}
 \end{figure}
 
@@ -334,21 +334,9 @@ The values are displayed in the table below.
      $p^+$ & $\mu_0$ & 0.00227353 &         0.00231676 &         0.00364672 &         0.00276859 &         0.00128827 &          0.00439605 \\
   $p^+$ & $\sigma_2$ & 0.001429 &         0.00144256 &         0.00124456 &         0.00190709 &         0.00141039 &          0.0011516 \\
   $p^+$ & $\sigma_1$ & -0.0021472 &        -0.00262226 &        -0.00196308 &        -0.00385218 &        -0.00186708 &        -0.00186749 \\
-  $p^+$ & $\sigma_0$ & 0.0107541 &          0.0109091 &          0.0104381 &          0.0115449 &          0.0109969 &          0.0107759 \\
-      $\pi^-$ & $\mu_2$ & 3.28823666e-04 &    -1.30673670e-05 &    -2.32502052e-04 &    -9.75619848e-04 &    -5.89834444e-04 &     5.27496718e-04 \\
-      $\pi^-$ & $\mu_1$ & -3.94924663e-03 &    -2.66028661e-03 &    -1.28565631e-03 &     9.09410075e-04 &    -2.01610684e-03 &    -4.42276918e-03 \\
-      $\pi^-$ & $\mu_0$ & 9.48011169e-04 &     1.55078786e-03 &     1.43431985e-03 &     1.35056935e-03 &     4.59833580e-03 &     2.30751866e-03 \\
-   $\pi^-$ & $\sigma_2$ & 4.37635504e-04 &     4.38306224e-04 &    5.32057510e-04 &     3.36999845e-04 &     7.74135462e-04 &     1.36515196e-04 \\
-   $\pi^-$ & $\sigma_1$ & -3.28011836e-03 &    -3.28456104e-03 &    -3.82847286e-03 &     -3.11749323e-03 &    -4.63110728e-03 &    -2.21229710e-03 \\
-   $\pi^-$ & $\sigma_0$ & 1.63296567e-02 &     1.62229164e-02 &    1.59769911e-02 &     1.58803427e-02 &     1.74670064e-02 &     1.51753145e-02 \\
-       $K^-$ & $\mu_2$ & -2.72020947e-03 &    -5.21081786e-03 &    -2.13868763e-02 &    -4.45600034e-03 &    -7.60703841e-03 &    -5.27074813e-03 \\
-       $K^-$ & $\mu_1$ & 1.78610401e-02 &      2.30787460e-02 &     9.49357818e-02 &     1.95764575e-02 &     3.63245785e-02 &     2.92417500e-02 \\
-       $K^-$ & $\mu_0$ & -2.26190100e-02 &    -2.22562379e-02 &     -1.02704771e-01 &    -2.25931014e-02 &    -5.10484618e-02 &    -3.19918187e-02 \\
-    $K^-$ & $\sigma_2$ & 1.76905114e-02 &     1.62989708e-02 &     3.60928130e-02 &     1.51270521e-02 &     1.91308107e-02 &     2.38470033e-02 \\
-    $K^-$ & $\sigma_1$ & -7.74901862e-02 &    -7.33041628e-02 &    -1.57454534e-01 &    -7.26870393e-02 &     -9.23654247e-02 &    -1.02397836e-01 \\
-    $K^-$ & $\sigma_0$ & 1.07082820e-01 &     1.00573410e-01 &     1.93148260e-01 &     1.00993689e-01 &     1.26963814e-01 &     1.30057621e-01
+  $p^+$ & $\sigma_0$ & 0.0107541 &          0.0109091 &          0.0104381 &          0.0115449 &          0.0109969 &          0.0107759 
   \end{tabular}
-  \caption{Values used to calculate the mean and resolutions for hadron likelihood based identification.}
+  \caption{Values used to calculate the mean and resolution for hadron likelihood based identification.}
   \label{table-hadron-pdfs}
   \end{table}
 \end{landscape}
