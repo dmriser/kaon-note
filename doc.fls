@@ -344,6 +344,12 @@ INPUT /Users/davidriser/repos/kaon-note/image/plots/hadron-id/beautiful_pbeta_kp
 INPUT /Users/davidriser/repos/kaon-note/image/plots/hadron-id/beautiful_pbeta_prot.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/hadron-id/beautiful_pbeta_prot.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/hadron-id/beautiful_pbeta_prot.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/hadron-id/beta_p_simulation.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/hadron-id/beta_p_simulation.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/hadron-id/beta_p_simulation.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/hadron-id/kaon_efficiency_purity.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/hadron-id/kaon_efficiency_purity.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/hadron-id/kaon_efficiency_purity.pdf
 OUTPUT chapters/kaon-bsa.aux
 INPUT /Users/davidriser/repos/kaon-note/chapters/kaon-bsa.tex
 INPUT /Users/davidriser/repos/kaon-note/chapters/kaon-bsa.tex

@@ -341,4 +341,22 @@ The values are displayed in the table below.
   \end{table}
 \end{landscape}
 
+\subsubsection*{Validation of Kaon Identification}
 
+For higher momentum tracks, the CLAS time of flight system no longer has sufficient resolution to differentiate between pion, kaon, and protons.  To study the size and impact of this effect in our analysis, we use SIDIS events generated with \texttt{clasdis} event generator and passed through the CLAS detector simulation \texttt{gsim}.  After reconstruction, generated hadrons are matched by comparing 3-momenta with reconstructed particles.  Our PID is applied to this control sample and the efficiency as well as the purity are studied as a function of momentum.  The purity is defined as the fraction of tracks identified as kaons that are true kaons.  The efficiency is simply the fraction of true kaons which we identify.  As a simple illustrative example, consider the case when all hadrons are called kaons, in this case the efficiency will be 1, but the purity will be at its minimum (related to the fraction of total particles that are kaons).  As the purity of the sample is increased, the efficiency drops.  For this study the efficiency drives our statistical errors, but the purity is the more important metric.  As the cut boundaries are restricted by raising the minimum confidence level of hadrons identified as kaons, the purity goes up and the efficiency goes down \ref{fig:kaon_efficiency_purity}.
+
+\begin{figure}
+	\centering
+	\label{fig:beta_p_simulation}
+	\includegraphics[width=15cm]{image/plots/hadron-id/beta_p_simulation.pdf}
+	\caption{Positive hadrons from the Monte Carlo simulation produce a $\beta$  vs. p simulation that is very similar to data.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\label{fig:kaon_efficiency_purity}
+	\includegraphics[width=15cm]{image/plots/hadron-id/kaon_efficiency_purity.pdf}
+	\caption{The efficiency and purity of our kaon sample are studied by using a Monte Carlo simulation.  Here, the results are studied as a function of the confidence level, and of the track momentum.}
+\end{figure}
+
+Based on this study, a maximum momentum of 2.0 GeV and a minimum confidence $\alpha_{min}$ of 0.55 is required for all kaons in our analysis, which provides a purity of 80\% or more (depending on the kinematics).  
