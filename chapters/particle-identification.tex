@@ -76,7 +76,14 @@ As particles traverse the electromagnetic calorimeter they develop electromagnet
 \easyFigure{image/plots/electron-id/ec-fid.png}{All negative tracks are shown here in black.  In color, the tracks which pass the EC fiducial cut are shown.}
 
 \subsubsection*{EC minimum energy deposition}
-One way to differentiate between these electrons and pions is to exploit the difference in energy deposition between the two in the electromagnetic calorimeter.  Electron typically develop a much larger and more energetic shower than $\pi$ mesons, which minimally ionize the calorimeter material.  The result is that the total energy deposition is typically larger for electrons than $\pi$ mesons.  In this analysis we require that at least 60 MeV was deposited in the inner calorimeter for electron candidates.  
+One way to differentiate between these electrons and pions is to exploit the difference in energy deposition between the two in the electromagnetic calorimeter.  Electron typically develop a much larger and more energetic shower than $\pi$ mesons, which minimally ionize the calorimeter material.  The result is that the total energy deposition is typically larger for electrons than $\pi$ mesons.  In this analysis we require that at least 60 MeV was deposited in the inner calorimeter for electron candidates \ref{fig:ec-edep}.  
+
+\begin{figure}
+	\centering
+	\label{fig:ec-edep}
+	\includegraphics[width=\textwidth]{image/plots/summary-ec-edep.pdf}
+	\caption{Each panel shown above contains events from one sector, increasing from 1-6 from top left to bottom right.  The value selected of 60 MeV is applied to all sectors and separates the negatively charged pions (left) from the electrons (right).}
+\end{figure}
 
 \subsubsection*{Sampling Fraction (momentum dependent)}
 The electromagnetic calorimeter is designed such that electrons will deposit $E_{dep}/p \approx 0.3$ approximately one-third of their energy, regardless of their momentum.  In contrast to this, the ratio $E_{dep}/p$ for $\pi$ mesons decreases rapidly with momentum.  To develop a momentum dependent cut for this distribution, all negative candidates are first filled into a two-dimensional histogram of $E_{dep}/p$ vs. $p$.  The histogram is then binned more coarsely in momentum, and projected into a series of 40 momentum slices.  Each of these slices is fit with a Gaussian to extract the position $\mu_i$ and width $\sigma_i$ of the electron peak.  Finally, a functional form for the mean and standard deviation of the distributions is chosen to be a third order polynomial in momentum.
@@ -342,8 +349,27 @@ The values are displayed in the table below.
 \end{landscape}
 
 \subsubsection*{Validation of Kaon Identification}
+A Monte Carlo simulation was used to study particle identification of positive hadrons as a function of the hadronic momentum.  As a result of this study the minimum confidence level ($\alpha = 0.55$) and maximum momentum ($p_{max} = 2.0 \; GeV/c$) for $K^+$ were determined. \\
 
-For higher momentum tracks, the CLAS time of flight system no longer has sufficient resolution to differentiate between pion, kaon, and protons.  To study the size and impact of this effect in our analysis, we use SIDIS events generated with \texttt{clasdis} event generator and passed through the CLAS detector simulation \texttt{gsim}.  After reconstruction, generated hadrons are matched by comparing 3-momenta with reconstructed particles.  Our PID is applied to this control sample and the efficiency as well as the purity are studied as a function of momentum.  The purity is defined as the fraction of tracks identified as kaons that are true kaons.  The efficiency is simply the fraction of true kaons which we identify.  As a simple illustrative example, consider the case when all hadrons are called kaons, in this case the efficiency will be 1, but the purity will be at its minimum (related to the fraction of total particles that are kaons).  As the purity of the sample is increased, the efficiency drops.  For this study the efficiency drives our statistical errors, but the purity is the more important metric.  As the cut boundaries are restricted by raising the minimum confidence level of hadrons identified as kaons, the purity goes up and the efficiency goes down \ref{fig:kaon_efficiency_purity}.
+To study this SIDIS events were generated using \texttt{clasdis}.  Our simulation includes $\pi^+$, $K^+$ and protons (here denoted $P^+$) over a range of kinematics consistent with the E1-F beam energy of $E_{beam} = 5.498 \; GeV$.  After passing these events through the CLAS detector simulation \texttt{GSIM}, reconstruction was used to fit tracks.  The truth information for generated kinematics was stored in the output files, and we correlated reconstructed particles to their generated counter-part by requiring that magnitude of the three momentum difference was small ($\delta P < 0.05$).  
+
+\begin{equation}
+	\delta P = \frac{|\vec{P_{gen}} - \vec{P_{rec}}|}{|\vec{P_{gen}}|}
+\end{equation}   
+
+In this simple equation $P_{rec}$ and $P_{gen}$ are the reconstructed and generated three momentum of the track being matched.  After this matching procedure has been applied, we calculate two simple metrics, the \textit{purity} and the \textit{efficiency}.  The purity refers to the fraction of tracks that are classified as kaons that are truly kaons.  More formally it is written, 
+
+\begin{equation}
+		P = \frac{tp}{tp + fp} = \frac{N_{K^+}}{N_{K^+} + N_{\pi^+} + N_{P^+}}
+\end{equation}     
+
+where $tp$ and $fp$ are true positives and false positives respectively, and the variables $N$ refer to the true number of tracks with that label in the sample.  The efficiency is simply the fraction of all true kaons which are identified as kaons, and can be written as shown below.   
+
+\begin{equation}
+	\epsilon = \frac{tp}{tp + fn} = \frac{N_{K+^}^{identified}}{N_{K^+}^{total}}
+\end{equation}
+
+As a simple illustrative example, consider the case when all hadrons are called kaons, in this case the efficiency is 1, but the purity will be at its minimum (related to the fraction of total particles that are kaons).  As the purity of the sample is increased, the efficiency drops.  For this study the efficiency drives our statistical errors, but the purity is the more important metric.  As the cut boundaries are restricted by raising the minimum confidence level of hadrons identified as kaons, the purity goes up and the efficiency goes down \ref{fig:kaon_efficiency_purity}.
 
 \begin{figure}
 	\centering
@@ -359,4 +385,4 @@ For higher momentum tracks, the CLAS time of flight system no longer has suffici
 	\caption{The efficiency and purity of our kaon sample are studied by using a Monte Carlo simulation.  Here, the results are studied as a function of the confidence level, and of the track momentum.}
 \end{figure}
 
-Based on this study, a maximum momentum of 2.0 GeV and a minimum confidence $\alpha_{min}$ of 0.55 is required for all kaons in our analysis, which provides a purity of 80\% or more (depending on the kinematics).  
+Based on this study, a maximum momentum of 2.0 GeV and a minimum confidence $\alpha_{min}$ of 0.55 is required for all kaons in our analysis, which provides a purity of 80\% or more (depending on the kinematics).  The magnitude of the $\pi^+$ asymmetry is known in these kinematics to be on the order of 0.02, if the sample is comprised of 20\% pions (which is the worse case in our measurement) then the contribution to the total asymmetry is equivalent to a $K^+$ asymmetry of 0.005, which is much smaller than our errors.  This level of contamination is therefore very tolerable, and should have no significant impact on our analysis.  

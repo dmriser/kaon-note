@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 NOV 2018 15:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 DEC 2018 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2305,12 +2305,45 @@ plots/hadron-id/beautiful_pbeta_pip.pdf, page is rotated 90 degrees> </Users/da
 vidriser/repos/kaon-note/image/plots/hadron-id/beautiful_pbeta_kp.pdf, page is 
 rotated 90 degrees>] [36 </Users/davidriser/repos/kaon-note/image/plots/hadron-
 id/beautiful_pbeta_prot.pdf, page is rotated 90 degrees>] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
+
+ []
+
+! Missing { inserted.
+<to be read again> 
+                   }
+l.362 ...ac{N_{K+^}^{identified}}{N_{K^+}^{total}}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Double superscript.
+<argument> N_{K+^}^
+                   {identified}
+l.362 ...ac{N_{K+^}^{identified}}{N_{K^+}^{total}}
+                                                  
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.362 ...ac{N_{K+^}^{identified}}{N_{K^+}^{total}}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
 <image/plots/hadron-id/beta_p_simulation.pdf, id=1135, 487.11143pt x 335.82878p
 t>
 File: image/plots/hadron-id/beta_p_simulation.pdf Graphic file (type pdf)
  <use image/plots/hadron-id/beta_p_simulation.pdf>
 Package pdftex.def Info: image/plots/hadron-id/beta_p_simulation.pdf used on in
-put line 352.
+put line 370.
 (pdftex.def)             Requested size: 426.79134pt x 294.24915pt.
 
 <image/plots/hadron-id/kaon_efficiency_purity.pdf, id=1136, 1076.86029pt x 499.
@@ -2318,7 +2351,7 @@ put line 352.
 File: image/plots/hadron-id/kaon_efficiency_purity.pdf Graphic file (type pdf)
  <use image/plots/hadron-id/kaon_efficiency_purity.pdf>
 Package pdftex.def Info: image/plots/hadron-id/kaon_efficiency_purity.pdf used 
-on input line 359.
+on input line 377.
 (pdftex.def)             Requested size: 426.79134pt x 197.97528pt.
 ) [38
 
@@ -2330,23 +2363,19 @@ _purity.pdf
 pdfTeX warning: pdflatex (file /Users/davidriser/repos/kaon-note/image/plots/ha
 dron-id/kaon_efficiency_purity.pdf): PDF inclusion: multiple pdfs with page gro
 up included in a single page
->]
+>] [40]
 \openout2 = `chapters/kaon-bsa.aux'.
 
- (/Users/davidriser/repos/kaon-note/chapters/kaon-bsa.tex [40
-
-
-
-]
+ (/Users/davidriser/repos/kaon-note/chapters/kaon-bsa.tex
 Chapter 4.
-<image/plots/kaon-bsa/z-pt2.pdf, id=1198, 476.83571pt x 376.10574pt>
+<image/plots/kaon-bsa/z-pt2.pdf, id=1202, 476.83571pt x 376.10574pt>
 File: image/plots/kaon-bsa/z-pt2.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/z-pt2.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/z-pt2.pdf used on input line 10.
 (pdftex.def)             Requested size: 452.9679pt x 357.2927pt.
 
-<image/plots/kaon-bsa/mx.pdf, id=1199, 514.80435pt x 387.6377pt>
+<image/plots/kaon-bsa/mx.pdf, id=1203, 514.80435pt x 387.6377pt>
 File: image/plots/kaon-bsa/mx.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/mx.pdf>
@@ -2362,95 +2391,111 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[41] [42 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-pt2.pdf>]
+[41
+
+
+
+] [42 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-pt2.pdf>]
 [43 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/mx.pdf>]
+<image/plots/kaon-bsa/binning_z_phi.pdf, id=1273, 518.6459pt x 391.94958pt>
+File: image/plots/kaon-bsa/binning_z_phi.pdf Graphic file (type pdf)
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 33.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\phi' on input line 33.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 33.
+<use image/plots/kaon-bsa/binning_z_phi.pdf>
+Package pdftex.def Info: image/plots/kaon-bsa/binning_z_phi.pdf used on input l
+ine 36.
+(pdftex.def)             Requested size: 341.43306pt x 258.03563pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 33.
+(hyperref)                removing `math shift' on input line 40.
 
-<image/plots/kaon-bsa/bsa_x_sys.pdf, id=1269, 854.30415pt x 857.97412pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\phi' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 40.
+
+[44 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/binning_z_phi.pdf>]
+<image/plots/kaon-bsa/bsa_x_sys.pdf, id=1298, 854.30415pt x 857.97412pt>
 File: image/plots/kaon-bsa/bsa_x_sys.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/bsa_x_sys.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/bsa_x_sys.pdf used on input line 
-43.
+50.
 (pdftex.def)             Requested size: 452.9679pt x 454.9205pt.
- [44] [45 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/bsa_x_sys.pdf
->]
-<image/plots/kaon-bsa/bsa_z_sys.pdf, id=1320, 854.30415pt x 857.97412pt>
+
+<image/plots/kaon-bsa/bsa_z_sys.pdf, id=1299, 854.30415pt x 857.97412pt>
 File: image/plots/kaon-bsa/bsa_z_sys.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/bsa_z_sys.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/bsa_z_sys.pdf used on input line 
-66.
+73.
 (pdftex.def)             Requested size: 452.9679pt x 454.9205pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
-<image/diagrams/linear-error.pdf, id=1322, 1027.84pt x 770.88pt>
+[45] [46 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/bsa_x_sys.pdf>
+] [47 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/bsa_z_sys.pdf>]
+<image/diagrams/linear-error.pdf, id=1391, 1027.84pt x 770.88pt>
 File: image/diagrams/linear-error.pdf Graphic file (type pdf)
 
 <use image/diagrams/linear-error.pdf>
-Package pdftex.def Info: image/diagrams/linear-error.pdf used on input line 79.
+Package pdftex.def Info: image/diagrams/linear-error.pdf used on input line 86.
 
 (pdftex.def)             Requested size: 452.9679pt x 339.72934pt.
- [46] [47 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/bsa_z_sys.pdf
->] [48 </Users/davidriser/repos/kaon-note/image/diagrams/linear-error.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+Underfull \vbox (badness 1478) has occurred while \output is active []
+
+ [48 </Users/davidriser/repos/kaon-note/image/diagrams/linear-error.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 [49]
-<image/plots/kaon-bsa/ec-fid-sys.pdf, id=1460, 1127.12965pt x 260.89346pt>
+<image/plots/kaon-bsa/ec-fid-sys.pdf, id=1481, 1127.12965pt x 260.89346pt>
 File: image/plots/kaon-bsa/ec-fid-sys.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/ec-fid-sys.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/ec-fid-sys.pdf used on input line
- 146.
+ 153.
 (pdftex.def)             Requested size: 398.33858pt x 92.20181pt.
 
-<image/plots/kaon-bsa/systematics_integrated_heatmap_x.pdf, id=1461, 936.44368p
+<image/plots/kaon-bsa/systematics_integrated_heatmap_x.pdf, id=1482, 936.44368p
 t x 552.57945pt>
 File: image/plots/kaon-bsa/systematics_integrated_heatmap_x.pdf Graphic file (t
 ype pdf)
 
 <use image/plots/kaon-bsa/systematics_integrated_heatmap_x.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/systematics_integrated_heatmap_x.
-pdf used on input line 154.
+pdf used on input line 161.
 (pdftex.def)             Requested size: 398.33858pt x 235.04973pt.
 
-<image/plots/kaon-bsa/systematics_integrated_heatmap_pt.pdf, id=1465, 936.44368
+<image/plots/kaon-bsa/systematics_integrated_heatmap_pt.pdf, id=1486, 936.44368
 pt x 552.57945pt>
 File: image/plots/kaon-bsa/systematics_integrated_heatmap_pt.pdf Graphic file (
 type pdf)
 
 <use image/plots/kaon-bsa/systematics_integrated_heatmap_pt.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/systematics_integrated_heatmap_pt
-.pdf used on input line 168.
+.pdf used on input line 175.
 (pdftex.def)             Requested size: 398.33858pt x 235.04973pt.
 
-<image/plots/kaon-bsa/systematics_integrated_heatmap_z.pdf, id=1466, 936.44368p
+<image/plots/kaon-bsa/systematics_integrated_heatmap_z.pdf, id=1487, 936.44368p
 t x 552.57945pt>
 File: image/plots/kaon-bsa/systematics_integrated_heatmap_z.pdf Graphic file (t
 ype pdf)
 
 <use image/plots/kaon-bsa/systematics_integrated_heatmap_z.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/systematics_integrated_heatmap_z.
-pdf used on input line 176.
+pdf used on input line 183.
 (pdftex.def)             Requested size: 398.33858pt x 235.04973pt.
  [50 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/ec-fid-sys.pdf> </
 Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/systematics_integrated_he
@@ -2467,97 +2512,97 @@ pdfTeX warning: pdflatex (file /Users/davidriser/repos/kaon-note/image/plots/ka
 on-bsa/systematics_integrated_heatmap_z.pdf): PDF inclusion: multiple pdfs with
  page group included in a single page
 >]
-<image/plots/kaon-bsa/bar-systematics-x.pdf, id=1688, 624.71399pt x 400.67857pt
+<image/plots/kaon-bsa/bar-systematics-x.pdf, id=1708, 624.71399pt x 400.67857pt
 >
 File: image/plots/kaon-bsa/bar-systematics-x.pdf Graphic file (type pdf)
  <use image/plots/kaon-bsa/bar-systematics-x.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/bar-systematics-x.pdf used on inp
-ut line 186.
+ut line 193.
 (pdftex.def)             Requested size: 455.24408pt x 291.99158pt.
 
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 186--187
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 193--194
  [][] 
  []
 
 File: image/plots/kaon-bsa/bar-systematics-x.pdf Graphic file (type pdf)
 <use image/plots/kaon-bsa/bar-systematics-x.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/bar-systematics-x.pdf used on inp
-ut line 192.
+ut line 199.
 (pdftex.def)             Requested size: 455.24408pt x 291.99158pt.
 
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 192--193
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 199--200
  [][] 
  []
 
 
-<image/plots/kaon-bsa/bar-systematics-z.pdf, id=1689, 624.71399pt x 400.67857pt
+<image/plots/kaon-bsa/bar-systematics-z.pdf, id=1709, 624.71399pt x 400.67857pt
 >
 File: image/plots/kaon-bsa/bar-systematics-z.pdf Graphic file (type pdf)
  <use image/plots/kaon-bsa/bar-systematics-z.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/bar-systematics-z.pdf used on inp
-ut line 198.
+ut line 205.
 (pdftex.def)             Requested size: 455.24408pt x 291.99158pt.
 
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 198--199
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
 [52 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/bar-systematics-x.p
 df>] [53 </Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/bar-systematic
 s-z.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-[54] <image/plots/kaon-bsa/p-study-x.pdf, id=1732, 1006.09941pt x 563.06393pt>
+[54] <image/plots/kaon-bsa/p-study-x.pdf, id=1753, 1006.09941pt x 563.06393pt>
 File: image/plots/kaon-bsa/p-study-x.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/p-study-x.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/p-study-x.pdf used on input line 
-233.
+240.
 (pdftex.def)             Requested size: 452.9679pt x 253.4967pt.
 
-<image/plots/kaon-bsa/z-phi-counts.pdf, id=1733, 844.16287pt x 843.09909pt>
+<image/plots/kaon-bsa/z-phi-counts.pdf, id=1754, 844.16287pt x 843.09909pt>
 File: image/plots/kaon-bsa/z-phi-counts.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/z-phi-counts.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/z-phi-counts.pdf used on input li
-ne 237.
+ne 244.
 (pdftex.def)             Requested size: 455.24408pt x 454.6621pt.
 
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 237--238
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 244--245
  [][] 
  []
 
-<image/plots/kaon-bsa/alu_sin.pdf, id=1734, 711.45174pt x 448.82053pt>
+<image/plots/kaon-bsa/alu_sin.pdf, id=1755, 711.45174pt x 448.82053pt>
 File: image/plots/kaon-bsa/alu_sin.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/alu_sin.pdf>
-Package pdftex.def Info: image/plots/kaon-bsa/alu_sin.pdf used on input line 24
-8.
+Package pdftex.def Info: image/plots/kaon-bsa/alu_sin.pdf used on input line 25
+5.
 (pdftex.def)             Requested size: 452.9679pt x 285.75803pt.
 
-<image/plots/kaon-bsa/compare-pion-xq2.pdf, id=1735, 725.3594pt x 280.55241pt>
+<image/plots/kaon-bsa/compare-pion-xq2.pdf, id=1756, 725.3594pt x 280.55241pt>
 File: image/plots/kaon-bsa/compare-pion-xq2.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/compare-pion-xq2.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/compare-pion-xq2.pdf used on inpu
-t line 253.
+t line 260.
 (pdftex.def)             Requested size: 455.24408pt x 176.08113pt.
 
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 253--254
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 260--261
  [][] 
  []
 
-<image/plots/kaon-bsa/compare-pion-zpt.pdf, id=1738, 731.452pt x 279.52838pt>
+<image/plots/kaon-bsa/compare-pion-zpt.pdf, id=1759, 731.452pt x 279.52838pt>
 File: image/plots/kaon-bsa/compare-pion-zpt.pdf Graphic file (type pdf)
 
 <use image/plots/kaon-bsa/compare-pion-zpt.pdf>
 Package pdftex.def Info: image/plots/kaon-bsa/compare-pion-zpt.pdf used on inpu
-t line 260.
+t line 267.
 (pdftex.def)             Requested size: 455.24408pt x 173.97545pt.
 
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 260--261
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 267--268
  [][] 
  []
 
@@ -2609,10 +2654,10 @@ Package rerunfilecheck Info: File `doc.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 17905 strings out of 492995
- 306313 string characters out of 6132704
+ 17915 strings out of 492995
+ 306576 string characters out of 6132704
  377140 words of memory out of 5000000
- 20924 multiletter control sequences out of 15000+600000
+ 20929 multiletter control sequences out of 15000+600000
  31553 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,12n,60p,10403b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2634,10 +2679,10 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist
 ype1/urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/ur
 w/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palat
 ino/uplri8a.pfb>
-Output written on doc.pdf (63 pages, 6488842 bytes).
+Output written on doc.pdf (63 pages, 6503866 bytes).
 PDF statistics:
- 2070 PDF objects out of 2073 (max. 8388607)
- 1191 compressed objects within 12 object streams
- 229 named destinations out of 1000 (max. 500000)
- 377 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2091 PDF objects out of 2487 (max. 8388607)
+ 1208 compressed objects within 13 object streams
+ 233 named destinations out of 1000 (max. 500000)
+ 382 words of extra memory for PDF output out of 10000 (max. 10000000)
 
