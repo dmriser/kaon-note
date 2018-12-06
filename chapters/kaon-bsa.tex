@@ -20,9 +20,9 @@ After particle identification, events which have a trigger electron and a positi
 
 % This is the ugliest figure in the history of physics.
 %\easyFigure{image/plots/kaon-bsa/binning.pdf}{The binning used for each of the kinematic axes.}
-The beam spin asymmetry measurement is performed for the kinematic variables $x$, $Q^2$, $z$, and $P_T$.  For each variable 10 bins are chosen, as well as 12 bins in $\phi$ for a total of 120 analysis bins. \\
+The beam spin asymmetry measurement is performed for the kinematic variables $x$, $Q^2$, $z$, and $P_T$.  For each variable 5 bins are chosen, as well as 12 bins in $\phi$ for a total of 60 analysis bins. \\
 
-Bins were chosen using a simple method to ensure equal statistics in each bin.  The procedure is described using the axis $x$ as an example.  First, all events are sorted by their $x$ value from smallest to largest.  Then, the smallest and largest values are recorded, which are $x_1$ and $x_N$ if there are N events in the sample.  Next, the target number of bins M is chosen (this choice depends on each analysis).  Finally, the limits of each bin can be chosen by calculating the number of events per bin $N/M$ and then using the value of $x$ which corresponds to multiples of $N/M$ in the sample.    
+Bins were chosen using a simple method to ensure equal statistics in each kinematic variable bin (the phi bins do not have equal statistics).  The procedure is described using the axis $x$ as an example.  First, all events are sorted by their $x$ value from smallest to largest.  Then, the smallest and largest values are recorded, which are $x_1$ and $x_N$ if there are N events in the sample.  Next, the target number of bins M is chosen (this choice depends on each analysis).  Finally, the limits of each bin can be chosen by calculating the number of events per bin $N/M$ and then using the value of $x$ which corresponds to multiples of $N/M$ in the sample.    
 
 \begin{equation}
   \vec{b} = (x_1, x_{N/M}, x_{2N/M}, ..., x_N)
@@ -47,7 +47,19 @@ In each bin $i$ the beam spin asymmetry (here $A_i$) is calculated according to,
 
 where $P_e$ is the average beam polarization over the dataset (74.9\%).  The symbols $n_{\pm}^{i}$ refer to the number of events counted in bin $i$ with helicity $\pm$.  
 
-\easyFigure{image/plots/kaon-bsa/bsa_x_sys.pdf}{The $\phi_h$ dependence is shown for each bin of $x$, increasing in value from the top left to the bottom right.  The statistical uncertainty is shown as black error bars on each point.  The total systematic uncertainty is shown as a red bar centered at zero.}
+\begin{equation}
+	\centering
+	\label{fig:bsa-sys-x}
+	\includegraphics[width=\textwidth]{image/plots/kaon-bsa/grid_bsa_sys_x.pdf}
+	\caption{The $\phi_h$ dependence is shown for each bin of $x$, increasing in value from the top left to the bottom right.  The statistical uncertainty is shown as black error bars on each point.  The total systematic uncertainty is shown as a red bar centered at zero.}
+\end{equation}
+
+\begin{equation}
+	\centering
+	\label{fig:bsa-sys-z}
+	\includegraphics[width=\textwidth]{image/plots/kaon-bsa/grid_bsa_sys_z.pdf}
+	\caption{The $\phi_h$ dependence is shown for each bin of $z$, increasing in value from the top left to the bottom right.  The statistical uncertainty is shown as black error bars on each point.  The total systematic uncertainty is shown as a red bar centered at zero.}
+\end{equation}
 
 \subsection*{Statistical Uncertainties}
 The uncertainty on the measured value of $A_i$ can be attributed to statistical uncertainty on the counts $n_{i}^{\pm}$, and the uncertainty associated with the measurement of $P_e$.  The statistical uncertainty reported on the measurement includes the contribution from counts, but not from the uncertainty in $P_e$ which is included in the systematic errors.  In general, the uncertainty in a measured observable $\mathcal{O}$ depends on the uncertainty of the parameters (here denoted by $\vec{\theta}$) used in the analysis in the following way (see appendix for derivation).
@@ -68,9 +80,6 @@ The first term which is the contribution from the variance in the measurements o
 \begin{equation}
   \sigma_{A}^{2} = \frac{4n_+ n_-}{P_{e}^{2} (n_+ + n_-)^3}
 \end{equation}
-
-
-\easyFigure{image/plots/kaon-bsa/bsa_z_sys.pdf}{The $\phi_h$ dependence is shown for each bin of $z$, increasing in value from the top left to the bottom right.  The statistical uncertainty is shown as black error bars on each point.  The total systematic uncertainty is shown as a red bar centered at zero.}
 
 \subsection*{Systematic Uncertainties}
 
@@ -103,17 +112,8 @@ where $\rho_{ij}$ is the correlation $V_{ij}/\sigma_i \sigma_j$.  In most cases,
   \sigma_{\mathcal{O}}^{2} = \sum_{i=1}^{n} \Bigl[ \mathcal{O}(\theta_i + \sigma_{\theta_i}/2) - \mathcal{O}(\theta_i - \sigma_{\theta_i}/2) \Bigr]^2
 \end{equation}
 
-%Another approach exists that takes into account possible correlations between the analysis parameters $\theta_i$.  The approach consists of generating $M$ sets of parameters $\vec{\theta}$ and obtaining $M$ results for the observable $\mathcal{O}$.  The results are then interpreted statistically and the observable value and total systematic error are reported as the mean and standard deviation of the results.  This Monte Carlo based technique has the advantage that it is conceptually simple, and allows the capture of correlations.  However, it can be computationally intensive to perform the analysis hundreds of times.  Additionally, only using this technique without first testing the individual size of each systematic source removes the possibility of correcting for or removing biases.
-%
-%\begin{gather}
-%  \expval{\mathcal{O}} = \frac{1}{M} \sum_{i=1}^{M} \mathcal{O}_i \\
-%  \sigma_{\mathcal{O}}^{2} = \frac{1}{M-1} \sum_{i=1}^{M} (\mathcal{O}_i - \expval{\mathcal{O}})^2
-%\end{gather}
-
 \subsubsection*{Sources of Systematic Uncertainty}
-In this study, systematic errors are calculated using the techniques described above for both the $\phi_h$ dependent asymmetry measurement as well as the results of the parameter extraction for each kinematic bin.
-
-Table \ref{table:kaon-systematics} below summarizes the sources of systematic uncertainty considered in this analysis.
+Systematic uncertainties are calculated using the techniques described above for both the $\phi_h$ dependent asymmetry measurement as well as the results of the parameter estimation for each kinematic bin.  The systematic errors on the phi dependent asymmetry bins is not used in the parameter estimation for the structure function ratios $A$.  Table \ref{table:kaon-systematics} below summarizes the sources of systematic uncertainty considered in this analysis.
 
 % --------------------
 %    table of sys 
@@ -129,10 +129,10 @@ Table \ref{table:kaon-systematics} below summarizes the sources of systematic un
     EC-W                                       & 12 (cm)         \\ 
     EC-V                                        & 12 (cm)        \\
     EC-U                                        & 12 (cm)        \\
-    Kaon Confidence ($\alpha$) & 0.01-0.07     \\
+    Kaon Confidence ($\alpha$) & 0.5-0.6     \\
     $\theta_{cc}$ Matching         & $\sigma$        \\
     EC Energy Deposition            & 0.01 (GeV)      \\
-    $p_{K^+}$                               & 2.5-$E_{beam}$  \\ 
+    $p_{K^+}$                               & 1.9-2.1  \\ 
     EC Sampling Fraction             & $0.5 \sigma$    \\
     Z-Vertex                                  & 0.5 (cm)        \\
     Vertex diff.                              & 1 (cm)  \\
@@ -145,54 +145,49 @@ Table \ref{table:kaon-systematics} below summarizes the sources of systematic un
 Except for the beam polarization and the momentum of the kaon track, all parameters listed in the table are treated using the formalism outlined above.  The beam polarization uncertainty quoted at 2.4\% contains contributions from the standard deviation of the Moller polarimetry measurements (0.2\%), residual target polarization effects (1.4\%), and atomic motion/finite acceptance corrections (0.8\%).\\
 
 \subsubsection*{Electromagnetic Calorimeter Fiducial Cuts}
-The electron identification cuts used on ECAL are varied in order to estimate the dependence of the asymmetry on these parameters.  For most kinematic bins these boundaries produced the largest shift in our measured value, particularly at small $x$ and small $Q^2$.  These shifts likely arise from the reduction of statistics in the low angle region ($x$ is correlated with $ECU$ with coefficient 0.49, $Q^2$ is correlated with $ECU$ with coefficient 0.8).  Noteworthy however is that even these observed shifts are within the parameter error extracted from the original measurement and its systematic errors.  
 
 \begin{figure}
 	\label{fig:ec_fid_sys}
 	\begin{center}
-		\includegraphics[width=14cm]{image/plots/kaon-bsa/ec-fid-sys.pdf}
+		\includegraphics[width=\textwidth]{image/plots/kaon-bsa/ec-fid-sys.pdf}
 		\caption{Boundaries and associated uncertainties for the $EC$ coordinate cuts.}
 	\end{center}
 \end{figure}
 
-\begin{figure}
+The electron identification cuts used on ECAL are varied in order to estimate the dependence of the asymmetry on these parameters.  These boundaries (which are sometimes excluded from systematic uncertainties) produce some of the largest changes in our analysis, associated with the large deviation of the distributions around the cut \ref{fig:ec_fid_sys}.  The shift in the measured beam spin asymmetry is large particularly for low $x$, low $Q^2$, low $P_T$ and high $z$.  These shifts likely arise from the reduction of statistics in the low angle region ($x$ is correlated with $ECU$ with coefficient 0.49, $Q^2$ is correlated with $ECU$ with coefficient 0.8).   
+
+\begin{sidewaysfigure}
 	\label{fig:systematic_heatmap_x}
 	\begin{center}
-		\includegraphics[width=14cm]{image/plots/kaon-bsa/systematics_integrated_heatmap_x.pdf}
+		\includegraphics[width=\textwidth]{image/plots/kaon-bsa/systematics_integrated_heatmap_x.pdf}
 		\caption{The magnitude of each systematic error source considered is shown above in a heat-map for the $x$ axis.  The vertical scale maximum corresponds to half of a percent.}
 	\end{center}
-\end{figure}
+\end{sidewaysfigure}
 
 \subsubsection*{Missing Mass}
-To investigate the effect of varying our missing mass cut on the analysis we shift it left and right by 50 MeV, which produces little to no effect.  This is demonstrated in the figures \ref{fig:systematic_heatmap_x} \ref{fig:systematic_heatmap_pt} \ref{fig:systematic_heatmap_z}.
+To investigate the effect of varying our missing mass cut on the analysis we shift it left and right by 50 MeV, which produces little to no effect.  This is demonstrated in the figures \ref{fig:systematic_heatmap_x} \ref{fig:systematic_heatmap_pt} \ref{fig:systematic_heatmap_z}.  
 
 \subsubsection*{Confidence Level}
-The minimum acceptable confidence level is varied between 0.01 at the loosest and 0.07 at the tightest.  For the $x$, $Q^2$, and $P_T$ axes the observed shift is roughly constant regardless of the kinematic bin, for the $z$ axis however the resulting uncertainty is largest for the last three bins.  This captures the fact that at higher values of $z$ the ability to distinguish between pions and kaons diminishes to some degree.  The impact of this is captured completely in the systematic from kaon momentum. 
+The minimum acceptable confidence level is varied between 0.5 at the loosest and 0.6 at the tightest.  For the $x$, $Q^2$, and $P_T$ axes the observed shift is roughly constant regardless of the kinematic bin.  
 
-\begin{figure}
+\begin{sidewaysfigure}
 	\label{fig:systematic_heatmap_pt}
 	\begin{center}
-		\includegraphics[width=14cm]{image/plots/kaon-bsa/systematics_integrated_heatmap_pt.pdf}
+		\includegraphics[width=\textwidth]{image/plots/kaon-bsa/systematics_integrated_heatmap_pt.pdf}
 		\caption{The magnitude of each systematic error source considered is shown above in a heat-map for the $P_T$ axis.  The vertical scale maximum corresponds to half of a percent.}
 	\end{center}
-\end{figure}
+\end{sidewaysfigure}
 
-\begin{figure}
+\begin{sidewaysfigure}
 	\label{fig:systematic_heatmap_z}
 	\begin{center}
-		\includegraphics[width=14cm]{image/plots/kaon-bsa/systematics_integrated_heatmap_z.pdf}
+		\includegraphics[width=\textwidth]{image/plots/kaon-bsa/systematics_integrated_heatmap_z.pdf}
 		\caption{The magnitude of each systematic error source considered is shown above in a heat-map for the $z$ axis.  The vertical scale maximum corresponds to half of a percent.}
 	\end{center}
-\end{figure}
+\end{sidewaysfigure}
 
 \subsubsection*{Kaon Momentum}
-While kaons have been studied many times in CLAS, they are analyzed in exclusive processes where exclusivity cuts can be used to help reduce pion and proton contamination.  Naturally, no such cuts can be applied in this analysis as we are identifying inclusive events with $K^+$ mesons in the final state.  This means that at higher momentum, significant pion contamination is likely to exist, though it is limited to some degree by our missing mass cut (higher momenta tracks tend to be excluded because they are at lower missing mass).  In order to address concerns over the identification, we have included a systematic error associated with the part of the spectrum from $p_{K} > 2.5 \; GeV$.  Here, we first calculate the beam spin asymmetries over the full momentum range, then again with the restriction that $p_{K} < 2.5 \; GeV$, the difference between the two is included as a systematic uncertainty.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=16cm]{image/plots/kaon-bsa/bar-systematics-x.pdf}
-	\caption{The relative contribution of each systematic uncertainty to the total is shown above averaged over the bins of the $x$ axis.}
-\end{figure}
+Monte Carlo analysis of kaon identification purity and efficiency was used to establish a maximum acceptable momentum for kaons included in our analysis.  In order to study the impact of that value (2.0), the value is varied by 100 MeV and the result is included as a systematic error.  
 
 \begin{figure}
 	\centering
@@ -210,12 +205,27 @@ While kaons have been studied many times in CLAS, they are analyzed in exclusive
 The momentum dependent sampling fraction cut, as well as the energy deposition cut placed on the inner electromagnetic calorimeter do not contribute much to the total systematic uncertainty.  In this study, the variation of the energy deposited cut by 10 MeV did not have a strong impact on the result.  Additionally, the observed shift was mostly constant over the kinematic variables.  The same is true for the sampling fraction cut.
 
 \subsubsection*{Fiducial Cuts on DC and CC}
-The variation of our fiducial cuts on the drift chambers regions 1 and 3, as well as the Cherenkov counter produced no major shift in our measured asymmetries.  
+The variation of our fiducial cuts on the drift chambers regions 1 and 3, as well as the Cherenkov counter produced no major shift in our measured asymmetries.  This reflects the redundancy of using several fiducial cuts.
 
 \subsubsection*{Vertex Cuts}
-When our vertex cut was varied, little to no changes were observed in the beam spin asymmetries we extracted.  Additionally, no kinematic dependence was observed in the shifts.
+The vertex cut position was varied by $\pm 0.5 \; (cm)$ and small changes were observed in the extracted beam spin asymmetries.  Additionally, no kinematic dependence was observed in the shifts.
 
 \section{Extraction of Modulations}
+
+\begin{equation}
+	\centering
+	\label{fig:replicas-x}
+	\includegraphics[width=\textwidth]{image/plots/kaon-bsa/grid_bsa_reps_x.pdf}
+	\caption{The $\phi_h$ dependence is shown for each bin of $x$, increasing in value from the top left to the bottom right.  The statistical uncertainty is shown as black error bars on each point.  Fits to 256 replicas have been superimposed on the figure.}
+\end{equation}
+
+\begin{equation}
+	\centering
+	\label{fig:replicas-z}
+	\includegraphics[width=\textwidth]{image/plots/kaon-bsa/grid_bsa_reps_z.pdf}
+	\caption{The $\phi_h$ dependence is shown for each bin of $z$, increasing in value from the top left to the bottom right.  The statistical uncertainty is shown as black error bars on each point.  Fits to 256 replicas have been superimposed on the figure.}
+\end{equation}
+
 The motivation to measure the beam spin asymmetry in several kinematic bins as well as bins of $\phi_{h}$ is to perform an estimate of the value of structure functions at the kinematic points (more precisely the average value of the structure functions over the range of values included in a point).  To do this, the authors perform parameter estimation on the $\phi_{h}$ distributions taking as a model the theoretical dependence of the beam spin asymmetry on $\phi_{h}$.
 
 \begin{equation}
@@ -224,7 +234,7 @@ The motivation to measure the beam spin asymmetry in several kinematic bins as w
 
 The parameters $\vec{a}$ are the structure function ratios to be extracted.  The simplest way to extract these parameters is to use $\chi^2$ minimization implemented in a standard fitting package.  In these approaches, $\chi^2$ is defined as the square difference between the observed data values and those predicted by the model, normalized by the error.  If the fluctuation between the data and theory predictions is on the order of the error, the $\chi^2$ is simply on the order of the number of data points.  The parameters $\vec{a}$ which best describe the data are those which make the $\chi^2 (\vec{a})$ assume its minimum value.  This minimization is done in practice with gradient descent or quasi-Newtons method based algorithms like those provided in \texttt{Minuit} or \texttt{scipy.optimize.minimize}, the details of such algorithms will not be discussed here.  It is sufficient to say that these minimization methods produce the parameters $\vec{a}$, and an estimate of the covariance matrix $V$.  The parameters and their errors become the extracted value and uncertainty of the structure function ratio in each bin. \\
 
-Unfortunately, applying the standard single-fit procedure described above does not always produce stable results.  In some cases, the resulting parameter sets are reasonable, in other cases however the parameters in the denominator become nonphysically large and oppose each other.  This effect has motivated previous analysts to search for other means of extracting the dominant $\sin\phi_h$ behavior from the distributions.  One common technique is to assume that the coefficients $a_1$ and $a_2$ of above are small compared to 1.  The analyst can then fit the $\phi_h$ distribution with just one linear parameter $a_0$.  This produces a stable result, but has the disadvantage that one needs to introduce a systematic uncertainty associated with the difference observed between using the full model (with a restricted range for the parameters in the denominator) and the results obtained using the single parameter model.  Additionally, the structure function decomposition of the SIDIS cross section relies on theoretically solid ground, therefore it should be used in its full form.  If the data contain little information regarding the structure function ratios in the denominator, the authors believe it more valuable to demonstrate this by extracting those parameters with (large) errors, rather than ignore their contribution.  In order to accomplish this, the method of replicas (or parametric bootstrapping) is used to perform the parameter extraction.  The replica method consists of generating $N_{rep}$ pseudo-data $\phi_h$ distributions which have a normal distrubition located at the observed value, and with a variance equal to the statistical errors on the associated data point.  
+Unfortunately, applying the standard single-fit procedure described above does not always produce stable results.  In some cases, the resulting parameter sets are reasonable, in other cases however the parameters in the denominator become nonphysically large and oppose each other.  This effect has motivated previous analysts to search for other means of extracting the dominant $\sin\phi_h$ behavior from the distributions.  One common technique is to assume that the coefficients $a_1$ and $a_2$ of above are small compared to 1.  The analyst can then fit the $\phi_h$ distribution with just one linear parameter $a_0$.  This produces a stable result, but has the disadvantage that one needs to introduce a systematic uncertainty associated with the difference observed between using the full model (with a restricted range for the parameters in the denominator) and the results obtained using the single parameter model.  Additionally, the structure function decomposition of the SIDIS cross section relies on theoretically solid ground, therefore it should be used in its full form.  If the data contain little information regarding the structure function ratios in the denominator, the authors believe it more valuable to demonstrate this by extracting those parameters with (large) errors, rather than ignore their contribution.  In order to accomplish this, the method of replicas (or parametric bootstrapping) is used to perform the parameter estimation.  The replica method consists of generating $N_{rep}$ pseudo-data $\phi_h$ distributions which have a normal distrubition located at the observed value, and with a variance equal to the statistical errors on the associated data point.  
 
 \begin{equation}
   \vec{A}_{rep} = \mathcal{N}(\vec{A}, \vec{\sigma_{A}})
@@ -236,8 +246,6 @@ Here $\vec{A}$ is a vector of length $n_{phi}$ bins, representing the measured b
   \expval{a_j} = \sum_{i=1}^{N_{rep}} a_{j}^{(i)} \\
   \sigma_{a_j}^{2} = \frac{1}{N_{rep}-1} \sum_{i=1}^{N_{rep}} (a_{j}^{(i)} - \expval{a_j}) 
 \end{gather}
-
-\easyFigure{image/plots/kaon-bsa/p-study-x.pdf}{The BSA for each bin of $x$, $\phi_h$ (all plotted together on the x-axis) is compared with and without a maximum momentum (no tracks exceed 5 GeV) for the kaon track.  The global bin coordinate on the x-axis is $i + n_{\phi} * j$ where $i$ is the $\phi_h$ bin, $j$ is the $x$ bin, and $n_{\phi}$ is the number of $\phi$ bins (12). Both $i$ and $j$ start at 0.}
 
 \begin{figure}
 	\centering
