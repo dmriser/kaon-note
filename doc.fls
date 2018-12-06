@@ -309,6 +309,9 @@ INPUT /Users/davidriser/repos/kaon-note/image/plots/electron-id/summary-dc-regio
 INPUT /Users/davidriser/repos/kaon-note/image/plots/electron-id/ec-fid.png
 INPUT /Users/davidriser/repos/kaon-note/image/plots/electron-id/ec-fid.png
 INPUT /Users/davidriser/repos/kaon-note/image/plots/electron-id/ec-fid.png
+INPUT /Users/davidriser/repos/kaon-note/image/plots/electron-id/summary-ec-edep.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/electron-id/summary-ec-edep.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/electron-id/summary-ec-edep.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/electron-id/summary-sampling-fraction.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/electron-id/summary-sampling-fraction.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/electron-id/summary-sampling-fraction.pdf
@@ -354,9 +357,9 @@ INPUT /Users/davidriser/repos/kaon-note/image/plots/hadron-id/kaon_efficiency_pu
 OUTPUT chapters/kaon-bsa.aux
 INPUT /Users/davidriser/repos/kaon-note/chapters/kaon-bsa.tex
 INPUT /Users/davidriser/repos/kaon-note/chapters/kaon-bsa.tex
-INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-pt2.pdf
-INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-pt2.pdf
-INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-pt2.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-pt.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-pt.pdf
+INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/z-pt.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/mx.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/mx.pdf
 INPUT /Users/davidriser/repos/kaon-note/image/plots/kaon-bsa/mx.pdf
