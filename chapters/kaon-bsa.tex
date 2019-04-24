@@ -50,14 +50,14 @@ where $P_e$ is the average beam polarization over the dataset (74.9\%).  The sym
 \begin{equation}
 	\centering
 	\label{fig:bsa-sys-x}
-	\includegraphics[width=\textwidth]{image/plots/kaon-bsa/grid_bsa_sys_x.pdf}
+	\includegraphics[width = \textwidth]{image/plots/kaon-bsa/grid_bsa_sys_x.pdf}
 	\caption{The $\phi_h$ dependence is shown for each bin of $x$, increasing in value from the top left to the bottom right.  The statistical uncertainty is shown as black error bars on each point.  The total systematic uncertainty is shown as a red bar centered at zero.}
 \end{equation}
 
 \begin{equation}
 	\centering
 	\label{fig:bsa-sys-z}
-	\includegraphics[width=\textwidth]{image/plots/kaon-bsa/grid_bsa_sys_z.pdf}
+	\includegraphics[width = \textwidth]{image/plots/kaon-bsa/grid_bsa_sys_z.pdf}
 	\caption{The $\phi_h$ dependence is shown for each bin of $z$, increasing in value from the top left to the bottom right.  The statistical uncertainty is shown as black error bars on each point.  The total systematic uncertainty is shown as a red bar centered at zero.}
 \end{equation}
 
@@ -243,7 +243,7 @@ Unfortunately, applying the standard single-fit procedure described above does n
 Here $\vec{A}$ is a vector of length $n_{phi}$ bins, representing the measured beam spin asymmetry for each value of $\phi_h$ in a given kinematic bin.  Each of these distributions is fit with the full model, and the resulting parameter values are saved.  The final reported value for each fit parameter, as well as its uncertainty can be reported as the mean, and standard deviation of the fit results.  This procedure which is similar to bootstrapping, can be seen as an attempt to fit the underlying distribution that generated the data while avoiding the statistical noise.  This technique has been discussed in \cite{computing-watt:2012}.
 
 \begin{gather}
-  \expval{a_j} = \sum_{i=1}^{N_{rep}} a_{j}^{(i)} \\
+  \expval{a_j} = \frac{1}{N_{rep}} \sum_{i=1}^{N_{rep}} a_{j}^{(i)} \\
   \sigma_{a_j}^{2} = \frac{1}{N_{rep}-1} \sum_{i=1}^{N_{rep}} (a_{j}^{(i)} - \expval{a_j}) 
 \end{gather}
 
