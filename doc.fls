@@ -426,6 +426,8 @@ INPUT /Users/davidriser/repos/kaon-note/chapters/appendix.tex
 OUTPUT chapters/references.aux
 INPUT /Users/davidriser/repos/kaon-note/chapters/references.tex
 INPUT /Users/davidriser/repos/kaon-note/chapters/references.tex
+INPUT /Users/davidriser/repos/kaon-note/doc.bbl
+INPUT /Users/davidriser/repos/kaon-note/doc.bbl
 INPUT /Users/davidriser/repos/kaon-note/doc.aux
 INPUT /Users/davidriser/repos/kaon-note/extras/title.aux
 INPUT /Users/davidriser/repos/kaon-note/extras/title.aux
