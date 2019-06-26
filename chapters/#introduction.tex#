@@ -1,0 +1,67 @@
+\chapter{Introduction}
+
+% Setting up the problem (where is the proton spin coming from)
+Protons and neutrons (nucleons) are spin-half fermions.  Striking results of measurements performed by the European Muon Collaboration (EMC) in 1988 \cite{pdfs-leader:1988} demonstrated that just $30\%$ of the spin of the nucleons can be attributed to quark spin.  This important experiment changed the commonly held view that nucleon spin structure arose from simply the spins of the constituent valence quarks, to a more complete picture in which the sea quarks and gluonic spins also contributed to the total nucleonic spin.  Moreover, the orbital angular momentum possessed by the quarks is now expected to contribute, and is the subject of much interest.
+
+% Introducing important character (TMD)
+Addressing the question of orbital angular momentum distributions of partons within nucleons motivates moving beyond a co-linear picture of parton interactions.   During the early 1990s, theoretical tools began to emerge that are now being used to study quark dynamics in three-dimensions.  Transverse momentum dependent functions (TMDs) naturally extend the co-linear parton distribution functions (PDFs) to include intrinsic quark momentum in the plane transverse to the hard probe \cite{tmds-mulders:1995, tmds-bacchetta:2006}.  \\
+
+% Introducing important character (SSAs)
+Sadly, TMDs are not directly observable.  Despite this fact, single spin asymmetry (SSA) measurements of semi-inclusive deeply inelastic scattering (SIDIS) have proven useful in recent years as inputs for phenomenological extraction of TMD parton distribution functions (TMD PDFs, sometimes just called TMDs) and TMD fragmentation functions (TMD FFs or simply FFs) \cite{tmds-airapetian:2009, tmds-airapetian:2012, tmds-aghasyan:2017}.  Because of the absence of a TMD PDF, semi-inclusive annihilation of $e^+ e^- \rightarrow h_1 h_2 X$ has been successfully used as input to TMD FF extractions \cite{tmds-anselmino:2015}.  \\
+
+% More quantitative connection between cross sections and TMDs
+By assuming single photon exchange and writing the QED interaction between the virtual photon and the nucleon as a generic vertex, then applying hermiticity, parity, and naive time-reversal invariance, the cross section for SIDIS can be written in a model independent way in terms of structure functions \cite{tmds-mulders:1995, tmds-bacchetta:2006} (terms that arise from target polarization are omitted below).  
+
+% This is the cross section for unpolarized target and polarized beam.
+\begin{eqnarray}
+  \frac{d^5\sigma}{dx \, dQ^{2}\, dz\, d\phi_h\, d P_{T}^2} = \frac{\alpha^2_{em}}{2x_B y Q^2} \frac{y^2}{1-\varepsilon}  ( 1+\frac{\gamma^2}{2x_B} ) \Bigl\{ F_{UU ,T} +  \varepsilon F_{UU ,L} \nonumber \\
+  + \sqrt{2\,\varepsilon (1+\varepsilon)} \cos\phi_h F_{UU}^{\cos\phi_h}+ \varepsilon \cos(2\phi_h) F_{UU}^{\cos 2\phi_h} +& \lambda_e
+\sqrt{2\,\varepsilon (1-\varepsilon)} \sin\phi_h F_{LU}^{\sin\phi_h} \Bigr\}
+\end{eqnarray}
+
+Here, typical definitions for the SIDIS kinematic variables are used (where $q = l - l'$ and $Q^{2} = -q^{2}$). 
+
+\begin{align}
+  x = \frac{Q^{2}}{2P \cdot q} && y = \frac{P \cdot q}{P \cdot l} && z = \frac{P \cdot P_{h}}{P \cdot q} && \gamma = \frac{2Mx}{Q}
+\end{align}
+
+Additionally, the ratio $\varepsilon$ of the longitudinal and transverse photon flux is shown below.
+
+\begin{equation}
+	\varepsilon = \frac{1 - y - \frac{1}{4}\gamma^2 y^2}{1 - y + \frac{1}{2}y^2 + \frac{1}{4}\gamma^2 y^2}
+\end{equation}
+
+The factor $\lambda_e$ appearing in the cross section refers to the helicity state of the incoming lepton, and $\phi_h$ is the angle between the lepton and hadron scattering planes.  By measuring the cross section for both electron helicity states, the beam spin asymmetry can be constructed.  
+
+\begin{equation}
+  BSA = \frac{d\sigma^+ - d\sigma^-}{d\sigma^+ + d\sigma^-} = \frac{\phimod{LU}{\sin\phi_h}}{1 + \phimod{UU}{\cos\phi_h} + \phimod{UU}{\cos(2\phi_h)}}
+\end{equation}
+
+Where the coefficient $A_{LU}^{\sin\phi}$ is defined as, 
+\begin{equation}
+  A_{LU}^{\sin\phi_h} = \sqrt{2\,\varepsilon (1-\varepsilon)} \frac{F_{LU}^{\sin\phi_h}}{F_{UU,T} + \varepsilon F_{UU,L}}
+\end{equation}
+
+and the unpolarized coefficients are defined in a similar way.  Within the TMD framework, the structure function $F_{LU}^{\sin\phi_h}$ is a pure twist-three structure function.  With the assumption of twist-three factorization (which has not been demonstrated) the structure function is composed of four terms.
+
+\begin{equation}
+  F_{LU}^{\sin\phi_h} = \frac{2M}{Q} \mathcal{C} \Bigl[ -\frac{\hhat \cdot \kt}{M_h} \Bigl( xeH_1^\perp + \frac{M_h}{M} f_1 \frac{\tilde{}^\perp}{z} \Bigr) + \frac{\hhat \cdot \pt}{M} \Bigl( xg^\perp D_1 + \frac{M_h}{M} h_{1}^{\perp} \frac{\tilde{E}}{z} \Bigr) \Bigr]
+\end{equation}
+
+The notation $\mathcal{C}$ is shorhtand  presented in \cite{tmds-bacchetta:2006} as a way to write structure functions in terms of the convolutions of PDF and FF objects.
+
+\begin{equation}
+  \mathcal{C}[\omega f D] = x \sum_{a} e^{2}_{a} \int d^{2}\pt d^{2}\kt \delta^{(2)} \left( z\kt + \pt - \vect{P}_{h\perp} \right) \omega (\kt, \pt) f^{a}(x, k_{T}^{2}) D^{a}(z, p_{T}^{2}) 
+\end{equation}
+
+Here the summation over quark flavors $a$ is explicitly shown.
+
+% Describe each TMD PDF/FF present in the structure function.
+At twist-three four TMD PDFs appear in the structure function, one of which is known as the Boer Mulders function $h_{1}^{\perp}$.  The Boer Mulders TMD is a twist-two time-reversal odd function.  Additionally, $g^{\perp}$ is a twist-three time reversal odd TMD, that has been compared to a higher twist analog of the Sivers function.  The remaining TMDs are $e$, a chiral odd twist-three TMD and $f_1$ the unpolarized TMD.  Since the TMD PDF is accompanied by a TMD fragmentation function (FF), four fragmentation functions also appear in this structure function, at leading order the Collins $H_{1}^{\perp}$ and unpolarized $D_1$, and at twist-three $\tilde{G}^{\perp}$, $\tilde{E}$.
+
+% Introduce another character (Kaons).
+Despite measurements of $A_{LU}^{\sin\phi_h}$ for $\pi^+$, $\pi^-$, and the neutral $\pi^0$ mesons \cite{tmds-gohn:2014}, little is known about the contribution of each individual PDF/FF term to the asymmetry.  Still fewer are the SSA measurements which have tagged kaons in the final state.  Previous analyses have reported results for the Sivers asymmetry $A_{UT}^{\sin(\phi_h - \phi_S)}$, which was recently reported by Hall A \cite{tmds-zhao:2014} and was observed with a small magnitude.  However, measuremenst by the HERMES collaboration indicate that the Sivers asymmetry has quite a large magnitude \cite{tmds-airapetian:2009}.      
+
+% Conclude the introductory section. 
+This measurement of $K^+$ beam spin asymmetries is non-zero, and provides further evidence that at the presently studied kinematics, intrinsically twist-three distributions functions are not vanishingly small.  
+

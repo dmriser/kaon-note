@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{14}%
+\begin{thebibliography}{15}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -140,6 +140,17 @@
   (\bibinfo {year} {2015})},\ \Eprint {http://arxiv.org/abs/1510.05389}
   {arXiv:1510.05389 [hep-ph]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1510.05389;%%
+\bibitem [{\citenamefont {Avakian}\ \emph {et~al.}(2004)\citenamefont {Avakian}
+  \emph {et~al.}}]{tmds-avakian:2003}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Avakian}} \emph {et~al.} (\bibinfo {collaboration} {CLAS}),\ }\href
+  {\doibase 10.1103/PhysRevD.69.112004} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D69}},\ \bibinfo {pages}
+  {112004} (\bibinfo {year} {2004})},\ \Eprint
+  {http://arxiv.org/abs/hep-ex/0301005} {arXiv:hep-ex/0301005 [hep-ex]}
+  \BibitemShut {NoStop}%
+%%CITATION = HEP-EX/0301005;%%
 \bibitem [{\citenamefont {Gohn}\ \emph {et~al.}(2014)\citenamefont {Gohn} \emph
   {et~al.}}]{tmds-gohn:2014}%
   \BibitemOpen

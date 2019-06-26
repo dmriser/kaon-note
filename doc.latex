@@ -16,7 +16,7 @@
 	\include{chapters/kaon-bsa}
 %	\include{chapters/sidis}
 %	\include{chapters/tmd-extraction}	
-	\include{chapters/appendix}	
+%	\include{chapters/appendix}	
 	\include{chapters/references}
 
 \end{document}

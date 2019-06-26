@@ -69,7 +69,7 @@ As particles traverse the electromagnetic calorimeter they develop electromagnet
     U & 70 & 400 \\
     V & - & 362 \\
     W & - & 395
-  \end{tbular}
+  \end{tabular}
   \caption{Cut parameters used for the EC fiducial cut.}
 \end{table}
 
@@ -365,7 +365,7 @@ In this simple equation $P_{rec}$ and $P_{gen}$ are the reconstructed and genera
 where $tp$ and $fp$ are true positives and false positives respectively, and the variables $N$ refer to the true number of tracks with that label in the sample.  The efficiency is simply the fraction of all true kaons which are identified as kaons, and can be written as shown below.   
 
 \begin{equation}
-	\epsilon = \frac{tp}{tp + fn} = \frac{N_{K+^}^{identified}}{N_{K^+}^{total}}
+	\epsilon = \frac{tp}{tp + fn} = \frac{N_{K^+}^{identified}}{N_{K^+}^{total}}
 \end{equation}
 
 As a simple illustrative example, consider the case when all hadrons are called kaons, in this case the efficiency is 1, but the purity will be at its minimum (related to the fraction of total particles that are kaons).  As the purity of the sample is increased, the efficiency drops.  For this study the efficiency drives our statistical errors, but the purity is the more important metric.  As the cut boundaries are restricted by raising the minimum confidence level of hadrons identified as kaons, the purity goes up and the efficiency goes down \ref{fig:kaon_efficiency_purity}.
